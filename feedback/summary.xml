@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?><evaluation>
+  <exam>b-vsa-ls23-projekt-2</exam>
+  <student>
+    <aisId>105089</aisId>
+    <name>Ivan Cicka</name>
+    <email>xcickai1@stuba.sk</email>
+    <github>xcickai1</github>
+  </student>
+  <testRuns>
+    <testRun>
+      <id>testRun-2023-06-01T16-28-12.471</id>
+      <totalRun>45</totalRun>
+      <success>31</success>
+      <failure>14</failure>
+      <error>0</error>
+      <skipped>0</skipped>
+      <points>10</points>
+      <bonus>false</bonus>
+      <duration>PT1M50.242S</duration>
+    </testRun>
+    <testRun>
+      <id>testRun-2023-06-01T16-30-02.716</id>
+      <totalRun>3</totalRun>
+      <success>0</success>
+      <failure>0</failure>
+      <error>0</error>
+      <skipped>3</skipped>
+      <points>0</points>
+      <bonus>true</bonus>
+      <duration>PT11.318S</duration>
+    </testRun>
+  </testRuns>
+  <totalPoints>10</totalPoints>
+  <notes/>
+  <testDuration>PT2M1.56S</testDuration>
+</evaluation>

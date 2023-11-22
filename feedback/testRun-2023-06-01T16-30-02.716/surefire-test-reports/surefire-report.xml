@@ -1,0 +1,410 @@
+<?xml version="1.0" encoding="UTF-8"?><testsuites>
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="sk.stuba.fei.uim.vsa.pr2.bonus.BonusSearchResourceTest" time="3.136" tests="3" errors="0" skipped="3" failures="0">
+  <properties>
+    <property name="awt.toolkit" value="sun.awt.X11.XToolkit"/>
+    <property name="file.encoding.pkg" value="sun.io"/>
+    <property name="java.specification.version" value="1.8"/>
+    <property name="sun.cpu.isalist" value=""/>
+    <property name="sun.jnu.encoding" value="UTF-8"/>
+    <property name="java.class.path" value="/tested--b-vsa-ls23-projekt-2/target/test-classes:/tested--b-vsa-ls23-projekt-2/target/classes:/root/.m2/repository/org/apache/derby/derbyclient/10.14.2.0/derbyclient-10.14.2.0.jar:/root/.m2/repository/org/glassfish/jersey/containers/jersey-container-grizzly2-http/2.39.1/jersey-container-grizzly2-http-2.39.1.jar:/root/.m2/repository/org/glassfish/hk2/external/jakarta.inject/2.6.1/jakarta.inject-2.6.1.jar:/root/.m2/repository/org/glassfish/grizzly/grizzly-http-server/2.4.4/grizzly-http-server-2.4.4.jar:/root/.m2/repository/org/glassfish/grizzly/grizzly-http/2.4.4/grizzly-http-2.4.4.jar:/root/.m2/repository/org/glassfish/grizzly/grizzly-framework/2.4.4/grizzly-framework-2.4.4.jar:/root/.m2/repository/org/glassfish/jersey/core/jersey-common/2.39.1/jersey-common-2.39.1.jar:/root/.m2/repository/jakarta/annotation/jakarta.annotation-api/1.3.5/jakarta.annotation-api-1.3.5.jar:/root/.m2/repository/org/glassfish/hk2/osgi-resource-locator/1.0.3/osgi-resource-locator-1.0.3.jar:/root/.m2/repository/org/glassfish/jersey/core/jersey-server/2.39.1/jersey-server-2.39.1.jar:/root/.m2/repository/org/glassfish/jersey/core/jersey-client/2.39.1/jersey-client-2.39.1.jar:/root/.m2/repository/jakarta/validation/jakarta.validation-api/2.0.2/jakarta.validation-api-2.0.2.jar:/root/.m2/repository/jakarta/ws/rs/jakarta.ws.rs-api/2.1.6/jakarta.ws.rs-api-2.1.6.jar:/root/.m2/repository/org/glassfish/jersey/media/jersey-media-moxy/2.39.1/jersey-media-moxy-2.39.1.jar:/root/.m2/repository/org/glassfish/jersey/ext/jersey-entity-filtering/2.39.1/jersey-entity-filtering-2.39.1.jar:/root/.m2/repository/jakarta/json/jakarta.json-api/1.1.6/jakarta.json-api-1.1.6.jar:/root/.m2/repository/org/glassfish/jakarta.json/1.1.6/jakarta.json-1.1.6.jar:/root/.m2/repository/org/eclipse/persistence/org.eclipse.persistence.moxy/2.7.10/org.eclipse.persistence.moxy-2.7.10.jar:/root/.m2/repository/org/eclipse/persistence/org.eclipse.persistence.core/2.7.10/org.eclipse.persistence.core-2.7.10.jar:/root/.m2/repository/org/eclipse/persistence/org.eclipse.persistence.asm/9.2.0/org.eclipse.persistence.asm-9.2.0.jar:/root/.m2/repository/org/glassfish/jersey/media/jersey-media-json-jackson/2.39.1/jersey-media-json-jackson-2.39.1.jar:/root/.m2/repository/com/fasterxml/jackson/core/jackson-annotations/2.14.1/jackson-annotations-2.14.1.jar:/root/.m2/repository/com/fasterxml/jackson/core/jackson-databind/2.14.1/jackson-databind-2.14.1.jar:/root/.m2/repository/com/fasterxml/jackson/module/jackson-module-jaxb-annotations/2.14.1/jackson-module-jaxb-annotations-2.14.1.jar:/root/.m2/repository/jakarta/xml/bind/jakarta.xml.bind-api/2.3.3/jakarta.xml.bind-api-2.3.3.jar:/root/.m2/repository/org/glassfish/jersey/inject/jersey-hk2/2.39.1/jersey-hk2-2.39.1.jar:/root/.m2/repository/org/glassfish/hk2/hk2-locator/2.6.1/hk2-locator-2.6.1.jar:/root/.m2/repository/org/glassfish/hk2/external/aopalliance-repackaged/2.6.1/aopalliance-repackaged-2.6.1.jar:/root/.m2/repository/org/glassfish/hk2/hk2-api/2.6.1/hk2-api-2.6.1.jar:/root/.m2/repository/org/glassfish/hk2/hk2-utils/2.6.1/hk2-utils-2.6.1.jar:/root/.m2/repository/org/javassist/javassist/3.29.0-GA/javassist-3.29.0-GA.jar:/root/.m2/repository/at/favre/lib/bcrypt/0.10.2/bcrypt-0.10.2.jar:/root/.m2/repository/at/favre/lib/bytes/1.5.0/bytes-1.5.0.jar:/root/.m2/repository/org/postgresql/postgresql/42.5.4/postgresql-42.5.4.jar:/root/.m2/repository/org/checkerframework/checker-qual/3.5.0/checker-qual-3.5.0.jar:/root/.m2/repository/org/eclipse/persistence/eclipselink/2.7.11/eclipselink-2.7.11.jar:/root/.m2/repository/org/eclipse/persistence/jakarta.persistence/2.2.3/jakarta.persistence-2.2.3.jar:/root/.m2/repository/org/eclipse/persistence/commonj.sdo/2.1.1/commonj.sdo-2.1.1.jar:/root/.m2/repository/org/eclipse/persistence/javax.persistence/2.2.1/javax.persistence-2.2.1.jar:/root/.m2/repository/org/projectlombok/lombok/1.18.24/lombok-1.18.24.jar:/root/.m2/repository/org/reflections/reflections/0.10.2/reflections-0.10.2.jar:/root/.m2/repository/com/google/code/findbugs/jsr305/3.0.2/jsr305-3.0.2.jar:/root/.m2/repository/org/junit/jupiter/junit-jupiter-engine/5.8.2/junit-jupiter-engine-5.8.2.jar:/root/.m2/repository/org/junit/platform/junit-platform-engine/1.8.2/junit-platform-engine-1.8.2.jar:/root/.m2/repository/org/apiguardian/apiguardian-api/1.1.2/apiguardian-api-1.1.2.jar:/root/.m2/repository/org/junit/jupiter/junit-jupiter-api/5.8.2/junit-jupiter-api-5.8.2.jar:/root/.m2/repository/org/opentest4j/opentest4j/1.2.0/opentest4j-1.2.0.jar:/root/.m2/repository/org/junit/platform/junit-platform-commons/1.8.2/junit-platform-commons-1.8.2.jar:/root/.m2/repository/ch/qos/logback/logback-core/1.3.5/logback-core-1.3.5.jar:/root/.m2/repository/org/slf4j/slf4j-api/2.0.4/slf4j-api-2.0.4.jar:/root/.m2/repository/ch/qos/logback/logback-classic/1.3.5/logback-classic-1.3.5.jar:/root/.m2/repository/com/fasterxml/jackson/datatype/jackson-datatype-jsr310/2.15.1/jackson-datatype-jsr310-2.15.1.jar:/root/.m2/repository/com/fasterxml/jackson/core/jackson-core/2.15.1/jackson-core-2.15.1.jar:"/>
+    <property name="java.vm.vendor" value="Oracle Corporation"/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="java.vendor.url" value="http://java.oracle.com/"/>
+    <property name="user.timezone" value=""/>
+    <property name="java.vm.specification.version" value="1.8"/>
+    <property name="os.name" value="Linux"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="sun.boot.library.path" value="/usr/local/openjdk-8/jre/lib/amd64"/>
+    <property name="sun.java.command" value="/tested--b-vsa-ls23-projekt-2/target/surefire/surefirebooter8930579994000757300.jar /tested--b-vsa-ls23-projekt-2/target/surefire 2023-06-01T16-30-09_452-jvmRun1 surefire8273536054526661680tmp surefire_04516683599514210863tmp"/>
+    <property name="surefire.test.class.path" value="/tested--b-vsa-ls23-projekt-2/target/test-classes:/tested--b-vsa-ls23-projekt-2/target/classes:/root/.m2/repository/org/apache/derby/derbyclient/10.14.2.0/derbyclient-10.14.2.0.jar:/root/.m2/repository/org/glassfish/jersey/containers/jersey-container-grizzly2-http/2.39.1/jersey-container-grizzly2-http-2.39.1.jar:/root/.m2/repository/org/glassfish/hk2/external/jakarta.inject/2.6.1/jakarta.inject-2.6.1.jar:/root/.m2/repository/org/glassfish/grizzly/grizzly-http-server/2.4.4/grizzly-http-server-2.4.4.jar:/root/.m2/repository/org/glassfish/grizzly/grizzly-http/2.4.4/grizzly-http-2.4.4.jar:/root/.m2/repository/org/glassfish/grizzly/grizzly-framework/2.4.4/grizzly-framework-2.4.4.jar:/root/.m2/repository/org/glassfish/jersey/core/jersey-common/2.39.1/jersey-common-2.39.1.jar:/root/.m2/repository/jakarta/annotation/jakarta.annotation-api/1.3.5/jakarta.annotation-api-1.3.5.jar:/root/.m2/repository/org/glassfish/hk2/osgi-resource-locator/1.0.3/osgi-resource-locator-1.0.3.jar:/root/.m2/repository/org/glassfish/jersey/core/jersey-server/2.39.1/jersey-server-2.39.1.jar:/root/.m2/repository/org/glassfish/jersey/core/jersey-client/2.39.1/jersey-client-2.39.1.jar:/root/.m2/repository/jakarta/validation/jakarta.validation-api/2.0.2/jakarta.validation-api-2.0.2.jar:/root/.m2/repository/jakarta/ws/rs/jakarta.ws.rs-api/2.1.6/jakarta.ws.rs-api-2.1.6.jar:/root/.m2/repository/org/glassfish/jersey/media/jersey-media-moxy/2.39.1/jersey-media-moxy-2.39.1.jar:/root/.m2/repository/org/glassfish/jersey/ext/jersey-entity-filtering/2.39.1/jersey-entity-filtering-2.39.1.jar:/root/.m2/repository/jakarta/json/jakarta.json-api/1.1.6/jakarta.json-api-1.1.6.jar:/root/.m2/repository/org/glassfish/jakarta.json/1.1.6/jakarta.json-1.1.6.jar:/root/.m2/repository/org/eclipse/persistence/org.eclipse.persistence.moxy/2.7.10/org.eclipse.persistence.moxy-2.7.10.jar:/root/.m2/repository/org/eclipse/persistence/org.eclipse.persistence.core/2.7.10/org.eclipse.persistence.core-2.7.10.jar:/root/.m2/repository/org/eclipse/persistence/org.eclipse.persistence.asm/9.2.0/org.eclipse.persistence.asm-9.2.0.jar:/root/.m2/repository/org/glassfish/jersey/media/jersey-media-json-jackson/2.39.1/jersey-media-json-jackson-2.39.1.jar:/root/.m2/repository/com/fasterxml/jackson/core/jackson-annotations/2.14.1/jackson-annotations-2.14.1.jar:/root/.m2/repository/com/fasterxml/jackson/core/jackson-databind/2.14.1/jackson-databind-2.14.1.jar:/root/.m2/repository/com/fasterxml/jackson/module/jackson-module-jaxb-annotations/2.14.1/jackson-module-jaxb-annotations-2.14.1.jar:/root/.m2/repository/jakarta/xml/bind/jakarta.xml.bind-api/2.3.3/jakarta.xml.bind-api-2.3.3.jar:/root/.m2/repository/org/glassfish/jersey/inject/jersey-hk2/2.39.1/jersey-hk2-2.39.1.jar:/root/.m2/repository/org/glassfish/hk2/hk2-locator/2.6.1/hk2-locator-2.6.1.jar:/root/.m2/repository/org/glassfish/hk2/external/aopalliance-repackaged/2.6.1/aopalliance-repackaged-2.6.1.jar:/root/.m2/repository/org/glassfish/hk2/hk2-api/2.6.1/hk2-api-2.6.1.jar:/root/.m2/repository/org/glassfish/hk2/hk2-utils/2.6.1/hk2-utils-2.6.1.jar:/root/.m2/repository/org/javassist/javassist/3.29.0-GA/javassist-3.29.0-GA.jar:/root/.m2/repository/at/favre/lib/bcrypt/0.10.2/bcrypt-0.10.2.jar:/root/.m2/repository/at/favre/lib/bytes/1.5.0/bytes-1.5.0.jar:/root/.m2/repository/org/postgresql/postgresql/42.5.4/postgresql-42.5.4.jar:/root/.m2/repository/org/checkerframework/checker-qual/3.5.0/checker-qual-3.5.0.jar:/root/.m2/repository/org/eclipse/persistence/eclipselink/2.7.11/eclipselink-2.7.11.jar:/root/.m2/repository/org/eclipse/persistence/jakarta.persistence/2.2.3/jakarta.persistence-2.2.3.jar:/root/.m2/repository/org/eclipse/persistence/commonj.sdo/2.1.1/commonj.sdo-2.1.1.jar:/root/.m2/repository/org/eclipse/persistence/javax.persistence/2.2.1/javax.persistence-2.2.1.jar:/root/.m2/repository/org/projectlombok/lombok/1.18.24/lombok-1.18.24.jar:/root/.m2/repository/org/reflections/reflections/0.10.2/reflections-0.10.2.jar:/root/.m2/repository/com/google/code/findbugs/jsr305/3.0.2/jsr305-3.0.2.jar:/root/.m2/repository/org/junit/jupiter/junit-jupiter-engine/5.8.2/junit-jupiter-engine-5.8.2.jar:/root/.m2/repository/org/junit/platform/junit-platform-engine/1.8.2/junit-platform-engine-1.8.2.jar:/root/.m2/repository/org/apiguardian/apiguardian-api/1.1.2/apiguardian-api-1.1.2.jar:/root/.m2/repository/org/junit/jupiter/junit-jupiter-api/5.8.2/junit-jupiter-api-5.8.2.jar:/root/.m2/repository/org/opentest4j/opentest4j/1.2.0/opentest4j-1.2.0.jar:/root/.m2/repository/org/junit/platform/junit-platform-commons/1.8.2/junit-platform-commons-1.8.2.jar:/root/.m2/repository/ch/qos/logback/logback-core/1.3.5/logback-core-1.3.5.jar:/root/.m2/repository/org/slf4j/slf4j-api/2.0.4/slf4j-api-2.0.4.jar:/root/.m2/repository/ch/qos/logback/logback-classic/1.3.5/logback-classic-1.3.5.jar:/root/.m2/repository/com/fasterxml/jackson/datatype/jackson-datatype-jsr310/2.15.1/jackson-datatype-jsr310-2.15.1.jar:/root/.m2/repository/com/fasterxml/jackson/core/jackson-core/2.15.1/jackson-core-2.15.1.jar:"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="user.home" value="/root"/>
+    <property name="user.language" value="en"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.home" value="/usr/local/openjdk-8/jre"/>
+    <property name="basedir" value="/tested--b-vsa-ls23-projekt-2"/>
+    <property name="file.separator" value="/"/>
+    <property name="line.separator" value="&#10;"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="java.awt.graphicsenv" value="sun.awt.X11GraphicsEnvironment"/>
+    <property name="surefire.real.class.path" value="/tested--b-vsa-ls23-projekt-2/target/surefire/surefirebooter8930579994000757300.jar"/>
+    <property name="sun.boot.class.path" value="/usr/local/openjdk-8/jre/lib/resources.jar:/usr/local/openjdk-8/jre/lib/rt.jar:/usr/local/openjdk-8/jre/lib/sunrsasign.jar:/usr/local/openjdk-8/jre/lib/jsse.jar:/usr/local/openjdk-8/jre/lib/jce.jar:/usr/local/openjdk-8/jre/lib/charsets.jar:/usr/local/openjdk-8/jre/lib/jfr.jar:/usr/local/openjdk-8/jre/classes"/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="java.runtime.version" value="1.8.0_342-b07"/>
+    <property name="user.name" value="root"/>
+    <property name="path.separator" value=":"/>
+    <property name="os.version" value="5.15.90.1-microsoft-standard-WSL2"/>
+    <property name="java.endorsed.dirs" value="/usr/local/openjdk-8/jre/lib/endorsed"/>
+    <property name="java.runtime.name" value="OpenJDK Runtime Environment"/>
+    <property name="file.encoding" value="UTF-8"/>
+    <property name="java.vm.name" value="OpenJDK 64-Bit Server VM"/>
+    <property name="localRepository" value="/root/.m2/repository"/>
+    <property name="java.vendor.url.bug" value="http://bugreport.sun.com/bugreport/"/>
+    <property name="java.io.tmpdir" value="/tmp"/>
+    <property name="java.version" value="1.8.0_342"/>
+    <property name="user.dir" value="/tested--b-vsa-ls23-projekt-2"/>
+    <property name="os.arch" value="amd64"/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="java.awt.printerjob" value="sun.print.PSPrinterJob"/>
+    <property name="sun.os.patch.level" value="unknown"/>
+    <property name="java.library.path" value="/usr/java/packages/lib/amd64:/usr/lib64:/lib64:/lib:/usr/lib"/>
+    <property name="java.vm.info" value="mixed mode"/>
+    <property name="java.vendor" value="Oracle Corporation"/>
+    <property name="java.vm.version" value="25.342-b07"/>
+    <property name="java.ext.dirs" value="/usr/local/openjdk-8/jre/lib/ext:/usr/java/packages/lib/ext"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
+    <property name="java.class.version" value="52.0"/>
+  </properties>
+  <testcase name="shouldFindStudents" classname="sk.stuba.fei.uim.vsa.pr2.bonus.BonusSearchResourceTest" time="0">
+    <skipped message="Assumption failed: Skipping test. Bonus endpoints were not implemented" type="org.opentest4j.TestAbortedException">org.opentest4j.TestAbortedException: Assumption failed: Skipping test. Bonus endpoints were not implemented
+	at sk.stuba.fei.uim.vsa.pr2.bonus.BonusSearchResourceTest.shouldFindStudents(BonusSearchResourceTest.java:159)
+</skipped>
+    <system-out><![CDATA[2023-06-01 16:30:10.698  INFO --- [           main] s.s.fei.uim.vsa.pr2.utils.ResourceTest   : Starting HTTP server for testing
+2023-06-01 16:30:10.721  INFO --- [           main] s.s.fei.uim.vsa.pr2.Project2Application  : Starting Grizzly2 HTTP server...
+2023-06-01 16:30:10.721  INFO --- [           main] s.s.f.u.v.pr2.ApplicationConfiguration   : Set base uri: http://docker-desktop:8080/api
+2023-06-01 16:30:10.721  INFO --- [           main] s.s.fei.uim.vsa.pr2.Project2Application  : Server listening on http://docker-desktop:8080/api
+2023-06-01 16:30:11.014  INFO --- [           main] org.reflections.Reflections              : Reflections took 76 ms to scan 2 urls, producing 14 keys and 29 values
+2023-06-01 16:30:11.030  INFO --- [           main] .s.f.u.v.p.JAXRSApplicationConfiguration : Registered resource classes: [class sk.stuba.fei.uim.vsa.pr2.api.StudentResource, class sk.stuba.fei.uim.vsa.pr2.api.TeacherResource, class sk.stuba.fei.uim.vsa.pr2.api.ThesisResource]
+2023-06-01 16:30:11.030  INFO --- [           main] .s.f.u.v.p.JAXRSApplicationConfiguration : Registered feature providers: []
+2023-06-01 16:30:11.603  INFO --- [           main] s.s.fei.uim.vsa.pr2.utils.ResourceTest   : Creating client for HTTP server
+2023-06-01 16:30:11.618  INFO --- [           main] s.s.fei.uim.vsa.pr2.utils.ResourceTest   : Client created JerseyWebTarget { http://docker-desktop:8080/api }
+[EL Fine]: server: 2023-06-01 16:30:11.948--Thread(Thread[main,5,main])--Configured server platform: org.eclipse.persistence.platform.server.NoServerPlatform
+[EL Config]: metadata: 2023-06-01 16:30:12.065--ServerSession(948650013)--Thread(Thread[main,5,main])--The access type for the persistent class [class user.User] is set to [FIELD].
+[EL Config]: metadata: 2023-06-01 16:30:12.084--ServerSession(948650013)--Thread(Thread[main,5,main])--The target class (reference) class for the element collection mapping element [field permissions] is being defaulted to: class auth.Permission.
+[EL Config]: metadata: 2023-06-01 16:30:12.086--ServerSession(948650013)--Thread(Thread[main,5,main])--The access type for the persistent class [class entities.ZaverecnaPraca] is set to [FIELD].
+[EL Config]: metadata: 2023-06-01 16:30:12.092--ServerSession(948650013)--Thread(Thread[main,5,main])--The target entity (reference) class for the one to one mapping element [field author] is being defaulted to: class entities.Student.
+[EL Config]: metadata: 2023-06-01 16:30:12.095--ServerSession(948650013)--Thread(Thread[main,5,main])--The target entity (reference) class for the many to one mapping element [field supervisor] is being defaulted to: class entities.Pedagog.
+[EL Config]: metadata: 2023-06-01 16:30:12.095--ServerSession(948650013)--Thread(Thread[main,5,main])--The access type for the persistent class [class entities.Pedagog] is set to [FIELD].
+[EL Config]: metadata: 2023-06-01 16:30:12.097--ServerSession(948650013)--Thread(Thread[main,5,main])--The target entity (reference) class for the one to many mapping element [field theses] is being defaulted to: class entities.ZaverecnaPraca.
+[EL Config]: metadata: 2023-06-01 16:30:12.098--ServerSession(948650013)--Thread(Thread[main,5,main])--The access type for the persistent class [class entities.ThesisAssignmentRequest] is set to [FIELD].
+[EL Config]: metadata: 2023-06-01 16:30:12.098--ServerSession(948650013)--Thread(Thread[main,5,main])--The access type for the persistent class [class entities.Student] is set to [FIELD].
+[EL Config]: metadata: 2023-06-01 16:30:12.098--ServerSession(948650013)--Thread(Thread[main,5,main])--The target entity (reference) class for the one to one mapping element [field thesis] is being defaulted to: class entities.ZaverecnaPraca.
+[EL Config]: metadata: 2023-06-01 16:30:12.099--ServerSession(948650013)--Thread(Thread[main,5,main])--The alias name for the entity class [class user.User] is being defaulted to: User.
+[EL Config]: metadata: 2023-06-01 16:30:12.111--ServerSession(948650013)--Thread(Thread[main,5,main])--The column name for element [password] is being defaulted to: PASSWORD.
+[EL Config]: metadata: 2023-06-01 16:30:12.111--ServerSession(948650013)--Thread(Thread[main,5,main])--The column name for element [aisId] is being defaulted to: AISID.
+[EL Config]: metadata: 2023-06-01 16:30:12.112--ServerSession(948650013)--Thread(Thread[main,5,main])--The column name for element [username] is being defaulted to: USERNAME.
+[EL Config]: metadata: 2023-06-01 16:30:12.112--ServerSession(948650013)--Thread(Thread[main,5,main])--The alias name for the entity class [class entities.ZaverecnaPraca] is being defaulted to: ZaverecnaPraca.
+[EL Config]: metadata: 2023-06-01 16:30:12.112--ServerSession(948650013)--Thread(Thread[main,5,main])--The table name for entity [class entities.ZaverecnaPraca] is being defaulted to: ZAVERECNAPRACA.
+[EL Config]: metadata: 2023-06-01 16:30:12.113--ServerSession(948650013)--Thread(Thread[main,5,main])--The column name for element [registrationNumber] is being defaulted to: REGISTRATIONNUMBER.
+[EL Config]: metadata: 2023-06-01 16:30:12.113--ServerSession(948650013)--Thread(Thread[main,5,main])--The column name for element [description] is being defaulted to: DESCRIPTION.
+[EL Config]: metadata: 2023-06-01 16:30:12.113--ServerSession(948650013)--Thread(Thread[main,5,main])--The column name for element [publishedOn] is being defaulted to: PUBLISHEDON.
+[EL Config]: metadata: 2023-06-01 16:30:12.116--ServerSession(948650013)--Thread(Thread[main,5,main])--The column name for element [id] is being defaulted to: ID.
+[EL Config]: metadata: 2023-06-01 16:30:12.116--ServerSession(948650013)--Thread(Thread[main,5,main])--The column name for element [title] is being defaulted to: TITLE.
+[EL Config]: metadata: 2023-06-01 16:30:12.117--ServerSession(948650013)--Thread(Thread[main,5,main])--The column name for element [department] is being defaulted to: DEPARTMENT.
+[EL Config]: metadata: 2023-06-01 16:30:12.117--ServerSession(948650013)--Thread(Thread[main,5,main])--The column name for element [deadline] is being defaulted to: DEADLINE.
+[EL Config]: metadata: 2023-06-01 16:30:12.117--ServerSession(948650013)--Thread(Thread[main,5,main])--The column name for element [type] is being defaulted to: TYPE.
+[EL Config]: metadata: 2023-06-01 16:30:12.119--ServerSession(948650013)--Thread(Thread[main,5,main])--The column name for element [status] is being defaulted to: STATUS.
+[EL Config]: metadata: 2023-06-01 16:30:12.119--ServerSession(948650013)--Thread(Thread[main,5,main])--The alias name for the entity class [class entities.Pedagog] is being defaulted to: Pedagog.
+[EL Config]: metadata: 2023-06-01 16:30:12.119--ServerSession(948650013)--Thread(Thread[main,5,main])--The table name for entity [class entities.Pedagog] is being defaulted to: PEDAGOG.
+[EL Config]: metadata: 2023-06-01 16:30:12.12--ServerSession(948650013)--Thread(Thread[main,5,main])--The column name for element [password] is being defaulted to: PASSWORD.
+[EL Config]: metadata: 2023-06-01 16:30:12.12--ServerSession(948650013)--Thread(Thread[main,5,main])--The column name for element [name] is being defaulted to: NAME.
+[EL Config]: metadata: 2023-06-01 16:30:12.12--ServerSession(948650013)--Thread(Thread[main,5,main])--The column name for element [institute] is being defaulted to: INSTITUTE.
+[EL Config]: metadata: 2023-06-01 16:30:12.12--ServerSession(948650013)--Thread(Thread[main,5,main])--The column name for element [Id] is being defaulted to: ID.
+[EL Config]: metadata: 2023-06-01 16:30:12.12--ServerSession(948650013)--Thread(Thread[main,5,main])--The column name for element [department] is being defaulted to: DEPARTMENT.
+[EL Config]: metadata: 2023-06-01 16:30:12.121--ServerSession(948650013)--Thread(Thread[main,5,main])--The column name for element [aisId] is being defaulted to: AISID.
+[EL Config]: metadata: 2023-06-01 16:30:12.121--ServerSession(948650013)--Thread(Thread[main,5,main])--The column name for element [email] is being defaulted to: EMAIL.
+[EL Config]: metadata: 2023-06-01 16:30:12.121--ServerSession(948650013)--Thread(Thread[main,5,main])--The alias name for the entity class [class entities.ThesisAssignmentRequest] is being defaulted to: ThesisAssignmentRequest.
+[EL Config]: metadata: 2023-06-01 16:30:12.121--ServerSession(948650013)--Thread(Thread[main,5,main])--The table name for entity [class entities.ThesisAssignmentRequest] is being defaulted to: THESISASSIGNMENTREQUEST.
+[EL Config]: metadata: 2023-06-01 16:30:12.122--ServerSession(948650013)--Thread(Thread[main,5,main])--The column name for element [studentId] is being defaulted to: STUDENTID.
+[EL Config]: metadata: 2023-06-01 16:30:12.123--ServerSession(948650013)--Thread(Thread[main,5,main])--The column name for element [teacherId] is being defaulted to: TEACHERID.
+[EL Config]: metadata: 2023-06-01 16:30:12.123--ServerSession(948650013)--Thread(Thread[main,5,main])--The column name for element [id] is being defaulted to: ID.
+[EL Config]: metadata: 2023-06-01 16:30:12.123--ServerSession(948650013)--Thread(Thread[main,5,main])--The alias name for the entity class [class entities.Student] is being defaulted to: Student.
+[EL Config]: metadata: 2023-06-01 16:30:12.123--ServerSession(948650013)--Thread(Thread[main,5,main])--The table name for entity [class entities.Student] is being defaulted to: STUDENT.
+[EL Config]: metadata: 2023-06-01 16:30:12.123--ServerSession(948650013)--Thread(Thread[main,5,main])--The column name for element [password] is being defaulted to: PASSWORD.
+[EL Config]: metadata: 2023-06-01 16:30:12.124--ServerSession(948650013)--Thread(Thread[main,5,main])--The column name for element [name] is being defaulted to: NAME.
+[EL Config]: metadata: 2023-06-01 16:30:12.124--ServerSession(948650013)--Thread(Thread[main,5,main])--The column name for element [term] is being defaulted to: TERM.
+[EL Config]: metadata: 2023-06-01 16:30:12.125--ServerSession(948650013)--Thread(Thread[main,5,main])--The column name for element [Id] is being defaulted to: ID.
+[EL Config]: metadata: 2023-06-01 16:30:12.126--ServerSession(948650013)--Thread(Thread[main,5,main])--The column name for element [aisId] is being defaulted to: AISID.
+[EL Config]: metadata: 2023-06-01 16:30:12.126--ServerSession(948650013)--Thread(Thread[main,5,main])--The column name for element [email] is being defaulted to: EMAIL.
+[EL Config]: metadata: 2023-06-01 16:30:12.145--ServerSession(948650013)--Thread(Thread[main,5,main])--The collection table name for the basic collection/map mapping [field permissions] is being defaulted to: User_PERMISSIONS.
+[EL Config]: metadata: 2023-06-01 16:30:12.145--ServerSession(948650013)--Thread(Thread[main,5,main])--The primary key column name for the mapping element [field permissions] is being defaulted to: AISID.
+[EL Config]: metadata: 2023-06-01 16:30:12.146--ServerSession(948650013)--Thread(Thread[main,5,main])--The foreign key column name for the mapping element [permissions] is being defaulted to: User_AISID.
+[EL Config]: metadata: 2023-06-01 16:30:12.147--ServerSession(948650013)--Thread(Thread[main,5,main])--The value column name for the basic collection/map mapping element mapping element [permissions] is being defaulted to: PERMISSIONS.
+[EL Fine]: metadata: 2023-06-01 16:30:12.148--Thread(Thread[main,5,main])--java.lang.ClassNotFoundException: java.util.Listauth.Permission
+[EL Config]: metadata: 2023-06-01 16:30:12.156--ServerSession(948650013)--Thread(Thread[main,5,main])--The primary key column name for the mapping element [field author] is being defaulted to: AISID.
+[EL Config]: metadata: 2023-06-01 16:30:12.156--ServerSession(948650013)--Thread(Thread[main,5,main])--The foreign key column name for the mapping element [author] is being defaulted to: AUTHOR_AISID.
+[EL Config]: metadata: 2023-06-01 16:30:12.156--ServerSession(948650013)--Thread(Thread[main,5,main])--The primary key column name for the mapping element [field supervisor] is being defaulted to: AISID.
+[EL Config]: metadata: 2023-06-01 16:30:12.156--ServerSession(948650013)--Thread(Thread[main,5,main])--The foreign key column name for the mapping element [supervisor] is being defaulted to: SUPERVISOR_AISID.
+[EL Info]: 2023-06-01 16:30:12.26--ServerSession(948650013)--Thread(Thread[main,5,main])--EclipseLink, version: Eclipse Persistence Services - 2.7.10.v20211216-fe64cd39c3
+[EL Fine]: connection: 2023-06-01 16:30:12.268--ServerSession(948650013)--Connection(214055354)--Thread(Thread[main,5,main])--connecting(DatabaseLogin(
+	platform=>PostgreSQLPlatform
+	user name=> "vsa"
+	datasource URL=> "jdbc:postgresql://localhost:5432/vsa_pr2_xcickai1"
+))
+[EL Config]: connection: 2023-06-01 16:30:12.312--ServerSession(948650013)--Connection(828535871)--Thread(Thread[main,5,main])--Connected: jdbc:postgresql://localhost:5432/vsa_pr2_xcickai1
+	User: vsa
+	Database: PostgreSQL  Version: 15.2 (Debian 15.2-1.pgdg110+1)
+	Driver: PostgreSQL JDBC Driver  Version: 42.5.4
+[EL Fine]: connection: 2023-06-01 16:30:12.364--ServerSession(948650013)--Thread(Thread[main,5,main])--/file:/tested--b-vsa-ls23-projekt-2/target/classes/_vsa-project-2 login successful
+[EL Config]: metadata: 2023-06-01 16:30:12.38--Thread(Thread[main,5,main])--The default table generator could not locate or convert a java type (class auth.Permission) into a database type for database field (User_PERMISSIONS.PERMISSIONS). The generator uses "java.lang.String" as default java type for the field.
+[EL Fine]: sql: 2023-06-01 16:30:12.382--ServerSession(948650013)--Connection(828535871)--Thread(Thread[main,5,main])--ALTER TABLE ZAVERECNAPRACA DROP CONSTRAINT FK_ZAVERECNAPRACA_AUTHOR_AISID
+[EL Fine]: sql: 2023-06-01 16:30:12.396--ServerSession(948650013)--Thread(Thread[main,5,main])--SELECT 1
+[EL Warning]: 2023-06-01 16:30:12.408--ServerSession(948650013)--Thread(Thread[main,5,main])--Exception [EclipseLink-4002] (Eclipse Persistence Services - 2.7.10.v20211216-fe64cd39c3): org.eclipse.persistence.exceptions.DatabaseException
+Internal Exception: org.postgresql.util.PSQLException: ERROR: relation "zaverecnapraca" does not exist
+Error Code: 0
+Call: ALTER TABLE ZAVERECNAPRACA DROP CONSTRAINT FK_ZAVERECNAPRACA_AUTHOR_AISID
+Query: DataModifyQuery(sql="ALTER TABLE ZAVERECNAPRACA DROP CONSTRAINT FK_ZAVERECNAPRACA_AUTHOR_AISID")
+[EL Fine]: sql: 2023-06-01 16:30:12.409--ServerSession(948650013)--Connection(828535871)--Thread(Thread[main,5,main])--ALTER TABLE ZAVERECNAPRACA DROP CONSTRAINT FK_ZAVERECNAPRACA_SUPERVISOR_AISID
+[EL Fine]: sql: 2023-06-01 16:30:12.41--ServerSession(948650013)--Thread(Thread[main,5,main])--SELECT 1
+[EL Warning]: 2023-06-01 16:30:12.411--ServerSession(948650013)--Thread(Thread[main,5,main])--Exception [EclipseLink-4002] (Eclipse Persistence Services - 2.7.10.v20211216-fe64cd39c3): org.eclipse.persistence.exceptions.DatabaseException
+Internal Exception: org.postgresql.util.PSQLException: ERROR: relation "zaverecnapraca" does not exist
+Error Code: 0
+Call: ALTER TABLE ZAVERECNAPRACA DROP CONSTRAINT FK_ZAVERECNAPRACA_SUPERVISOR_AISID
+Query: DataModifyQuery(sql="ALTER TABLE ZAVERECNAPRACA DROP CONSTRAINT FK_ZAVERECNAPRACA_SUPERVISOR_AISID")
+[EL Fine]: sql: 2023-06-01 16:30:12.412--ServerSession(948650013)--Connection(828535871)--Thread(Thread[main,5,main])--ALTER TABLE User_PERMISSIONS DROP CONSTRAINT FK_User_PERMISSIONS_User_AISID
+[EL Fine]: sql: 2023-06-01 16:30:12.412--ServerSession(948650013)--Thread(Thread[main,5,main])--SELECT 1
+[EL Warning]: 2023-06-01 16:30:12.413--ServerSession(948650013)--Thread(Thread[main,5,main])--Exception [EclipseLink-4002] (Eclipse Persistence Services - 2.7.10.v20211216-fe64cd39c3): org.eclipse.persistence.exceptions.DatabaseException
+Internal Exception: org.postgresql.util.PSQLException: ERROR: relation "user_permissions" does not exist
+Error Code: 0
+Call: ALTER TABLE User_PERMISSIONS DROP CONSTRAINT FK_User_PERMISSIONS_User_AISID
+Query: DataModifyQuery(sql="ALTER TABLE User_PERMISSIONS DROP CONSTRAINT FK_User_PERMISSIONS_User_AISID")
+[EL Fine]: sql: 2023-06-01 16:30:12.414--ServerSession(948650013)--Connection(828535871)--Thread(Thread[main,5,main])--DROP TABLE STUDENT CASCADE
+[EL Fine]: sql: 2023-06-01 16:30:12.415--ServerSession(948650013)--Thread(Thread[main,5,main])--SELECT 1
+[EL Warning]: 2023-06-01 16:30:12.416--ServerSession(948650013)--Thread(Thread[main,5,main])--Exception [EclipseLink-4002] (Eclipse Persistence Services - 2.7.10.v20211216-fe64cd39c3): org.eclipse.persistence.exceptions.DatabaseException
+Internal Exception: org.postgresql.util.PSQLException: ERROR: table "student" does not exist
+Error Code: 0
+Call: DROP TABLE STUDENT CASCADE
+Query: DataModifyQuery(sql="DROP TABLE STUDENT CASCADE")
+[EL Fine]: sql: 2023-06-01 16:30:12.416--ServerSession(948650013)--Connection(828535871)--Thread(Thread[main,5,main])--DROP TABLE PEDAGOG CASCADE
+[EL Fine]: sql: 2023-06-01 16:30:12.418--ServerSession(948650013)--Thread(Thread[main,5,main])--SELECT 1
+[EL Warning]: 2023-06-01 16:30:12.419--ServerSession(948650013)--Thread(Thread[main,5,main])--Exception [EclipseLink-4002] (Eclipse Persistence Services - 2.7.10.v20211216-fe64cd39c3): org.eclipse.persistence.exceptions.DatabaseException
+Internal Exception: org.postgresql.util.PSQLException: ERROR: table "pedagog" does not exist
+Error Code: 0
+Call: DROP TABLE PEDAGOG CASCADE
+Query: DataModifyQuery(sql="DROP TABLE PEDAGOG CASCADE")
+[EL Fine]: sql: 2023-06-01 16:30:12.419--ServerSession(948650013)--Connection(828535871)--Thread(Thread[main,5,main])--DROP TABLE ZAVERECNAPRACA CASCADE
+[EL Fine]: sql: 2023-06-01 16:30:12.42--ServerSession(948650013)--Thread(Thread[main,5,main])--SELECT 1
+[EL Warning]: 2023-06-01 16:30:12.42--ServerSession(948650013)--Thread(Thread[main,5,main])--Exception [EclipseLink-4002] (Eclipse Persistence Services - 2.7.10.v20211216-fe64cd39c3): org.eclipse.persistence.exceptions.DatabaseException
+Internal Exception: org.postgresql.util.PSQLException: ERROR: table "zaverecnapraca" does not exist
+Error Code: 0
+Call: DROP TABLE ZAVERECNAPRACA CASCADE
+Query: DataModifyQuery(sql="DROP TABLE ZAVERECNAPRACA CASCADE")
+[EL Fine]: sql: 2023-06-01 16:30:12.421--ServerSession(948650013)--Connection(828535871)--Thread(Thread[main,5,main])--DROP TABLE vsa_user CASCADE
+[EL Fine]: sql: 2023-06-01 16:30:12.422--ServerSession(948650013)--Thread(Thread[main,5,main])--SELECT 1
+[EL Warning]: 2023-06-01 16:30:12.423--ServerSession(948650013)--Thread(Thread[main,5,main])--Exception [EclipseLink-4002] (Eclipse Persistence Services - 2.7.10.v20211216-fe64cd39c3): org.eclipse.persistence.exceptions.DatabaseException
+Internal Exception: org.postgresql.util.PSQLException: ERROR: table "vsa_user" does not exist
+Error Code: 0
+Call: DROP TABLE vsa_user CASCADE
+Query: DataModifyQuery(sql="DROP TABLE vsa_user CASCADE")
+[EL Fine]: sql: 2023-06-01 16:30:12.423--ServerSession(948650013)--Connection(828535871)--Thread(Thread[main,5,main])--DROP TABLE THESISASSIGNMENTREQUEST CASCADE
+[EL Fine]: sql: 2023-06-01 16:30:12.424--ServerSession(948650013)--Thread(Thread[main,5,main])--SELECT 1
+[EL Warning]: 2023-06-01 16:30:12.425--ServerSession(948650013)--Thread(Thread[main,5,main])--Exception [EclipseLink-4002] (Eclipse Persistence Services - 2.7.10.v20211216-fe64cd39c3): org.eclipse.persistence.exceptions.DatabaseException
+Internal Exception: org.postgresql.util.PSQLException: ERROR: table "thesisassignmentrequest" does not exist
+Error Code: 0
+Call: DROP TABLE THESISASSIGNMENTREQUEST CASCADE
+Query: DataModifyQuery(sql="DROP TABLE THESISASSIGNMENTREQUEST CASCADE")
+[EL Fine]: sql: 2023-06-01 16:30:12.425--ServerSession(948650013)--Connection(828535871)--Thread(Thread[main,5,main])--DROP TABLE User_PERMISSIONS CASCADE
+[EL Fine]: sql: 2023-06-01 16:30:12.426--ServerSession(948650013)--Thread(Thread[main,5,main])--SELECT 1
+[EL Warning]: 2023-06-01 16:30:12.426--ServerSession(948650013)--Thread(Thread[main,5,main])--Exception [EclipseLink-4002] (Eclipse Persistence Services - 2.7.10.v20211216-fe64cd39c3): org.eclipse.persistence.exceptions.DatabaseException
+Internal Exception: org.postgresql.util.PSQLException: ERROR: table "user_permissions" does not exist
+Error Code: 0
+Call: DROP TABLE User_PERMISSIONS CASCADE
+Query: DataModifyQuery(sql="DROP TABLE User_PERMISSIONS CASCADE")
+[EL Fine]: sql: 2023-06-01 16:30:12.427--ServerSession(948650013)--Connection(828535871)--Thread(Thread[main,5,main])--DROP TABLE STUDENT CASCADE
+[EL Fine]: sql: 2023-06-01 16:30:12.427--ServerSession(948650013)--Thread(Thread[main,5,main])--SELECT 1
+[EL Warning]: 2023-06-01 16:30:12.428--ServerSession(948650013)--Thread(Thread[main,5,main])--Exception [EclipseLink-4002] (Eclipse Persistence Services - 2.7.10.v20211216-fe64cd39c3): org.eclipse.persistence.exceptions.DatabaseException
+Internal Exception: org.postgresql.util.PSQLException: ERROR: table "student" does not exist
+Error Code: 0
+Call: DROP TABLE STUDENT CASCADE
+Query: DataModifyQuery(sql="DROP TABLE STUDENT CASCADE")
+[EL Fine]: sql: 2023-06-01 16:30:12.428--ServerSession(948650013)--Connection(828535871)--Thread(Thread[main,5,main])--DROP TABLE PEDAGOG CASCADE
+[EL Fine]: sql: 2023-06-01 16:30:12.429--ServerSession(948650013)--Thread(Thread[main,5,main])--SELECT 1
+[EL Warning]: 2023-06-01 16:30:12.429--ServerSession(948650013)--Thread(Thread[main,5,main])--Exception [EclipseLink-4002] (Eclipse Persistence Services - 2.7.10.v20211216-fe64cd39c3): org.eclipse.persistence.exceptions.DatabaseException
+Internal Exception: org.postgresql.util.PSQLException: ERROR: table "pedagog" does not exist
+Error Code: 0
+Call: DROP TABLE PEDAGOG CASCADE
+Query: DataModifyQuery(sql="DROP TABLE PEDAGOG CASCADE")
+[EL Fine]: sql: 2023-06-01 16:30:12.43--ServerSession(948650013)--Connection(828535871)--Thread(Thread[main,5,main])--DROP TABLE ZAVERECNAPRACA CASCADE
+[EL Fine]: sql: 2023-06-01 16:30:12.43--ServerSession(948650013)--Thread(Thread[main,5,main])--SELECT 1
+[EL Warning]: 2023-06-01 16:30:12.431--ServerSession(948650013)--Thread(Thread[main,5,main])--Exception [EclipseLink-4002] (Eclipse Persistence Services - 2.7.10.v20211216-fe64cd39c3): org.eclipse.persistence.exceptions.DatabaseException
+Internal Exception: org.postgresql.util.PSQLException: ERROR: table "zaverecnapraca" does not exist
+Error Code: 0
+Call: DROP TABLE ZAVERECNAPRACA CASCADE
+Query: DataModifyQuery(sql="DROP TABLE ZAVERECNAPRACA CASCADE")
+[EL Fine]: sql: 2023-06-01 16:30:12.431--ServerSession(948650013)--Connection(828535871)--Thread(Thread[main,5,main])--DROP TABLE vsa_user CASCADE
+[EL Fine]: sql: 2023-06-01 16:30:12.433--ServerSession(948650013)--Thread(Thread[main,5,main])--SELECT 1
+[EL Warning]: 2023-06-01 16:30:12.434--ServerSession(948650013)--Thread(Thread[main,5,main])--Exception [EclipseLink-4002] (Eclipse Persistence Services - 2.7.10.v20211216-fe64cd39c3): org.eclipse.persistence.exceptions.DatabaseException
+Internal Exception: org.postgresql.util.PSQLException: ERROR: table "vsa_user" does not exist
+Error Code: 0
+Call: DROP TABLE vsa_user CASCADE
+Query: DataModifyQuery(sql="DROP TABLE vsa_user CASCADE")
+[EL Fine]: sql: 2023-06-01 16:30:12.434--ServerSession(948650013)--Connection(828535871)--Thread(Thread[main,5,main])--DROP TABLE THESISASSIGNMENTREQUEST CASCADE
+[EL Fine]: sql: 2023-06-01 16:30:12.435--ServerSession(948650013)--Thread(Thread[main,5,main])--SELECT 1
+[EL Warning]: 2023-06-01 16:30:12.436--ServerSession(948650013)--Thread(Thread[main,5,main])--Exception [EclipseLink-4002] (Eclipse Persistence Services - 2.7.10.v20211216-fe64cd39c3): org.eclipse.persistence.exceptions.DatabaseException
+Internal Exception: org.postgresql.util.PSQLException: ERROR: table "thesisassignmentrequest" does not exist
+Error Code: 0
+Call: DROP TABLE THESISASSIGNMENTREQUEST CASCADE
+Query: DataModifyQuery(sql="DROP TABLE THESISASSIGNMENTREQUEST CASCADE")
+[EL Fine]: sql: 2023-06-01 16:30:12.436--ServerSession(948650013)--Connection(828535871)--Thread(Thread[main,5,main])--DROP TABLE User_PERMISSIONS CASCADE
+[EL Fine]: sql: 2023-06-01 16:30:12.437--ServerSession(948650013)--Thread(Thread[main,5,main])--SELECT 1
+[EL Warning]: 2023-06-01 16:30:12.438--ServerSession(948650013)--Thread(Thread[main,5,main])--Exception [EclipseLink-4002] (Eclipse Persistence Services - 2.7.10.v20211216-fe64cd39c3): org.eclipse.persistence.exceptions.DatabaseException
+Internal Exception: org.postgresql.util.PSQLException: ERROR: table "user_permissions" does not exist
+Error Code: 0
+Call: DROP TABLE User_PERMISSIONS CASCADE
+Query: DataModifyQuery(sql="DROP TABLE User_PERMISSIONS CASCADE")
+[EL Fine]: sql: 2023-06-01 16:30:12.438--ServerSession(948650013)--Connection(828535871)--Thread(Thread[main,5,main])--DROP TABLE STUDENT CASCADE
+[EL Fine]: sql: 2023-06-01 16:30:12.439--ServerSession(948650013)--Thread(Thread[main,5,main])--SELECT 1
+[EL Warning]: 2023-06-01 16:30:12.44--ServerSession(948650013)--Thread(Thread[main,5,main])--Exception [EclipseLink-4002] (Eclipse Persistence Services - 2.7.10.v20211216-fe64cd39c3): org.eclipse.persistence.exceptions.DatabaseException
+Internal Exception: org.postgresql.util.PSQLException: ERROR: table "student" does not exist
+Error Code: 0
+Call: DROP TABLE STUDENT CASCADE
+Query: DataModifyQuery(sql="DROP TABLE STUDENT CASCADE")
+[EL Fine]: sql: 2023-06-01 16:30:12.44--ServerSession(948650013)--Connection(828535871)--Thread(Thread[main,5,main])--DROP TABLE PEDAGOG CASCADE
+[EL Fine]: sql: 2023-06-01 16:30:12.441--ServerSession(948650013)--Thread(Thread[main,5,main])--SELECT 1
+[EL Warning]: 2023-06-01 16:30:12.441--ServerSession(948650013)--Thread(Thread[main,5,main])--Exception [EclipseLink-4002] (Eclipse Persistence Services - 2.7.10.v20211216-fe64cd39c3): org.eclipse.persistence.exceptions.DatabaseException
+Internal Exception: org.postgresql.util.PSQLException: ERROR: table "pedagog" does not exist
+Error Code: 0
+Call: DROP TABLE PEDAGOG CASCADE
+Query: DataModifyQuery(sql="DROP TABLE PEDAGOG CASCADE")
+[EL Fine]: sql: 2023-06-01 16:30:12.442--ServerSession(948650013)--Connection(828535871)--Thread(Thread[main,5,main])--DROP TABLE ZAVERECNAPRACA CASCADE
+[EL Fine]: sql: 2023-06-01 16:30:12.442--ServerSession(948650013)--Thread(Thread[main,5,main])--SELECT 1
+[EL Warning]: 2023-06-01 16:30:12.443--ServerSession(948650013)--Thread(Thread[main,5,main])--Exception [EclipseLink-4002] (Eclipse Persistence Services - 2.7.10.v20211216-fe64cd39c3): org.eclipse.persistence.exceptions.DatabaseException
+Internal Exception: org.postgresql.util.PSQLException: ERROR: table "zaverecnapraca" does not exist
+Error Code: 0
+Call: DROP TABLE ZAVERECNAPRACA CASCADE
+Query: DataModifyQuery(sql="DROP TABLE ZAVERECNAPRACA CASCADE")
+[EL Fine]: sql: 2023-06-01 16:30:12.444--ServerSession(948650013)--Connection(828535871)--Thread(Thread[main,5,main])--DROP TABLE vsa_user CASCADE
+[EL Fine]: sql: 2023-06-01 16:30:12.444--ServerSession(948650013)--Thread(Thread[main,5,main])--SELECT 1
+[EL Warning]: 2023-06-01 16:30:12.445--ServerSession(948650013)--Thread(Thread[main,5,main])--Exception [EclipseLink-4002] (Eclipse Persistence Services - 2.7.10.v20211216-fe64cd39c3): org.eclipse.persistence.exceptions.DatabaseException
+Internal Exception: org.postgresql.util.PSQLException: ERROR: table "vsa_user" does not exist
+Error Code: 0
+Call: DROP TABLE vsa_user CASCADE
+Query: DataModifyQuery(sql="DROP TABLE vsa_user CASCADE")
+[EL Fine]: sql: 2023-06-01 16:30:12.445--ServerSession(948650013)--Connection(828535871)--Thread(Thread[main,5,main])--DROP TABLE THESISASSIGNMENTREQUEST CASCADE
+[EL Fine]: sql: 2023-06-01 16:30:12.446--ServerSession(948650013)--Thread(Thread[main,5,main])--SELECT 1
+[EL Warning]: 2023-06-01 16:30:12.446--ServerSession(948650013)--Thread(Thread[main,5,main])--Exception [EclipseLink-4002] (Eclipse Persistence Services - 2.7.10.v20211216-fe64cd39c3): org.eclipse.persistence.exceptions.DatabaseException
+Internal Exception: org.postgresql.util.PSQLException: ERROR: table "thesisassignmentrequest" does not exist
+Error Code: 0
+Call: DROP TABLE THESISASSIGNMENTREQUEST CASCADE
+Query: DataModifyQuery(sql="DROP TABLE THESISASSIGNMENTREQUEST CASCADE")
+[EL Fine]: sql: 2023-06-01 16:30:12.447--ServerSession(948650013)--Connection(828535871)--Thread(Thread[main,5,main])--DROP TABLE User_PERMISSIONS CASCADE
+[EL Fine]: sql: 2023-06-01 16:30:12.447--ServerSession(948650013)--Thread(Thread[main,5,main])--SELECT 1
+[EL Warning]: 2023-06-01 16:30:12.448--ServerSession(948650013)--Thread(Thread[main,5,main])--Exception [EclipseLink-4002] (Eclipse Persistence Services - 2.7.10.v20211216-fe64cd39c3): org.eclipse.persistence.exceptions.DatabaseException
+Internal Exception: org.postgresql.util.PSQLException: ERROR: table "user_permissions" does not exist
+Error Code: 0
+Call: DROP TABLE User_PERMISSIONS CASCADE
+Query: DataModifyQuery(sql="DROP TABLE User_PERMISSIONS CASCADE")
+[EL Fine]: sql: 2023-06-01 16:30:12.448--ServerSession(948650013)--Connection(828535871)--Thread(Thread[main,5,main])--DROP TABLE STUDENT CASCADE
+[EL Fine]: sql: 2023-06-01 16:30:12.45--ServerSession(948650013)--Thread(Thread[main,5,main])--SELECT 1
+[EL Warning]: 2023-06-01 16:30:12.451--ServerSession(948650013)--Thread(Thread[main,5,main])--Exception [EclipseLink-4002] (Eclipse Persistence Services - 2.7.10.v20211216-fe64cd39c3): org.eclipse.persistence.exceptions.DatabaseException
+Internal Exception: org.postgresql.util.PSQLException: ERROR: table "student" does not exist
+Error Code: 0
+Call: DROP TABLE STUDENT CASCADE
+Query: DataModifyQuery(sql="DROP TABLE STUDENT CASCADE")
+[EL Fine]: sql: 2023-06-01 16:30:12.451--ServerSession(948650013)--Connection(828535871)--Thread(Thread[main,5,main])--DROP TABLE PEDAGOG CASCADE
+[EL Fine]: sql: 2023-06-01 16:30:12.453--ServerSession(948650013)--Thread(Thread[main,5,main])--SELECT 1
+[EL Warning]: 2023-06-01 16:30:12.453--ServerSession(948650013)--Thread(Thread[main,5,main])--Exception [EclipseLink-4002] (Eclipse Persistence Services - 2.7.10.v20211216-fe64cd39c3): org.eclipse.persistence.exceptions.DatabaseException
+Internal Exception: org.postgresql.util.PSQLException: ERROR: table "pedagog" does not exist
+Error Code: 0
+Call: DROP TABLE PEDAGOG CASCADE
+Query: DataModifyQuery(sql="DROP TABLE PEDAGOG CASCADE")
+[EL Fine]: sql: 2023-06-01 16:30:12.453--ServerSession(948650013)--Connection(828535871)--Thread(Thread[main,5,main])--DROP TABLE ZAVERECNAPRACA CASCADE
+[EL Fine]: sql: 2023-06-01 16:30:12.455--ServerSession(948650013)--Thread(Thread[main,5,main])--SELECT 1
+[EL Warning]: 2023-06-01 16:30:12.455--ServerSession(948650013)--Thread(Thread[main,5,main])--Exception [EclipseLink-4002] (Eclipse Persistence Services - 2.7.10.v20211216-fe64cd39c3): org.eclipse.persistence.exceptions.DatabaseException
+Internal Exception: org.postgresql.util.PSQLException: ERROR: table "zaverecnapraca" does not exist
+Error Code: 0
+Call: DROP TABLE ZAVERECNAPRACA CASCADE
+Query: DataModifyQuery(sql="DROP TABLE ZAVERECNAPRACA CASCADE")
+[EL Fine]: sql: 2023-06-01 16:30:12.456--ServerSession(948650013)--Connection(828535871)--Thread(Thread[main,5,main])--DROP TABLE vsa_user CASCADE
+[EL Fine]: sql: 2023-06-01 16:30:12.456--ServerSession(948650013)--Thread(Thread[main,5,main])--SELECT 1
+[EL Warning]: 2023-06-01 16:30:12.457--ServerSession(948650013)--Thread(Thread[main,5,main])--Exception [EclipseLink-4002] (Eclipse Persistence Services - 2.7.10.v20211216-fe64cd39c3): org.eclipse.persistence.exceptions.DatabaseException
+Internal Exception: org.postgresql.util.PSQLException: ERROR: table "vsa_user" does not exist
+Error Code: 0
+Call: DROP TABLE vsa_user CASCADE
+Query: DataModifyQuery(sql="DROP TABLE vsa_user CASCADE")
+[EL Fine]: sql: 2023-06-01 16:30:12.457--ServerSession(948650013)--Connection(828535871)--Thread(Thread[main,5,main])--DROP TABLE THESISASSIGNMENTREQUEST CASCADE
+[EL Fine]: sql: 2023-06-01 16:30:12.458--ServerSession(948650013)--Thread(Thread[main,5,main])--SELECT 1
+[EL Warning]: 2023-06-01 16:30:12.459--ServerSession(948650013)--Thread(Thread[main,5,main])--Exception [EclipseLink-4002] (Eclipse Persistence Services - 2.7.10.v20211216-fe64cd39c3): org.eclipse.persistence.exceptions.DatabaseException
+Internal Exception: org.postgresql.util.PSQLException: ERROR: table "thesisassignmentrequest" does not exist
+Error Code: 0
+Call: DROP TABLE THESISASSIGNMENTREQUEST CASCADE
+Query: DataModifyQuery(sql="DROP TABLE THESISASSIGNMENTREQUEST CASCADE")
+[EL Fine]: sql: 2023-06-01 16:30:12.46--ServerSession(948650013)--Connection(828535871)--Thread(Thread[main,5,main])--DROP TABLE User_PERMISSIONS CASCADE
+[EL Fine]: sql: 2023-06-01 16:30:12.461--ServerSession(948650013)--Thread(Thread[main,5,main])--SELECT 1
+[EL Warning]: 2023-06-01 16:30:12.461--ServerSession(948650013)--Thread(Thread[main,5,main])--Exception [EclipseLink-4002] (Eclipse Persistence Services - 2.7.10.v20211216-fe64cd39c3): org.eclipse.persistence.exceptions.DatabaseException
+Internal Exception: org.postgresql.util.PSQLException: ERROR: table "user_permissions" does not exist
+Error Code: 0
+Call: DROP TABLE User_PERMISSIONS CASCADE
+Query: DataModifyQuery(sql="DROP TABLE User_PERMISSIONS CASCADE")
+[EL Fine]: sql: 2023-06-01 16:30:12.461--ServerSession(948650013)--Connection(828535871)--Thread(Thread[main,5,main])--DROP TABLE STUDENT CASCADE
+[EL Fine]: sql: 2023-06-01 16:30:12.462--ServerSession(948650013)--Thread(Thread[main,5,main])--SELECT 1
+[EL Warning]: 2023-06-01 16:30:12.463--ServerSession(948650013)--Thread(Thread[main,5,main])--Exception [EclipseLink-4002] (Eclipse Persistence Services - 2.7.10.v20211216-fe64cd39c3): org.eclipse.persistence.exceptions.DatabaseException
+Internal Exception: org.postgresql.util.PSQLException: ERROR: table "student" does not exist
+Error Code: 0
+Call: DROP TABLE STUDENT CASCADE
+Query: DataModifyQuery(sql="DROP TABLE STUDENT CASCADE")
+[EL Fine]: sql: 2023-06-01 16:30:12.463--ServerSession(948650013)--Connection(828535871)--Thread(Thread[main,5,main])--DROP TABLE PEDAGOG CASCADE
+[EL Fine]: sql: 2023-06-01 16:30:12.464--ServerSession(948650013)--Thread(Thread[main,5,main])--SELECT 1
+[EL Warning]: 2023-06-01 16:30:12.464--ServerSession(948650013)--Thread(Thread[main,5,main])--Exception [EclipseLink-4002] (Eclipse Persistence Services - 2.7.10.v20211216-fe64cd39c3): org.eclipse.persistence.exceptions.DatabaseException
+Internal Exception: org.postgresql.util.PSQLException: ERROR: table "pedagog" does not exist
+Error Code: 0
+Call: DROP TABLE PEDAGOG CASCADE
+Query: DataModifyQuery(sql="DROP TABLE PEDAGOG CASCADE")
+[EL Fine]: sql: 2023-06-01 16:30:12.465--ServerSession(948650013)--Connection(828535871)--Thread(Thread[main,5,main])--DROP TABLE ZAVERECNAPRACA CASCADE
+[EL Fine]: sql: 2023-06-01 16:30:12.465--ServerSession(948650013)--Thread(Thread[main,5,main])--SELECT 1
+[EL Warning]: 2023-06-01 16:30:12.466--ServerSession(948650013)--Thread(Thread[main,5,main])--Exception [EclipseLink-4002] (Eclipse Persistence Services - 2.7.10.v20211216-fe64cd39c3): org.eclipse.persistence.exceptions.DatabaseException
+Internal Exception: org.postgresql.util.PSQLException: ERROR: table "zaverecnapraca" does not exist
+Error Code: 0
+Call: DROP TABLE ZAVERECNAPRACA CASCADE
+Query: DataModifyQuery(sql="DROP TABLE ZAVERECNAPRACA CASCADE")
+[EL Fine]: sql: 2023-06-01 16:30:12.466--ServerSession(948650013)--Connection(828535871)--Thread(Thread[main,5,main])--DROP TABLE vsa_user CASCADE
+[EL Fine]: sql: 2023-06-01 16:30:12.467--ServerSession(948650013)--Thread(Thread[main,5,main])--SELECT 1
+[EL Warning]: 2023-06-01 16:30:12.468--ServerSession(948650013)--Thread(Thread[main,5,main])--Exception [EclipseLink-4002] (Eclipse Persistence Services - 2.7.10.v20211216-fe64cd39c3): org.eclipse.persistence.exceptions.DatabaseException
+Internal Exception: org.postgresql.util.PSQLException: ERROR: table "vsa_user" does not exist
+Error Code: 0
+Call: DROP TABLE vsa_user CASCADE
+Query: DataModifyQuery(sql="DROP TABLE vsa_user CASCADE")
+[EL Fine]: sql: 2023-06-01 16:30:12.468--ServerSession(948650013)--Connection(828535871)--Thread(Thread[main,5,main])--DROP TABLE THESISASSIGNMENTREQUEST CASCADE
+[EL Fine]: sql: 2023-06-01 16:30:12.469--ServerSession(948650013)--Thread(Thread[main,5,main])--SELECT 1
+[EL Warning]: 2023-06-01 16:30:12.47--ServerSession(948650013)--Thread(Thread[main,5,main])--Exception [EclipseLink-4002] (Eclipse Persistence Services - 2.7.10.v20211216-fe64cd39c3): org.eclipse.persistence.exceptions.DatabaseException
+Internal Exception: org.postgresql.util.PSQLException: ERROR: table "thesisassignmentrequest" does not exist
+Error Code: 0
+Call: DROP TABLE THESISASSIGNMENTREQUEST CASCADE
+Query: DataModifyQuery(sql="DROP TABLE THESISASSIGNMENTREQUEST CASCADE")
+[EL Fine]: sql: 2023-06-01 16:30:12.47--ServerSession(948650013)--Connection(828535871)--Thread(Thread[main,5,main])--DROP TABLE User_PERMISSIONS CASCADE
+[EL Fine]: sql: 2023-06-01 16:30:12.47--ServerSession(948650013)--Thread(Thread[main,5,main])--SELECT 1
+[EL Warning]: 2023-06-01 16:30:12.471--ServerSession(948650013)--Thread(Thread[main,5,main])--Exception [EclipseLink-4002] (Eclipse Persistence Services - 2.7.10.v20211216-fe64cd39c3): org.eclipse.persistence.exceptions.DatabaseException
+Internal Exception: org.postgresql.util.PSQLException: ERROR: table "user_permissions" does not exist
+Error Code: 0
+Call: DROP TABLE User_PERMISSIONS CASCADE
+Query: DataModifyQuery(sql="DROP TABLE User_PERMISSIONS CASCADE")
+[EL Fine]: sql: 2023-06-01 16:30:12.476--ServerSession(948650013)--Connection(828535871)--Thread(Thread[main,5,main])--DELETE FROM SEQUENCE WHERE SEQ_NAME = 'SEQ_GEN'
+[EL Fine]: sql: 2023-06-01 16:30:12.477--ServerSession(948650013)--Thread(Thread[main,5,main])--SELECT 1
+[EL Warning]: 2023-06-01 16:30:12.478--ServerSession(948650013)--Thread(Thread[main,5,main])--Exception [EclipseLink-4002] (Eclipse Persistence Services - 2.7.10.v20211216-fe64cd39c3): org.eclipse.persistence.exceptions.DatabaseException
+Internal Exception: org.postgresql.util.PSQLException: ERROR: relation "sequence" does not exist
+  Position: 13
+Error Code: 0
+Call: DELETE FROM SEQUENCE WHERE SEQ_NAME = 'SEQ_GEN'
+Query: DataModifyQuery(sql="DELETE FROM SEQUENCE WHERE SEQ_NAME = 'SEQ_GEN'")
+[EL Config]: metadata: 2023-06-01 16:30:12.479--Thread(Thread[main,5,main])--The default table generator could not locate or convert a java type (class auth.Permission) into a database type for database field (User_PERMISSIONS.PERMISSIONS). The generator uses "java.lang.String" as default java type for the field.
+[EL Fine]: sql: 2023-06-01 16:30:12.482--ServerSession(948650013)--Connection(828535871)--Thread(Thread[main,5,main])--CREATE TABLE STUDENT (AISID BIGINT NOT NULL, ID BIGINT, EMAIL VARCHAR(255) UNIQUE, NAME VARCHAR(255), PASSWORD VARCHAR(255), program VARCHAR(255), TERM INTEGER, study_year INTEGER, PRIMARY KEY (AISID))
+[EL Fine]: sql: 2023-06-01 16:30:12.513--ServerSession(948650013)--Connection(828535871)--Thread(Thread[main,5,main])--CREATE TABLE PEDAGOG (AISID BIGINT NOT NULL, ID BIGINT, DEPARTMENT VARCHAR(255), EMAIL VARCHAR(255) UNIQUE, INSTITUTE VARCHAR(255), NAME VARCHAR(255), PASSWORD VARCHAR(255), PRIMARY KEY (AISID))
+[EL Fine]: sql: 2023-06-01 16:30:12.531--ServerSession(948650013)--Connection(828535871)--Thread(Thread[main,5,main])--CREATE TABLE ZAVERECNAPRACA (ID BIGINT NOT NULL, DEADLINE DATE, DEPARTMENT VARCHAR(255), DESCRIPTION VARCHAR(255), PUBLISHEDON DATE, REGISTRATIONNUMBER VARCHAR(255) UNIQUE, STATUS VARCHAR(255), TITLE VARCHAR(255), TYPE VARCHAR(255), SUPERVISOR_AISID BIGINT, AUTHOR_AISID BIGINT, PRIMARY KEY (ID))
+[EL Fine]: sql: 2023-06-01 16:30:12.567--ServerSession(948650013)--Connection(828535871)--Thread(Thread[main,5,main])--CREATE TABLE vsa_user (AISID BIGINT NOT NULL, PASSWORD VARCHAR(255), USERNAME VARCHAR(255), PRIMARY KEY (AISID))
+[EL Fine]: sql: 2023-06-01 16:30:12.587--ServerSession(948650013)--Connection(828535871)--Thread(Thread[main,5,main])--CREATE TABLE THESISASSIGNMENTREQUEST (ID BIGINT NOT NULL, STUDENTID BIGINT, TEACHERID BIGINT, PRIMARY KEY (ID))
+[EL Fine]: sql: 2023-06-01 16:30:12.599--ServerSession(948650013)--Connection(828535871)--Thread(Thread[main,5,main])--CREATE TABLE User_PERMISSIONS (User_AISID BIGINT, PERMISSIONS VARCHAR(255))
+[EL Fine]: sql: 2023-06-01 16:30:12.606--ServerSession(948650013)--Connection(828535871)--Thread(Thread[main,5,main])--ALTER TABLE ZAVERECNAPRACA ADD CONSTRAINT FK_ZAVERECNAPRACA_AUTHOR_AISID FOREIGN KEY (AUTHOR_AISID) REFERENCES STUDENT (AISID)
+[EL Fine]: sql: 2023-06-01 16:30:12.613--ServerSession(948650013)--Connection(828535871)--Thread(Thread[main,5,main])--ALTER TABLE ZAVERECNAPRACA ADD CONSTRAINT FK_ZAVERECNAPRACA_SUPERVISOR_AISID FOREIGN KEY (SUPERVISOR_AISID) REFERENCES PEDAGOG (AISID)
+[EL Fine]: sql: 2023-06-01 16:30:12.618--ServerSession(948650013)--Connection(828535871)--Thread(Thread[main,5,main])--ALTER TABLE User_PERMISSIONS ADD CONSTRAINT FK_User_PERMISSIONS_User_AISID FOREIGN KEY (User_AISID) REFERENCES vsa_user (AISID)
+[EL Fine]: sql: 2023-06-01 16:30:12.624--ServerSession(948650013)--Connection(828535871)--Thread(Thread[main,5,main])--CREATE TABLE SEQUENCE (SEQ_NAME VARCHAR(50) NOT NULL, SEQ_COUNT DECIMAL(38), PRIMARY KEY (SEQ_NAME))
+[EL Fine]: sql: 2023-06-01 16:30:12.632--ServerSession(948650013)--Connection(828535871)--Thread(Thread[main,5,main])--SELECT * FROM SEQUENCE WHERE SEQ_NAME = 'SEQ_GEN'
+[EL Fine]: sql: 2023-06-01 16:30:12.636--ServerSession(948650013)--Connection(828535871)--Thread(Thread[main,5,main])--INSERT INTO SEQUENCE(SEQ_NAME, SEQ_COUNT) values ('SEQ_GEN', 0)
+]]></system-out>
+    <system-err><![CDATA[Jun 01, 2023 4:30:11 PM org.glassfish.grizzly.http.server.NetworkListener start
+INFO: Started listener bound to [docker-desktop:8080]
+Jun 01, 2023 4:30:11 PM org.glassfish.grizzly.http.server.HttpServer start
+INFO: [HttpServer] Started.
+]]></system-err>
+  </testcase>
+  <testcase name="shouldFindTeachers" classname="sk.stuba.fei.uim.vsa.pr2.bonus.BonusSearchResourceTest" time="0">
+    <skipped message="Assumption failed: Skipping test. Bonus endpoints were not implemented" type="org.opentest4j.TestAbortedException">org.opentest4j.TestAbortedException: Assumption failed: Skipping test. Bonus endpoints were not implemented
+	at sk.stuba.fei.uim.vsa.pr2.bonus.BonusSearchResourceTest.shouldFindTeachers(BonusSearchResourceTest.java:99)
+</skipped>
+  </testcase>
+  <testcase name="shouldFindThesesWithPageOf5" classname="sk.stuba.fei.uim.vsa.pr2.bonus.BonusSearchResourceTest" time="0">
+    <skipped message="Assumption failed: Skipping test. Bonus endpoints were not implemented" type="org.opentest4j.TestAbortedException">org.opentest4j.TestAbortedException: Assumption failed: Skipping test. Bonus endpoints were not implemented
+	at sk.stuba.fei.uim.vsa.pr2.bonus.BonusSearchResourceTest.shouldFindThesesWithPageOf5(BonusSearchResourceTest.java:36)
+</skipped>
+  </testcase>
+</testsuite></testsuites>

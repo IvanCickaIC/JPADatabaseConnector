@@ -1,0 +1,1294 @@
+<?xml version="1.0" encoding="UTF-8"?><testsuites>
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="sk.stuba.fei.uim.vsa.pr2.StudentResourceTest" time="15.78" tests="10" errors="0" skipped="0" failures="7">
+  <properties>
+    <property name="awt.toolkit" value="sun.awt.X11.XToolkit"/>
+    <property name="file.encoding.pkg" value="sun.io"/>
+    <property name="java.specification.version" value="1.8"/>
+    <property name="sun.cpu.isalist" value=""/>
+    <property name="sun.jnu.encoding" value="UTF-8"/>
+    <property name="java.class.path" value="/tested--b-vsa-ls23-projekt-2/target/test-classes:/tested--b-vsa-ls23-projekt-2/target/classes:/root/.m2/repository/org/apache/derby/derbyclient/10.14.2.0/derbyclient-10.14.2.0.jar:/root/.m2/repository/org/glassfish/jersey/containers/jersey-container-grizzly2-http/2.39.1/jersey-container-grizzly2-http-2.39.1.jar:/root/.m2/repository/org/glassfish/hk2/external/jakarta.inject/2.6.1/jakarta.inject-2.6.1.jar:/root/.m2/repository/org/glassfish/grizzly/grizzly-http-server/2.4.4/grizzly-http-server-2.4.4.jar:/root/.m2/repository/org/glassfish/grizzly/grizzly-http/2.4.4/grizzly-http-2.4.4.jar:/root/.m2/repository/org/glassfish/grizzly/grizzly-framework/2.4.4/grizzly-framework-2.4.4.jar:/root/.m2/repository/org/glassfish/jersey/core/jersey-common/2.39.1/jersey-common-2.39.1.jar:/root/.m2/repository/jakarta/annotation/jakarta.annotation-api/1.3.5/jakarta.annotation-api-1.3.5.jar:/root/.m2/repository/org/glassfish/hk2/osgi-resource-locator/1.0.3/osgi-resource-locator-1.0.3.jar:/root/.m2/repository/org/glassfish/jersey/core/jersey-server/2.39.1/jersey-server-2.39.1.jar:/root/.m2/repository/org/glassfish/jersey/core/jersey-client/2.39.1/jersey-client-2.39.1.jar:/root/.m2/repository/jakarta/validation/jakarta.validation-api/2.0.2/jakarta.validation-api-2.0.2.jar:/root/.m2/repository/jakarta/ws/rs/jakarta.ws.rs-api/2.1.6/jakarta.ws.rs-api-2.1.6.jar:/root/.m2/repository/org/glassfish/jersey/media/jersey-media-moxy/2.39.1/jersey-media-moxy-2.39.1.jar:/root/.m2/repository/org/glassfish/jersey/ext/jersey-entity-filtering/2.39.1/jersey-entity-filtering-2.39.1.jar:/root/.m2/repository/jakarta/json/jakarta.json-api/1.1.6/jakarta.json-api-1.1.6.jar:/root/.m2/repository/org/glassfish/jakarta.json/1.1.6/jakarta.json-1.1.6.jar:/root/.m2/repository/org/eclipse/persistence/org.eclipse.persistence.moxy/2.7.10/org.eclipse.persistence.moxy-2.7.10.jar:/root/.m2/repository/org/eclipse/persistence/org.eclipse.persistence.core/2.7.10/org.eclipse.persistence.core-2.7.10.jar:/root/.m2/repository/org/eclipse/persistence/org.eclipse.persistence.asm/9.2.0/org.eclipse.persistence.asm-9.2.0.jar:/root/.m2/repository/org/glassfish/jersey/media/jersey-media-json-jackson/2.39.1/jersey-media-json-jackson-2.39.1.jar:/root/.m2/repository/com/fasterxml/jackson/core/jackson-annotations/2.14.1/jackson-annotations-2.14.1.jar:/root/.m2/repository/com/fasterxml/jackson/core/jackson-databind/2.14.1/jackson-databind-2.14.1.jar:/root/.m2/repository/com/fasterxml/jackson/module/jackson-module-jaxb-annotations/2.14.1/jackson-module-jaxb-annotations-2.14.1.jar:/root/.m2/repository/jakarta/xml/bind/jakarta.xml.bind-api/2.3.3/jakarta.xml.bind-api-2.3.3.jar:/root/.m2/repository/org/glassfish/jersey/inject/jersey-hk2/2.39.1/jersey-hk2-2.39.1.jar:/root/.m2/repository/org/glassfish/hk2/hk2-locator/2.6.1/hk2-locator-2.6.1.jar:/root/.m2/repository/org/glassfish/hk2/external/aopalliance-repackaged/2.6.1/aopalliance-repackaged-2.6.1.jar:/root/.m2/repository/org/glassfish/hk2/hk2-api/2.6.1/hk2-api-2.6.1.jar:/root/.m2/repository/org/glassfish/hk2/hk2-utils/2.6.1/hk2-utils-2.6.1.jar:/root/.m2/repository/org/javassist/javassist/3.29.0-GA/javassist-3.29.0-GA.jar:/root/.m2/repository/at/favre/lib/bcrypt/0.10.2/bcrypt-0.10.2.jar:/root/.m2/repository/at/favre/lib/bytes/1.5.0/bytes-1.5.0.jar:/root/.m2/repository/org/postgresql/postgresql/42.5.4/postgresql-42.5.4.jar:/root/.m2/repository/org/checkerframework/checker-qual/3.5.0/checker-qual-3.5.0.jar:/root/.m2/repository/org/eclipse/persistence/eclipselink/2.7.11/eclipselink-2.7.11.jar:/root/.m2/repository/org/eclipse/persistence/jakarta.persistence/2.2.3/jakarta.persistence-2.2.3.jar:/root/.m2/repository/org/eclipse/persistence/commonj.sdo/2.1.1/commonj.sdo-2.1.1.jar:/root/.m2/repository/org/eclipse/persistence/javax.persistence/2.2.1/javax.persistence-2.2.1.jar:/root/.m2/repository/org/projectlombok/lombok/1.18.24/lombok-1.18.24.jar:/root/.m2/repository/org/reflections/reflections/0.10.2/reflections-0.10.2.jar:/root/.m2/repository/com/google/code/findbugs/jsr305/3.0.2/jsr305-3.0.2.jar:/root/.m2/repository/org/junit/jupiter/junit-jupiter-engine/5.8.2/junit-jupiter-engine-5.8.2.jar:/root/.m2/repository/org/junit/platform/junit-platform-engine/1.8.2/junit-platform-engine-1.8.2.jar:/root/.m2/repository/org/apiguardian/apiguardian-api/1.1.2/apiguardian-api-1.1.2.jar:/root/.m2/repository/org/junit/jupiter/junit-jupiter-api/5.8.2/junit-jupiter-api-5.8.2.jar:/root/.m2/repository/org/opentest4j/opentest4j/1.2.0/opentest4j-1.2.0.jar:/root/.m2/repository/org/junit/platform/junit-platform-commons/1.8.2/junit-platform-commons-1.8.2.jar:/root/.m2/repository/ch/qos/logback/logback-core/1.3.5/logback-core-1.3.5.jar:/root/.m2/repository/org/slf4j/slf4j-api/2.0.4/slf4j-api-2.0.4.jar:/root/.m2/repository/ch/qos/logback/logback-classic/1.3.5/logback-classic-1.3.5.jar:/root/.m2/repository/com/fasterxml/jackson/datatype/jackson-datatype-jsr310/2.15.1/jackson-datatype-jsr310-2.15.1.jar:/root/.m2/repository/com/fasterxml/jackson/core/jackson-core/2.15.1/jackson-core-2.15.1.jar:"/>
+    <property name="java.vm.vendor" value="Oracle Corporation"/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="java.vendor.url" value="http://java.oracle.com/"/>
+    <property name="user.timezone" value=""/>
+    <property name="java.vm.specification.version" value="1.8"/>
+    <property name="os.name" value="Linux"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="sun.boot.library.path" value="/usr/local/openjdk-8/jre/lib/amd64"/>
+    <property name="sun.java.command" value="/tested--b-vsa-ls23-projekt-2/target/surefire/surefirebooter3639320439650527394.jar /tested--b-vsa-ls23-projekt-2/target/surefire 2023-05-18T13-18-35_499-jvmRun1 surefire8438766231838400500tmp surefire_02617501296421621447tmp"/>
+    <property name="surefire.test.class.path" value="/tested--b-vsa-ls23-projekt-2/target/test-classes:/tested--b-vsa-ls23-projekt-2/target/classes:/root/.m2/repository/org/apache/derby/derbyclient/10.14.2.0/derbyclient-10.14.2.0.jar:/root/.m2/repository/org/glassfish/jersey/containers/jersey-container-grizzly2-http/2.39.1/jersey-container-grizzly2-http-2.39.1.jar:/root/.m2/repository/org/glassfish/hk2/external/jakarta.inject/2.6.1/jakarta.inject-2.6.1.jar:/root/.m2/repository/org/glassfish/grizzly/grizzly-http-server/2.4.4/grizzly-http-server-2.4.4.jar:/root/.m2/repository/org/glassfish/grizzly/grizzly-http/2.4.4/grizzly-http-2.4.4.jar:/root/.m2/repository/org/glassfish/grizzly/grizzly-framework/2.4.4/grizzly-framework-2.4.4.jar:/root/.m2/repository/org/glassfish/jersey/core/jersey-common/2.39.1/jersey-common-2.39.1.jar:/root/.m2/repository/jakarta/annotation/jakarta.annotation-api/1.3.5/jakarta.annotation-api-1.3.5.jar:/root/.m2/repository/org/glassfish/hk2/osgi-resource-locator/1.0.3/osgi-resource-locator-1.0.3.jar:/root/.m2/repository/org/glassfish/jersey/core/jersey-server/2.39.1/jersey-server-2.39.1.jar:/root/.m2/repository/org/glassfish/jersey/core/jersey-client/2.39.1/jersey-client-2.39.1.jar:/root/.m2/repository/jakarta/validation/jakarta.validation-api/2.0.2/jakarta.validation-api-2.0.2.jar:/root/.m2/repository/jakarta/ws/rs/jakarta.ws.rs-api/2.1.6/jakarta.ws.rs-api-2.1.6.jar:/root/.m2/repository/org/glassfish/jersey/media/jersey-media-moxy/2.39.1/jersey-media-moxy-2.39.1.jar:/root/.m2/repository/org/glassfish/jersey/ext/jersey-entity-filtering/2.39.1/jersey-entity-filtering-2.39.1.jar:/root/.m2/repository/jakarta/json/jakarta.json-api/1.1.6/jakarta.json-api-1.1.6.jar:/root/.m2/repository/org/glassfish/jakarta.json/1.1.6/jakarta.json-1.1.6.jar:/root/.m2/repository/org/eclipse/persistence/org.eclipse.persistence.moxy/2.7.10/org.eclipse.persistence.moxy-2.7.10.jar:/root/.m2/repository/org/eclipse/persistence/org.eclipse.persistence.core/2.7.10/org.eclipse.persistence.core-2.7.10.jar:/root/.m2/repository/org/eclipse/persistence/org.eclipse.persistence.asm/9.2.0/org.eclipse.persistence.asm-9.2.0.jar:/root/.m2/repository/org/glassfish/jersey/media/jersey-media-json-jackson/2.39.1/jersey-media-json-jackson-2.39.1.jar:/root/.m2/repository/com/fasterxml/jackson/core/jackson-annotations/2.14.1/jackson-annotations-2.14.1.jar:/root/.m2/repository/com/fasterxml/jackson/core/jackson-databind/2.14.1/jackson-databind-2.14.1.jar:/root/.m2/repository/com/fasterxml/jackson/module/jackson-module-jaxb-annotations/2.14.1/jackson-module-jaxb-annotations-2.14.1.jar:/root/.m2/repository/jakarta/xml/bind/jakarta.xml.bind-api/2.3.3/jakarta.xml.bind-api-2.3.3.jar:/root/.m2/repository/org/glassfish/jersey/inject/jersey-hk2/2.39.1/jersey-hk2-2.39.1.jar:/root/.m2/repository/org/glassfish/hk2/hk2-locator/2.6.1/hk2-locator-2.6.1.jar:/root/.m2/repository/org/glassfish/hk2/external/aopalliance-repackaged/2.6.1/aopalliance-repackaged-2.6.1.jar:/root/.m2/repository/org/glassfish/hk2/hk2-api/2.6.1/hk2-api-2.6.1.jar:/root/.m2/repository/org/glassfish/hk2/hk2-utils/2.6.1/hk2-utils-2.6.1.jar:/root/.m2/repository/org/javassist/javassist/3.29.0-GA/javassist-3.29.0-GA.jar:/root/.m2/repository/at/favre/lib/bcrypt/0.10.2/bcrypt-0.10.2.jar:/root/.m2/repository/at/favre/lib/bytes/1.5.0/bytes-1.5.0.jar:/root/.m2/repository/org/postgresql/postgresql/42.5.4/postgresql-42.5.4.jar:/root/.m2/repository/org/checkerframework/checker-qual/3.5.0/checker-qual-3.5.0.jar:/root/.m2/repository/org/eclipse/persistence/eclipselink/2.7.11/eclipselink-2.7.11.jar:/root/.m2/repository/org/eclipse/persistence/jakarta.persistence/2.2.3/jakarta.persistence-2.2.3.jar:/root/.m2/repository/org/eclipse/persistence/commonj.sdo/2.1.1/commonj.sdo-2.1.1.jar:/root/.m2/repository/org/eclipse/persistence/javax.persistence/2.2.1/javax.persistence-2.2.1.jar:/root/.m2/repository/org/projectlombok/lombok/1.18.24/lombok-1.18.24.jar:/root/.m2/repository/org/reflections/reflections/0.10.2/reflections-0.10.2.jar:/root/.m2/repository/com/google/code/findbugs/jsr305/3.0.2/jsr305-3.0.2.jar:/root/.m2/repository/org/junit/jupiter/junit-jupiter-engine/5.8.2/junit-jupiter-engine-5.8.2.jar:/root/.m2/repository/org/junit/platform/junit-platform-engine/1.8.2/junit-platform-engine-1.8.2.jar:/root/.m2/repository/org/apiguardian/apiguardian-api/1.1.2/apiguardian-api-1.1.2.jar:/root/.m2/repository/org/junit/jupiter/junit-jupiter-api/5.8.2/junit-jupiter-api-5.8.2.jar:/root/.m2/repository/org/opentest4j/opentest4j/1.2.0/opentest4j-1.2.0.jar:/root/.m2/repository/org/junit/platform/junit-platform-commons/1.8.2/junit-platform-commons-1.8.2.jar:/root/.m2/repository/ch/qos/logback/logback-core/1.3.5/logback-core-1.3.5.jar:/root/.m2/repository/org/slf4j/slf4j-api/2.0.4/slf4j-api-2.0.4.jar:/root/.m2/repository/ch/qos/logback/logback-classic/1.3.5/logback-classic-1.3.5.jar:/root/.m2/repository/com/fasterxml/jackson/datatype/jackson-datatype-jsr310/2.15.1/jackson-datatype-jsr310-2.15.1.jar:/root/.m2/repository/com/fasterxml/jackson/core/jackson-core/2.15.1/jackson-core-2.15.1.jar:"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="user.home" value="/root"/>
+    <property name="user.language" value="en"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.home" value="/usr/local/openjdk-8/jre"/>
+    <property name="basedir" value="/tested--b-vsa-ls23-projekt-2"/>
+    <property name="file.separator" value="/"/>
+    <property name="line.separator" value="&#10;"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="java.awt.graphicsenv" value="sun.awt.X11GraphicsEnvironment"/>
+    <property name="surefire.real.class.path" value="/tested--b-vsa-ls23-projekt-2/target/surefire/surefirebooter3639320439650527394.jar"/>
+    <property name="sun.boot.class.path" value="/usr/local/openjdk-8/jre/lib/resources.jar:/usr/local/openjdk-8/jre/lib/rt.jar:/usr/local/openjdk-8/jre/lib/sunrsasign.jar:/usr/local/openjdk-8/jre/lib/jsse.jar:/usr/local/openjdk-8/jre/lib/jce.jar:/usr/local/openjdk-8/jre/lib/charsets.jar:/usr/local/openjdk-8/jre/lib/jfr.jar:/usr/local/openjdk-8/jre/classes"/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="java.runtime.version" value="1.8.0_342-b07"/>
+    <property name="user.name" value="root"/>
+    <property name="path.separator" value=":"/>
+    <property name="os.version" value="5.15.90.1-microsoft-standard-WSL2"/>
+    <property name="java.endorsed.dirs" value="/usr/local/openjdk-8/jre/lib/endorsed"/>
+    <property name="java.runtime.name" value="OpenJDK Runtime Environment"/>
+    <property name="file.encoding" value="UTF-8"/>
+    <property name="java.vm.name" value="OpenJDK 64-Bit Server VM"/>
+    <property name="localRepository" value="/root/.m2/repository"/>
+    <property name="java.vendor.url.bug" value="http://bugreport.sun.com/bugreport/"/>
+    <property name="java.io.tmpdir" value="/tmp"/>
+    <property name="java.version" value="1.8.0_342"/>
+    <property name="user.dir" value="/tested--b-vsa-ls23-projekt-2"/>
+    <property name="os.arch" value="amd64"/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="java.awt.printerjob" value="sun.print.PSPrinterJob"/>
+    <property name="sun.os.patch.level" value="unknown"/>
+    <property name="java.library.path" value="/usr/java/packages/lib/amd64:/usr/lib64:/lib64:/lib:/usr/lib"/>
+    <property name="java.vm.info" value="mixed mode"/>
+    <property name="java.vendor" value="Oracle Corporation"/>
+    <property name="java.vm.version" value="25.342-b07"/>
+    <property name="java.ext.dirs" value="/usr/local/openjdk-8/jre/lib/ext:/usr/java/packages/lib/ext"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
+    <property name="java.class.version" value="52.0"/>
+  </properties>
+  <testcase name="shouldGetNotFoundForNonExistingStudent" classname="sk.stuba.fei.uim.vsa.pr2.StudentResourceTest" time="2.592">
+    <failure message="expected: &lt;true&gt; but was: &lt;false&gt;" type="org.opentest4j.AssertionFailedError"><![CDATA[org.opentest4j.AssertionFailedError: expected: <true> but was: <false>
+	at sk.stuba.fei.uim.vsa.pr2.StudentResourceTest.shouldGetNotFoundForNonExistingStudent(StudentResourceTest.java:166)
+]]></failure>
+    <system-out><![CDATA[2023-05-18 13:18:37.678  INFO --- [           main] s.s.fei.uim.vsa.pr2.utils.ResourceTest   : Starting HTTP server for testing
+2023-05-18 13:18:37.678  INFO --- [           main] s.s.fei.uim.vsa.pr2.Project2Application  : Starting Grizzly2 HTTP server...
+2023-05-18 13:18:37.678  INFO --- [           main] s.s.fei.uim.vsa.pr2.Project2Application  : Server listening on http://docker-desktop:8080/api
+2023-05-18 13:18:37.714  INFO --- [           main] org.reflections.Reflections              : Reflections took 17 ms to scan 2 urls, producing 13 keys and 29 values
+2023-05-18 13:18:37.715  INFO --- [           main] .s.f.u.v.p.JAXRSApplicationConfiguration : Registered resource classes: [class sk.stuba.fei.uim.vsa.pr2.api.StudentResource, class sk.stuba.fei.uim.vsa.pr2.api.TeacherResource, class sk.stuba.fei.uim.vsa.pr2.api.ThesisResource]
+2023-05-18 13:18:37.715  INFO --- [           main] .s.f.u.v.p.JAXRSApplicationConfiguration : Registered feature providers: []
+2023-05-18 13:18:37.816  INFO --- [           main] s.s.fei.uim.vsa.pr2.utils.ResourceTest   : Creating client for HTTP server
+2023-05-18 13:18:37.817  INFO --- [           main] s.s.fei.uim.vsa.pr2.utils.ResourceTest   : Client created JerseyWebTarget { http://docker-desktop:8080/api }
+[EL Fine]: server: 2023-05-18 13:18:38.164--Thread(Thread[main,5,main])--Configured server platform: org.eclipse.persistence.platform.server.NoServerPlatform
+[EL Config]: metadata: 2023-05-18 13:18:38.378--ServerSession(1202547191)--Thread(Thread[main,5,main])--The access type for the persistent class [class user.User] is set to [FIELD].
+[EL Config]: metadata: 2023-05-18 13:18:38.398--ServerSession(1202547191)--Thread(Thread[main,5,main])--The target class (reference) class for the element collection mapping element [field permissions] is being defaulted to: class auth.Permission.
+[EL Config]: metadata: 2023-05-18 13:18:38.399--ServerSession(1202547191)--Thread(Thread[main,5,main])--The access type for the persistent class [class entities.ZaverecnaPraca] is set to [FIELD].
+[EL Config]: metadata: 2023-05-18 13:18:38.406--ServerSession(1202547191)--Thread(Thread[main,5,main])--The target entity (reference) class for the one to one mapping element [field author] is being defaulted to: class entities.Student.
+[EL Config]: metadata: 2023-05-18 13:18:38.409--ServerSession(1202547191)--Thread(Thread[main,5,main])--The target entity (reference) class for the many to one mapping element [field supervisor] is being defaulted to: class entities.Pedagog.
+[EL Config]: metadata: 2023-05-18 13:18:38.41--ServerSession(1202547191)--Thread(Thread[main,5,main])--The access type for the persistent class [class entities.Pedagog] is set to [FIELD].
+[EL Config]: metadata: 2023-05-18 13:18:38.415--ServerSession(1202547191)--Thread(Thread[main,5,main])--The target entity (reference) class for the one to many mapping element [field theses] is being defaulted to: class entities.ZaverecnaPraca.
+[EL Config]: metadata: 2023-05-18 13:18:38.416--ServerSession(1202547191)--Thread(Thread[main,5,main])--The access type for the persistent class [class entities.ThesisAssignmentRequest] is set to [FIELD].
+[EL Config]: metadata: 2023-05-18 13:18:38.416--ServerSession(1202547191)--Thread(Thread[main,5,main])--The access type for the persistent class [class entities.Student] is set to [FIELD].
+[EL Config]: metadata: 2023-05-18 13:18:38.417--ServerSession(1202547191)--Thread(Thread[main,5,main])--The target entity (reference) class for the one to one mapping element [field thesis] is being defaulted to: class entities.ZaverecnaPraca.
+[EL Config]: metadata: 2023-05-18 13:18:38.417--ServerSession(1202547191)--Thread(Thread[main,5,main])--The alias name for the entity class [class user.User] is being defaulted to: User.
+[EL Config]: metadata: 2023-05-18 13:18:38.43--ServerSession(1202547191)--Thread(Thread[main,5,main])--The column name for element [password] is being defaulted to: PASSWORD.
+[EL Config]: metadata: 2023-05-18 13:18:38.431--ServerSession(1202547191)--Thread(Thread[main,5,main])--The column name for element [aisId] is being defaulted to: AISID.
+[EL Config]: metadata: 2023-05-18 13:18:38.431--ServerSession(1202547191)--Thread(Thread[main,5,main])--The column name for element [username] is being defaulted to: USERNAME.
+[EL Config]: metadata: 2023-05-18 13:18:38.431--ServerSession(1202547191)--Thread(Thread[main,5,main])--The alias name for the entity class [class entities.ZaverecnaPraca] is being defaulted to: ZaverecnaPraca.
+[EL Config]: metadata: 2023-05-18 13:18:38.432--ServerSession(1202547191)--Thread(Thread[main,5,main])--The table name for entity [class entities.ZaverecnaPraca] is being defaulted to: ZAVERECNAPRACA.
+[EL Config]: metadata: 2023-05-18 13:18:38.433--ServerSession(1202547191)--Thread(Thread[main,5,main])--The column name for element [registrationNumber] is being defaulted to: REGISTRATIONNUMBER.
+[EL Config]: metadata: 2023-05-18 13:18:38.433--ServerSession(1202547191)--Thread(Thread[main,5,main])--The column name for element [description] is being defaulted to: DESCRIPTION.
+[EL Config]: metadata: 2023-05-18 13:18:38.433--ServerSession(1202547191)--Thread(Thread[main,5,main])--The column name for element [publishedOn] is being defaulted to: PUBLISHEDON.
+[EL Config]: metadata: 2023-05-18 13:18:38.436--ServerSession(1202547191)--Thread(Thread[main,5,main])--The column name for element [id] is being defaulted to: ID.
+[EL Config]: metadata: 2023-05-18 13:18:38.436--ServerSession(1202547191)--Thread(Thread[main,5,main])--The column name for element [title] is being defaulted to: TITLE.
+[EL Config]: metadata: 2023-05-18 13:18:38.436--ServerSession(1202547191)--Thread(Thread[main,5,main])--The column name for element [department] is being defaulted to: DEPARTMENT.
+[EL Config]: metadata: 2023-05-18 13:18:38.437--ServerSession(1202547191)--Thread(Thread[main,5,main])--The column name for element [deadline] is being defaulted to: DEADLINE.
+[EL Config]: metadata: 2023-05-18 13:18:38.437--ServerSession(1202547191)--Thread(Thread[main,5,main])--The column name for element [type] is being defaulted to: TYPE.
+[EL Config]: metadata: 2023-05-18 13:18:38.439--ServerSession(1202547191)--Thread(Thread[main,5,main])--The column name for element [status] is being defaulted to: STATUS.
+[EL Config]: metadata: 2023-05-18 13:18:38.439--ServerSession(1202547191)--Thread(Thread[main,5,main])--The alias name for the entity class [class entities.Pedagog] is being defaulted to: Pedagog.
+[EL Config]: metadata: 2023-05-18 13:18:38.439--ServerSession(1202547191)--Thread(Thread[main,5,main])--The table name for entity [class entities.Pedagog] is being defaulted to: PEDAGOG.
+[EL Config]: metadata: 2023-05-18 13:18:38.439--ServerSession(1202547191)--Thread(Thread[main,5,main])--The column name for element [password] is being defaulted to: PASSWORD.
+[EL Config]: metadata: 2023-05-18 13:18:38.44--ServerSession(1202547191)--Thread(Thread[main,5,main])--The column name for element [name] is being defaulted to: NAME.
+[EL Config]: metadata: 2023-05-18 13:18:38.44--ServerSession(1202547191)--Thread(Thread[main,5,main])--The column name for element [institute] is being defaulted to: INSTITUTE.
+[EL Config]: metadata: 2023-05-18 13:18:38.44--ServerSession(1202547191)--Thread(Thread[main,5,main])--The column name for element [department] is being defaulted to: DEPARTMENT.
+[EL Config]: metadata: 2023-05-18 13:18:38.44--ServerSession(1202547191)--Thread(Thread[main,5,main])--The column name for element [aisId] is being defaulted to: AISID.
+[EL Config]: metadata: 2023-05-18 13:18:38.44--ServerSession(1202547191)--Thread(Thread[main,5,main])--The column name for element [email] is being defaulted to: EMAIL.
+[EL Config]: metadata: 2023-05-18 13:18:38.441--ServerSession(1202547191)--Thread(Thread[main,5,main])--The alias name for the entity class [class entities.ThesisAssignmentRequest] is being defaulted to: ThesisAssignmentRequest.
+[EL Config]: metadata: 2023-05-18 13:18:38.441--ServerSession(1202547191)--Thread(Thread[main,5,main])--The table name for entity [class entities.ThesisAssignmentRequest] is being defaulted to: THESISASSIGNMENTREQUEST.
+[EL Config]: metadata: 2023-05-18 13:18:38.441--ServerSession(1202547191)--Thread(Thread[main,5,main])--The column name for element [studentId] is being defaulted to: STUDENTID.
+[EL Config]: metadata: 2023-05-18 13:18:38.441--ServerSession(1202547191)--Thread(Thread[main,5,main])--The column name for element [teacherId] is being defaulted to: TEACHERID.
+[EL Config]: metadata: 2023-05-18 13:18:38.442--ServerSession(1202547191)--Thread(Thread[main,5,main])--The column name for element [id] is being defaulted to: ID.
+[EL Config]: metadata: 2023-05-18 13:18:38.442--ServerSession(1202547191)--Thread(Thread[main,5,main])--The alias name for the entity class [class entities.Student] is being defaulted to: Student.
+[EL Config]: metadata: 2023-05-18 13:18:38.442--ServerSession(1202547191)--Thread(Thread[main,5,main])--The table name for entity [class entities.Student] is being defaulted to: STUDENT.
+[EL Config]: metadata: 2023-05-18 13:18:38.442--ServerSession(1202547191)--Thread(Thread[main,5,main])--The column name for element [password] is being defaulted to: PASSWORD.
+[EL Config]: metadata: 2023-05-18 13:18:38.443--ServerSession(1202547191)--Thread(Thread[main,5,main])--The column name for element [name] is being defaulted to: NAME.
+[EL Config]: metadata: 2023-05-18 13:18:38.443--ServerSession(1202547191)--Thread(Thread[main,5,main])--The column name for element [term] is being defaulted to: TERM.
+[EL Config]: metadata: 2023-05-18 13:18:38.443--ServerSession(1202547191)--Thread(Thread[main,5,main])--The column name for element [email] is being defaulted to: EMAIL.
+[EL Config]: metadata: 2023-05-18 13:18:38.46--ServerSession(1202547191)--Thread(Thread[main,5,main])--The collection table name for the basic collection/map mapping [field permissions] is being defaulted to: User_PERMISSIONS.
+[EL Config]: metadata: 2023-05-18 13:18:38.461--ServerSession(1202547191)--Thread(Thread[main,5,main])--The primary key column name for the mapping element [field permissions] is being defaulted to: AISID.
+[EL Config]: metadata: 2023-05-18 13:18:38.461--ServerSession(1202547191)--Thread(Thread[main,5,main])--The foreign key column name for the mapping element [permissions] is being defaulted to: User_AISID.
+[EL Config]: metadata: 2023-05-18 13:18:38.463--ServerSession(1202547191)--Thread(Thread[main,5,main])--The value column name for the basic collection/map mapping element mapping element [permissions] is being defaulted to: PERMISSIONS.
+[EL Fine]: metadata: 2023-05-18 13:18:38.463--Thread(Thread[main,5,main])--java.lang.ClassNotFoundException: java.util.Listauth.Permission
+[EL Config]: metadata: 2023-05-18 13:18:38.471--ServerSession(1202547191)--Thread(Thread[main,5,main])--The primary key column name for the mapping element [field author] is being defaulted to: Id.
+[EL Config]: metadata: 2023-05-18 13:18:38.471--ServerSession(1202547191)--Thread(Thread[main,5,main])--The foreign key column name for the mapping element [author] is being defaulted to: AUTHOR_Id.
+[EL Config]: metadata: 2023-05-18 13:18:38.471--ServerSession(1202547191)--Thread(Thread[main,5,main])--The primary key column name for the mapping element [field supervisor] is being defaulted to: AISID.
+[EL Config]: metadata: 2023-05-18 13:18:38.471--ServerSession(1202547191)--Thread(Thread[main,5,main])--The foreign key column name for the mapping element [supervisor] is being defaulted to: SUPERVISOR_AISID.
+[EL Info]: 2023-05-18 13:18:38.528--ServerSession(1202547191)--Thread(Thread[main,5,main])--EclipseLink, version: Eclipse Persistence Services - 2.7.10.v20211216-fe64cd39c3
+[EL Fine]: connection: 2023-05-18 13:18:38.535--ServerSession(1202547191)--Connection(102709691)--Thread(Thread[main,5,main])--connecting(DatabaseLogin(
+	platform=>PostgreSQLPlatform
+	user name=> "vsa"
+	datasource URL=> "jdbc:postgresql://localhost:5432/vsa_pr2_xcickai1"
+))
+[EL Config]: connection: 2023-05-18 13:18:38.586--ServerSession(1202547191)--Connection(1403413933)--Thread(Thread[main,5,main])--Connected: jdbc:postgresql://localhost:5432/vsa_pr2_xcickai1
+	User: vsa
+	Database: PostgreSQL  Version: 15.2 (Debian 15.2-1.pgdg110+1)
+	Driver: PostgreSQL JDBC Driver  Version: 42.5.4
+[EL Fine]: connection: 2023-05-18 13:18:38.635--ServerSession(1202547191)--Thread(Thread[main,5,main])--/file:/tested--b-vsa-ls23-projekt-2/target/classes/_vsa-project-2 login successful
+[EL Config]: metadata: 2023-05-18 13:18:38.653--Thread(Thread[main,5,main])--The default table generator could not locate or convert a java type (class auth.Permission) into a database type for database field (User_PERMISSIONS.PERMISSIONS). The generator uses "java.lang.String" as default java type for the field.
+[EL Fine]: sql: 2023-05-18 13:18:38.655--ServerSession(1202547191)--Connection(1403413933)--Thread(Thread[main,5,main])--ALTER TABLE ZAVERECNAPRACA DROP CONSTRAINT FK_ZAVERECNAPRACA_SUPERVISOR_AISID
+[EL Fine]: sql: 2023-05-18 13:18:38.669--ServerSession(1202547191)--Thread(Thread[main,5,main])--SELECT 1
+[EL Warning]: 2023-05-18 13:18:38.68--ServerSession(1202547191)--Thread(Thread[main,5,main])--Exception [EclipseLink-4002] (Eclipse Persistence Services - 2.7.10.v20211216-fe64cd39c3): org.eclipse.persistence.exceptions.DatabaseException
+Internal Exception: org.postgresql.util.PSQLException: ERROR: relation "zaverecnapraca" does not exist
+Error Code: 0
+Call: ALTER TABLE ZAVERECNAPRACA DROP CONSTRAINT FK_ZAVERECNAPRACA_SUPERVISOR_AISID
+Query: DataModifyQuery(sql="ALTER TABLE ZAVERECNAPRACA DROP CONSTRAINT FK_ZAVERECNAPRACA_SUPERVISOR_AISID")
+[EL Fine]: sql: 2023-05-18 13:18:38.682--ServerSession(1202547191)--Connection(1403413933)--Thread(Thread[main,5,main])--ALTER TABLE ZAVERECNAPRACA DROP CONSTRAINT FK_ZAVERECNAPRACA_AUTHOR_Id
+[EL Fine]: sql: 2023-05-18 13:18:38.683--ServerSession(1202547191)--Thread(Thread[main,5,main])--SELECT 1
+[EL Warning]: 2023-05-18 13:18:38.685--ServerSession(1202547191)--Thread(Thread[main,5,main])--Exception [EclipseLink-4002] (Eclipse Persistence Services - 2.7.10.v20211216-fe64cd39c3): org.eclipse.persistence.exceptions.DatabaseException
+Internal Exception: org.postgresql.util.PSQLException: ERROR: relation "zaverecnapraca" does not exist
+Error Code: 0
+Call: ALTER TABLE ZAVERECNAPRACA DROP CONSTRAINT FK_ZAVERECNAPRACA_AUTHOR_Id
+Query: DataModifyQuery(sql="ALTER TABLE ZAVERECNAPRACA DROP CONSTRAINT FK_ZAVERECNAPRACA_AUTHOR_Id")
+[EL Fine]: sql: 2023-05-18 13:18:38.685--ServerSession(1202547191)--Connection(1403413933)--Thread(Thread[main,5,main])--ALTER TABLE User_PERMISSIONS DROP CONSTRAINT FK_User_PERMISSIONS_User_AISID
+[EL Fine]: sql: 2023-05-18 13:18:38.686--ServerSession(1202547191)--Thread(Thread[main,5,main])--SELECT 1
+[EL Warning]: 2023-05-18 13:18:38.686--ServerSession(1202547191)--Thread(Thread[main,5,main])--Exception [EclipseLink-4002] (Eclipse Persistence Services - 2.7.10.v20211216-fe64cd39c3): org.eclipse.persistence.exceptions.DatabaseException
+Internal Exception: org.postgresql.util.PSQLException: ERROR: relation "user_permissions" does not exist
+Error Code: 0
+Call: ALTER TABLE User_PERMISSIONS DROP CONSTRAINT FK_User_PERMISSIONS_User_AISID
+Query: DataModifyQuery(sql="ALTER TABLE User_PERMISSIONS DROP CONSTRAINT FK_User_PERMISSIONS_User_AISID")
+[EL Fine]: sql: 2023-05-18 13:18:38.687--ServerSession(1202547191)--Connection(1403413933)--Thread(Thread[main,5,main])--DROP TABLE STUDENT CASCADE
+[EL Fine]: sql: 2023-05-18 13:18:38.687--ServerSession(1202547191)--Thread(Thread[main,5,main])--SELECT 1
+[EL Warning]: 2023-05-18 13:18:38.688--ServerSession(1202547191)--Thread(Thread[main,5,main])--Exception [EclipseLink-4002] (Eclipse Persistence Services - 2.7.10.v20211216-fe64cd39c3): org.eclipse.persistence.exceptions.DatabaseException
+Internal Exception: org.postgresql.util.PSQLException: ERROR: table "student" does not exist
+Error Code: 0
+Call: DROP TABLE STUDENT CASCADE
+Query: DataModifyQuery(sql="DROP TABLE STUDENT CASCADE")
+[EL Fine]: sql: 2023-05-18 13:18:38.688--ServerSession(1202547191)--Connection(1403413933)--Thread(Thread[main,5,main])--DROP TABLE PEDAGOG CASCADE
+[EL Fine]: sql: 2023-05-18 13:18:38.689--ServerSession(1202547191)--Thread(Thread[main,5,main])--SELECT 1
+[EL Warning]: 2023-05-18 13:18:38.69--ServerSession(1202547191)--Thread(Thread[main,5,main])--Exception [EclipseLink-4002] (Eclipse Persistence Services - 2.7.10.v20211216-fe64cd39c3): org.eclipse.persistence.exceptions.DatabaseException
+Internal Exception: org.postgresql.util.PSQLException: ERROR: table "pedagog" does not exist
+Error Code: 0
+Call: DROP TABLE PEDAGOG CASCADE
+Query: DataModifyQuery(sql="DROP TABLE PEDAGOG CASCADE")
+[EL Fine]: sql: 2023-05-18 13:18:38.69--ServerSession(1202547191)--Connection(1403413933)--Thread(Thread[main,5,main])--DROP TABLE ZAVERECNAPRACA CASCADE
+[EL Fine]: sql: 2023-05-18 13:18:38.691--ServerSession(1202547191)--Thread(Thread[main,5,main])--SELECT 1
+[EL Warning]: 2023-05-18 13:18:38.692--ServerSession(1202547191)--Thread(Thread[main,5,main])--Exception [EclipseLink-4002] (Eclipse Persistence Services - 2.7.10.v20211216-fe64cd39c3): org.eclipse.persistence.exceptions.DatabaseException
+Internal Exception: org.postgresql.util.PSQLException: ERROR: table "zaverecnapraca" does not exist
+Error Code: 0
+Call: DROP TABLE ZAVERECNAPRACA CASCADE
+Query: DataModifyQuery(sql="DROP TABLE ZAVERECNAPRACA CASCADE")
+[EL Fine]: sql: 2023-05-18 13:18:38.692--ServerSession(1202547191)--Connection(1403413933)--Thread(Thread[main,5,main])--DROP TABLE vsa_user CASCADE
+[EL Fine]: sql: 2023-05-18 13:18:38.692--ServerSession(1202547191)--Thread(Thread[main,5,main])--SELECT 1
+[EL Warning]: 2023-05-18 13:18:38.693--ServerSession(1202547191)--Thread(Thread[main,5,main])--Exception [EclipseLink-4002] (Eclipse Persistence Services - 2.7.10.v20211216-fe64cd39c3): org.eclipse.persistence.exceptions.DatabaseException
+Internal Exception: org.postgresql.util.PSQLException: ERROR: table "vsa_user" does not exist
+Error Code: 0
+Call: DROP TABLE vsa_user CASCADE
+Query: DataModifyQuery(sql="DROP TABLE vsa_user CASCADE")
+[EL Fine]: sql: 2023-05-18 13:18:38.693--ServerSession(1202547191)--Connection(1403413933)--Thread(Thread[main,5,main])--DROP TABLE THESISASSIGNMENTREQUEST CASCADE
+[EL Fine]: sql: 2023-05-18 13:18:38.694--ServerSession(1202547191)--Thread(Thread[main,5,main])--SELECT 1
+[EL Warning]: 2023-05-18 13:18:38.694--ServerSession(1202547191)--Thread(Thread[main,5,main])--Exception [EclipseLink-4002] (Eclipse Persistence Services - 2.7.10.v20211216-fe64cd39c3): org.eclipse.persistence.exceptions.DatabaseException
+Internal Exception: org.postgresql.util.PSQLException: ERROR: table "thesisassignmentrequest" does not exist
+Error Code: 0
+Call: DROP TABLE THESISASSIGNMENTREQUEST CASCADE
+Query: DataModifyQuery(sql="DROP TABLE THESISASSIGNMENTREQUEST CASCADE")
+[EL Fine]: sql: 2023-05-18 13:18:38.694--ServerSession(1202547191)--Connection(1403413933)--Thread(Thread[main,5,main])--DROP TABLE User_PERMISSIONS CASCADE
+[EL Fine]: sql: 2023-05-18 13:18:38.696--ServerSession(1202547191)--Thread(Thread[main,5,main])--SELECT 1
+[EL Warning]: 2023-05-18 13:18:38.697--ServerSession(1202547191)--Thread(Thread[main,5,main])--Exception [EclipseLink-4002] (Eclipse Persistence Services - 2.7.10.v20211216-fe64cd39c3): org.eclipse.persistence.exceptions.DatabaseException
+Internal Exception: org.postgresql.util.PSQLException: ERROR: table "user_permissions" does not exist
+Error Code: 0
+Call: DROP TABLE User_PERMISSIONS CASCADE
+Query: DataModifyQuery(sql="DROP TABLE User_PERMISSIONS CASCADE")
+[EL Fine]: sql: 2023-05-18 13:18:38.697--ServerSession(1202547191)--Connection(1403413933)--Thread(Thread[main,5,main])--DROP TABLE STUDENT CASCADE
+[EL Fine]: sql: 2023-05-18 13:18:38.698--ServerSession(1202547191)--Thread(Thread[main,5,main])--SELECT 1
+[EL Warning]: 2023-05-18 13:18:38.698--ServerSession(1202547191)--Thread(Thread[main,5,main])--Exception [EclipseLink-4002] (Eclipse Persistence Services - 2.7.10.v20211216-fe64cd39c3): org.eclipse.persistence.exceptions.DatabaseException
+Internal Exception: org.postgresql.util.PSQLException: ERROR: table "student" does not exist
+Error Code: 0
+Call: DROP TABLE STUDENT CASCADE
+Query: DataModifyQuery(sql="DROP TABLE STUDENT CASCADE")
+[EL Fine]: sql: 2023-05-18 13:18:38.699--ServerSession(1202547191)--Connection(1403413933)--Thread(Thread[main,5,main])--DROP TABLE PEDAGOG CASCADE
+[EL Fine]: sql: 2023-05-18 13:18:38.699--ServerSession(1202547191)--Thread(Thread[main,5,main])--SELECT 1
+[EL Warning]: 2023-05-18 13:18:38.7--ServerSession(1202547191)--Thread(Thread[main,5,main])--Exception [EclipseLink-4002] (Eclipse Persistence Services - 2.7.10.v20211216-fe64cd39c3): org.eclipse.persistence.exceptions.DatabaseException
+Internal Exception: org.postgresql.util.PSQLException: ERROR: table "pedagog" does not exist
+Error Code: 0
+Call: DROP TABLE PEDAGOG CASCADE
+Query: DataModifyQuery(sql="DROP TABLE PEDAGOG CASCADE")
+[EL Fine]: sql: 2023-05-18 13:18:38.7--ServerSession(1202547191)--Connection(1403413933)--Thread(Thread[main,5,main])--DROP TABLE ZAVERECNAPRACA CASCADE
+[EL Fine]: sql: 2023-05-18 13:18:38.701--ServerSession(1202547191)--Thread(Thread[main,5,main])--SELECT 1
+[EL Warning]: 2023-05-18 13:18:38.701--ServerSession(1202547191)--Thread(Thread[main,5,main])--Exception [EclipseLink-4002] (Eclipse Persistence Services - 2.7.10.v20211216-fe64cd39c3): org.eclipse.persistence.exceptions.DatabaseException
+Internal Exception: org.postgresql.util.PSQLException: ERROR: table "zaverecnapraca" does not exist
+Error Code: 0
+Call: DROP TABLE ZAVERECNAPRACA CASCADE
+Query: DataModifyQuery(sql="DROP TABLE ZAVERECNAPRACA CASCADE")
+[EL Fine]: sql: 2023-05-18 13:18:38.701--ServerSession(1202547191)--Connection(1403413933)--Thread(Thread[main,5,main])--DROP TABLE vsa_user CASCADE
+[EL Fine]: sql: 2023-05-18 13:18:38.702--ServerSession(1202547191)--Thread(Thread[main,5,main])--SELECT 1
+[EL Warning]: 2023-05-18 13:18:38.703--ServerSession(1202547191)--Thread(Thread[main,5,main])--Exception [EclipseLink-4002] (Eclipse Persistence Services - 2.7.10.v20211216-fe64cd39c3): org.eclipse.persistence.exceptions.DatabaseException
+Internal Exception: org.postgresql.util.PSQLException: ERROR: table "vsa_user" does not exist
+Error Code: 0
+Call: DROP TABLE vsa_user CASCADE
+Query: DataModifyQuery(sql="DROP TABLE vsa_user CASCADE")
+[EL Fine]: sql: 2023-05-18 13:18:38.703--ServerSession(1202547191)--Connection(1403413933)--Thread(Thread[main,5,main])--DROP TABLE THESISASSIGNMENTREQUEST CASCADE
+[EL Fine]: sql: 2023-05-18 13:18:38.703--ServerSession(1202547191)--Thread(Thread[main,5,main])--SELECT 1
+[EL Warning]: 2023-05-18 13:18:38.704--ServerSession(1202547191)--Thread(Thread[main,5,main])--Exception [EclipseLink-4002] (Eclipse Persistence Services - 2.7.10.v20211216-fe64cd39c3): org.eclipse.persistence.exceptions.DatabaseException
+Internal Exception: org.postgresql.util.PSQLException: ERROR: table "thesisassignmentrequest" does not exist
+Error Code: 0
+Call: DROP TABLE THESISASSIGNMENTREQUEST CASCADE
+Query: DataModifyQuery(sql="DROP TABLE THESISASSIGNMENTREQUEST CASCADE")
+[EL Fine]: sql: 2023-05-18 13:18:38.704--ServerSession(1202547191)--Connection(1403413933)--Thread(Thread[main,5,main])--DROP TABLE User_PERMISSIONS CASCADE
+[EL Fine]: sql: 2023-05-18 13:18:38.705--ServerSession(1202547191)--Thread(Thread[main,5,main])--SELECT 1
+[EL Warning]: 2023-05-18 13:18:38.705--ServerSession(1202547191)--Thread(Thread[main,5,main])--Exception [EclipseLink-4002] (Eclipse Persistence Services - 2.7.10.v20211216-fe64cd39c3): org.eclipse.persistence.exceptions.DatabaseException
+Internal Exception: org.postgresql.util.PSQLException: ERROR: table "user_permissions" does not exist
+Error Code: 0
+Call: DROP TABLE User_PERMISSIONS CASCADE
+Query: DataModifyQuery(sql="DROP TABLE User_PERMISSIONS CASCADE")
+[EL Fine]: sql: 2023-05-18 13:18:38.705--ServerSession(1202547191)--Connection(1403413933)--Thread(Thread[main,5,main])--DROP TABLE STUDENT CASCADE
+[EL Fine]: sql: 2023-05-18 13:18:38.706--ServerSession(1202547191)--Thread(Thread[main,5,main])--SELECT 1
+[EL Warning]: 2023-05-18 13:18:38.706--ServerSession(1202547191)--Thread(Thread[main,5,main])--Exception [EclipseLink-4002] (Eclipse Persistence Services - 2.7.10.v20211216-fe64cd39c3): org.eclipse.persistence.exceptions.DatabaseException
+Internal Exception: org.postgresql.util.PSQLException: ERROR: table "student" does not exist
+Error Code: 0
+Call: DROP TABLE STUDENT CASCADE
+Query: DataModifyQuery(sql="DROP TABLE STUDENT CASCADE")
+[EL Fine]: sql: 2023-05-18 13:18:38.707--ServerSession(1202547191)--Connection(1403413933)--Thread(Thread[main,5,main])--DROP TABLE PEDAGOG CASCADE
+[EL Fine]: sql: 2023-05-18 13:18:38.707--ServerSession(1202547191)--Thread(Thread[main,5,main])--SELECT 1
+[EL Warning]: 2023-05-18 13:18:38.708--ServerSession(1202547191)--Thread(Thread[main,5,main])--Exception [EclipseLink-4002] (Eclipse Persistence Services - 2.7.10.v20211216-fe64cd39c3): org.eclipse.persistence.exceptions.DatabaseException
+Internal Exception: org.postgresql.util.PSQLException: ERROR: table "pedagog" does not exist
+Error Code: 0
+Call: DROP TABLE PEDAGOG CASCADE
+Query: DataModifyQuery(sql="DROP TABLE PEDAGOG CASCADE")
+[EL Fine]: sql: 2023-05-18 13:18:38.708--ServerSession(1202547191)--Connection(1403413933)--Thread(Thread[main,5,main])--DROP TABLE ZAVERECNAPRACA CASCADE
+[EL Fine]: sql: 2023-05-18 13:18:38.709--ServerSession(1202547191)--Thread(Thread[main,5,main])--SELECT 1
+[EL Warning]: 2023-05-18 13:18:38.709--ServerSession(1202547191)--Thread(Thread[main,5,main])--Exception [EclipseLink-4002] (Eclipse Persistence Services - 2.7.10.v20211216-fe64cd39c3): org.eclipse.persistence.exceptions.DatabaseException
+Internal Exception: org.postgresql.util.PSQLException: ERROR: table "zaverecnapraca" does not exist
+Error Code: 0
+Call: DROP TABLE ZAVERECNAPRACA CASCADE
+Query: DataModifyQuery(sql="DROP TABLE ZAVERECNAPRACA CASCADE")
+[EL Fine]: sql: 2023-05-18 13:18:38.709--ServerSession(1202547191)--Connection(1403413933)--Thread(Thread[main,5,main])--DROP TABLE vsa_user CASCADE
+[EL Fine]: sql: 2023-05-18 13:18:38.71--ServerSession(1202547191)--Thread(Thread[main,5,main])--SELECT 1
+[EL Warning]: 2023-05-18 13:18:38.711--ServerSession(1202547191)--Thread(Thread[main,5,main])--Exception [EclipseLink-4002] (Eclipse Persistence Services - 2.7.10.v20211216-fe64cd39c3): org.eclipse.persistence.exceptions.DatabaseException
+Internal Exception: org.postgresql.util.PSQLException: ERROR: table "vsa_user" does not exist
+Error Code: 0
+Call: DROP TABLE vsa_user CASCADE
+Query: DataModifyQuery(sql="DROP TABLE vsa_user CASCADE")
+[EL Fine]: sql: 2023-05-18 13:18:38.711--ServerSession(1202547191)--Connection(1403413933)--Thread(Thread[main,5,main])--DROP TABLE THESISASSIGNMENTREQUEST CASCADE
+[EL Fine]: sql: 2023-05-18 13:18:38.711--ServerSession(1202547191)--Thread(Thread[main,5,main])--SELECT 1
+[EL Warning]: 2023-05-18 13:18:38.712--ServerSession(1202547191)--Thread(Thread[main,5,main])--Exception [EclipseLink-4002] (Eclipse Persistence Services - 2.7.10.v20211216-fe64cd39c3): org.eclipse.persistence.exceptions.DatabaseException
+Internal Exception: org.postgresql.util.PSQLException: ERROR: table "thesisassignmentrequest" does not exist
+Error Code: 0
+Call: DROP TABLE THESISASSIGNMENTREQUEST CASCADE
+Query: DataModifyQuery(sql="DROP TABLE THESISASSIGNMENTREQUEST CASCADE")
+[EL Fine]: sql: 2023-05-18 13:18:38.712--ServerSession(1202547191)--Connection(1403413933)--Thread(Thread[main,5,main])--DROP TABLE User_PERMISSIONS CASCADE
+[EL Fine]: sql: 2023-05-18 13:18:38.713--ServerSession(1202547191)--Thread(Thread[main,5,main])--SELECT 1
+[EL Warning]: 2023-05-18 13:18:38.713--ServerSession(1202547191)--Thread(Thread[main,5,main])--Exception [EclipseLink-4002] (Eclipse Persistence Services - 2.7.10.v20211216-fe64cd39c3): org.eclipse.persistence.exceptions.DatabaseException
+Internal Exception: org.postgresql.util.PSQLException: ERROR: table "user_permissions" does not exist
+Error Code: 0
+Call: DROP TABLE User_PERMISSIONS CASCADE
+Query: DataModifyQuery(sql="DROP TABLE User_PERMISSIONS CASCADE")
+[EL Fine]: sql: 2023-05-18 13:18:38.713--ServerSession(1202547191)--Connection(1403413933)--Thread(Thread[main,5,main])--DROP TABLE STUDENT CASCADE
+[EL Fine]: sql: 2023-05-18 13:18:38.714--ServerSession(1202547191)--Thread(Thread[main,5,main])--SELECT 1
+[EL Warning]: 2023-05-18 13:18:38.714--ServerSession(1202547191)--Thread(Thread[main,5,main])--Exception [EclipseLink-4002] (Eclipse Persistence Services - 2.7.10.v20211216-fe64cd39c3): org.eclipse.persistence.exceptions.DatabaseException
+Internal Exception: org.postgresql.util.PSQLException: ERROR: table "student" does not exist
+Error Code: 0
+Call: DROP TABLE STUDENT CASCADE
+Query: DataModifyQuery(sql="DROP TABLE STUDENT CASCADE")
+[EL Fine]: sql: 2023-05-18 13:18:38.715--ServerSession(1202547191)--Connection(1403413933)--Thread(Thread[main,5,main])--DROP TABLE PEDAGOG CASCADE
+[EL Fine]: sql: 2023-05-18 13:18:38.715--ServerSession(1202547191)--Thread(Thread[main,5,main])--SELECT 1
+[EL Warning]: 2023-05-18 13:18:38.716--ServerSession(1202547191)--Thread(Thread[main,5,main])--Exception [EclipseLink-4002] (Eclipse Persistence Services - 2.7.10.v20211216-fe64cd39c3): org.eclipse.persistence.exceptions.DatabaseException
+Internal Exception: org.postgresql.util.PSQLException: ERROR: table "pedagog" does not exist
+Error Code: 0
+Call: DROP TABLE PEDAGOG CASCADE
+Query: DataModifyQuery(sql="DROP TABLE PEDAGOG CASCADE")
+[EL Fine]: sql: 2023-05-18 13:18:38.716--ServerSession(1202547191)--Connection(1403413933)--Thread(Thread[main,5,main])--DROP TABLE ZAVERECNAPRACA CASCADE
+[EL Fine]: sql: 2023-05-18 13:18:38.716--ServerSession(1202547191)--Thread(Thread[main,5,main])--SELECT 1
+[EL Warning]: 2023-05-18 13:18:38.717--ServerSession(1202547191)--Thread(Thread[main,5,main])--Exception [EclipseLink-4002] (Eclipse Persistence Services - 2.7.10.v20211216-fe64cd39c3): org.eclipse.persistence.exceptions.DatabaseException
+Internal Exception: org.postgresql.util.PSQLException: ERROR: table "zaverecnapraca" does not exist
+Error Code: 0
+Call: DROP TABLE ZAVERECNAPRACA CASCADE
+Query: DataModifyQuery(sql="DROP TABLE ZAVERECNAPRACA CASCADE")
+[EL Fine]: sql: 2023-05-18 13:18:38.717--ServerSession(1202547191)--Connection(1403413933)--Thread(Thread[main,5,main])--DROP TABLE vsa_user CASCADE
+[EL Fine]: sql: 2023-05-18 13:18:38.718--ServerSession(1202547191)--Thread(Thread[main,5,main])--SELECT 1
+[EL Warning]: 2023-05-18 13:18:38.718--ServerSession(1202547191)--Thread(Thread[main,5,main])--Exception [EclipseLink-4002] (Eclipse Persistence Services - 2.7.10.v20211216-fe64cd39c3): org.eclipse.persistence.exceptions.DatabaseException
+Internal Exception: org.postgresql.util.PSQLException: ERROR: table "vsa_user" does not exist
+Error Code: 0
+Call: DROP TABLE vsa_user CASCADE
+Query: DataModifyQuery(sql="DROP TABLE vsa_user CASCADE")
+[EL Fine]: sql: 2023-05-18 13:18:38.718--ServerSession(1202547191)--Connection(1403413933)--Thread(Thread[main,5,main])--DROP TABLE THESISASSIGNMENTREQUEST CASCADE
+[EL Fine]: sql: 2023-05-18 13:18:38.719--ServerSession(1202547191)--Thread(Thread[main,5,main])--SELECT 1
+[EL Warning]: 2023-05-18 13:18:38.719--ServerSession(1202547191)--Thread(Thread[main,5,main])--Exception [EclipseLink-4002] (Eclipse Persistence Services - 2.7.10.v20211216-fe64cd39c3): org.eclipse.persistence.exceptions.DatabaseException
+Internal Exception: org.postgresql.util.PSQLException: ERROR: table "thesisassignmentrequest" does not exist
+Error Code: 0
+Call: DROP TABLE THESISASSIGNMENTREQUEST CASCADE
+Query: DataModifyQuery(sql="DROP TABLE THESISASSIGNMENTREQUEST CASCADE")
+[EL Fine]: sql: 2023-05-18 13:18:38.72--ServerSession(1202547191)--Connection(1403413933)--Thread(Thread[main,5,main])--DROP TABLE User_PERMISSIONS CASCADE
+[EL Fine]: sql: 2023-05-18 13:18:38.72--ServerSession(1202547191)--Thread(Thread[main,5,main])--SELECT 1
+[EL Warning]: 2023-05-18 13:18:38.721--ServerSession(1202547191)--Thread(Thread[main,5,main])--Exception [EclipseLink-4002] (Eclipse Persistence Services - 2.7.10.v20211216-fe64cd39c3): org.eclipse.persistence.exceptions.DatabaseException
+Internal Exception: org.postgresql.util.PSQLException: ERROR: table "user_permissions" does not exist
+Error Code: 0
+Call: DROP TABLE User_PERMISSIONS CASCADE
+Query: DataModifyQuery(sql="DROP TABLE User_PERMISSIONS CASCADE")
+[EL Fine]: sql: 2023-05-18 13:18:38.721--ServerSession(1202547191)--Connection(1403413933)--Thread(Thread[main,5,main])--DROP TABLE STUDENT CASCADE
+[EL Fine]: sql: 2023-05-18 13:18:38.721--ServerSession(1202547191)--Thread(Thread[main,5,main])--SELECT 1
+[EL Warning]: 2023-05-18 13:18:38.722--ServerSession(1202547191)--Thread(Thread[main,5,main])--Exception [EclipseLink-4002] (Eclipse Persistence Services - 2.7.10.v20211216-fe64cd39c3): org.eclipse.persistence.exceptions.DatabaseException
+Internal Exception: org.postgresql.util.PSQLException: ERROR: table "student" does not exist
+Error Code: 0
+Call: DROP TABLE STUDENT CASCADE
+Query: DataModifyQuery(sql="DROP TABLE STUDENT CASCADE")
+[EL Fine]: sql: 2023-05-18 13:18:38.722--ServerSession(1202547191)--Connection(1403413933)--Thread(Thread[main,5,main])--DROP TABLE PEDAGOG CASCADE
+[EL Fine]: sql: 2023-05-18 13:18:38.723--ServerSession(1202547191)--Thread(Thread[main,5,main])--SELECT 1
+[EL Warning]: 2023-05-18 13:18:38.723--ServerSession(1202547191)--Thread(Thread[main,5,main])--Exception [EclipseLink-4002] (Eclipse Persistence Services - 2.7.10.v20211216-fe64cd39c3): org.eclipse.persistence.exceptions.DatabaseException
+Internal Exception: org.postgresql.util.PSQLException: ERROR: table "pedagog" does not exist
+Error Code: 0
+Call: DROP TABLE PEDAGOG CASCADE
+Query: DataModifyQuery(sql="DROP TABLE PEDAGOG CASCADE")
+[EL Fine]: sql: 2023-05-18 13:18:38.723--ServerSession(1202547191)--Connection(1403413933)--Thread(Thread[main,5,main])--DROP TABLE ZAVERECNAPRACA CASCADE
+[EL Fine]: sql: 2023-05-18 13:18:38.724--ServerSession(1202547191)--Thread(Thread[main,5,main])--SELECT 1
+[EL Warning]: 2023-05-18 13:18:38.724--ServerSession(1202547191)--Thread(Thread[main,5,main])--Exception [EclipseLink-4002] (Eclipse Persistence Services - 2.7.10.v20211216-fe64cd39c3): org.eclipse.persistence.exceptions.DatabaseException
+Internal Exception: org.postgresql.util.PSQLException: ERROR: table "zaverecnapraca" does not exist
+Error Code: 0
+Call: DROP TABLE ZAVERECNAPRACA CASCADE
+Query: DataModifyQuery(sql="DROP TABLE ZAVERECNAPRACA CASCADE")
+[EL Fine]: sql: 2023-05-18 13:18:38.724--ServerSession(1202547191)--Connection(1403413933)--Thread(Thread[main,5,main])--DROP TABLE vsa_user CASCADE
+[EL Fine]: sql: 2023-05-18 13:18:38.725--ServerSession(1202547191)--Thread(Thread[main,5,main])--SELECT 1
+[EL Warning]: 2023-05-18 13:18:38.725--ServerSession(1202547191)--Thread(Thread[main,5,main])--Exception [EclipseLink-4002] (Eclipse Persistence Services - 2.7.10.v20211216-fe64cd39c3): org.eclipse.persistence.exceptions.DatabaseException
+Internal Exception: org.postgresql.util.PSQLException: ERROR: table "vsa_user" does not exist
+Error Code: 0
+Call: DROP TABLE vsa_user CASCADE
+Query: DataModifyQuery(sql="DROP TABLE vsa_user CASCADE")
+[EL Fine]: sql: 2023-05-18 13:18:38.726--ServerSession(1202547191)--Connection(1403413933)--Thread(Thread[main,5,main])--DROP TABLE THESISASSIGNMENTREQUEST CASCADE
+[EL Fine]: sql: 2023-05-18 13:18:38.727--ServerSession(1202547191)--Thread(Thread[main,5,main])--SELECT 1
+[EL Warning]: 2023-05-18 13:18:38.728--ServerSession(1202547191)--Thread(Thread[main,5,main])--Exception [EclipseLink-4002] (Eclipse Persistence Services - 2.7.10.v20211216-fe64cd39c3): org.eclipse.persistence.exceptions.DatabaseException
+Internal Exception: org.postgresql.util.PSQLException: ERROR: table "thesisassignmentrequest" does not exist
+Error Code: 0
+Call: DROP TABLE THESISASSIGNMENTREQUEST CASCADE
+Query: DataModifyQuery(sql="DROP TABLE THESISASSIGNMENTREQUEST CASCADE")
+[EL Fine]: sql: 2023-05-18 13:18:38.728--ServerSession(1202547191)--Connection(1403413933)--Thread(Thread[main,5,main])--DROP TABLE User_PERMISSIONS CASCADE
+[EL Fine]: sql: 2023-05-18 13:18:38.729--ServerSession(1202547191)--Thread(Thread[main,5,main])--SELECT 1
+[EL Warning]: 2023-05-18 13:18:38.729--ServerSession(1202547191)--Thread(Thread[main,5,main])--Exception [EclipseLink-4002] (Eclipse Persistence Services - 2.7.10.v20211216-fe64cd39c3): org.eclipse.persistence.exceptions.DatabaseException
+Internal Exception: org.postgresql.util.PSQLException: ERROR: table "user_permissions" does not exist
+Error Code: 0
+Call: DROP TABLE User_PERMISSIONS CASCADE
+Query: DataModifyQuery(sql="DROP TABLE User_PERMISSIONS CASCADE")
+[EL Fine]: sql: 2023-05-18 13:18:38.733--ServerSession(1202547191)--Connection(1403413933)--Thread(Thread[main,5,main])--DELETE FROM SEQUENCE WHERE SEQ_NAME = 'SEQ_GEN'
+[EL Fine]: sql: 2023-05-18 13:18:38.734--ServerSession(1202547191)--Thread(Thread[main,5,main])--SELECT 1
+[EL Warning]: 2023-05-18 13:18:38.734--ServerSession(1202547191)--Thread(Thread[main,5,main])--Exception [EclipseLink-4002] (Eclipse Persistence Services - 2.7.10.v20211216-fe64cd39c3): org.eclipse.persistence.exceptions.DatabaseException
+Internal Exception: org.postgresql.util.PSQLException: ERROR: relation "sequence" does not exist
+  Position: 13
+Error Code: 0
+Call: DELETE FROM SEQUENCE WHERE SEQ_NAME = 'SEQ_GEN'
+Query: DataModifyQuery(sql="DELETE FROM SEQUENCE WHERE SEQ_NAME = 'SEQ_GEN'")
+[EL Config]: metadata: 2023-05-18 13:18:38.735--Thread(Thread[main,5,main])--The default table generator could not locate or convert a java type (class auth.Permission) into a database type for database field (User_PERMISSIONS.PERMISSIONS). The generator uses "java.lang.String" as default java type for the field.
+[EL Fine]: sql: 2023-05-18 13:18:38.736--ServerSession(1202547191)--Connection(1403413933)--Thread(Thread[main,5,main])--CREATE TABLE STUDENT (Id BIGINT NOT NULL, EMAIL VARCHAR(255) UNIQUE, NAME VARCHAR(255), PASSWORD VARCHAR(255), program VARCHAR(255), TERM INTEGER, study_year INTEGER, PRIMARY KEY (Id))
+[EL Fine]: sql: 2023-05-18 13:18:38.763--ServerSession(1202547191)--Connection(1403413933)--Thread(Thread[main,5,main])--CREATE TABLE PEDAGOG (AISID BIGINT NOT NULL, DEPARTMENT VARCHAR(255), EMAIL VARCHAR(255) UNIQUE, INSTITUTE VARCHAR(255), NAME VARCHAR(255), PASSWORD VARCHAR(255), PRIMARY KEY (AISID))
+[EL Fine]: sql: 2023-05-18 13:18:38.781--ServerSession(1202547191)--Connection(1403413933)--Thread(Thread[main,5,main])--CREATE TABLE ZAVERECNAPRACA (ID BIGINT NOT NULL, DEADLINE DATE, DEPARTMENT VARCHAR(255), DESCRIPTION VARCHAR(255), PUBLISHEDON DATE, REGISTRATIONNUMBER VARCHAR(255) UNIQUE, STATUS VARCHAR(255), TITLE VARCHAR(255), TYPE VARCHAR(255), SUPERVISOR_AISID BIGINT, AUTHOR_Id BIGINT, PRIMARY KEY (ID))
+[EL Fine]: sql: 2023-05-18 13:18:38.796--ServerSession(1202547191)--Connection(1403413933)--Thread(Thread[main,5,main])--CREATE TABLE vsa_user (AISID BIGINT NOT NULL, PASSWORD VARCHAR(255), USERNAME VARCHAR(255), PRIMARY KEY (AISID))
+[EL Fine]: sql: 2023-05-18 13:18:38.809--ServerSession(1202547191)--Connection(1403413933)--Thread(Thread[main,5,main])--CREATE TABLE THESISASSIGNMENTREQUEST (ID BIGINT NOT NULL, STUDENTID BIGINT, TEACHERID BIGINT, PRIMARY KEY (ID))
+[EL Fine]: sql: 2023-05-18 13:18:38.818--ServerSession(1202547191)--Connection(1403413933)--Thread(Thread[main,5,main])--CREATE TABLE User_PERMISSIONS (User_AISID BIGINT, PERMISSIONS VARCHAR(255))
+[EL Fine]: sql: 2023-05-18 13:18:38.821--ServerSession(1202547191)--Connection(1403413933)--Thread(Thread[main,5,main])--ALTER TABLE ZAVERECNAPRACA ADD CONSTRAINT FK_ZAVERECNAPRACA_SUPERVISOR_AISID FOREIGN KEY (SUPERVISOR_AISID) REFERENCES PEDAGOG (AISID)
+[EL Fine]: sql: 2023-05-18 13:18:38.824--ServerSession(1202547191)--Connection(1403413933)--Thread(Thread[main,5,main])--ALTER TABLE ZAVERECNAPRACA ADD CONSTRAINT FK_ZAVERECNAPRACA_AUTHOR_Id FOREIGN KEY (AUTHOR_Id) REFERENCES STUDENT (Id)
+[EL Fine]: sql: 2023-05-18 13:18:38.827--ServerSession(1202547191)--Connection(1403413933)--Thread(Thread[main,5,main])--ALTER TABLE User_PERMISSIONS ADD CONSTRAINT FK_User_PERMISSIONS_User_AISID FOREIGN KEY (User_AISID) REFERENCES vsa_user (AISID)
+[EL Fine]: sql: 2023-05-18 13:18:38.83--ServerSession(1202547191)--Connection(1403413933)--Thread(Thread[main,5,main])--CREATE TABLE SEQUENCE (SEQ_NAME VARCHAR(50) NOT NULL, SEQ_COUNT DECIMAL(38), PRIMARY KEY (SEQ_NAME))
+[EL Fine]: sql: 2023-05-18 13:18:38.837--ServerSession(1202547191)--Connection(1403413933)--Thread(Thread[main,5,main])--SELECT * FROM SEQUENCE WHERE SEQ_NAME = 'SEQ_GEN'
+[EL Fine]: sql: 2023-05-18 13:18:38.839--ServerSession(1202547191)--Connection(1403413933)--Thread(Thread[main,5,main])--INSERT INTO SEQUENCE(SEQ_NAME, SEQ_COUNT) values ('SEQ_GEN', 0)
+[EL Fine]: sql: 2023-05-18 13:18:39.376--ServerSession(1202547191)--Connection(1403413933)--Thread(Thread[grizzly-http-server-0,5,main])--SELECT Id, EMAIL, NAME, PASSWORD, program, TERM, study_year FROM STUDENT WHERE (EMAIL = ?)
+	bind => [xstudent@stuba.sk]
+[EL Fine]: sql: 2023-05-18 13:18:39.386--ClientSession(1848139183)--Connection(1403413933)--Thread(Thread[grizzly-http-server-0,5,main])--INSERT INTO STUDENT (Id, EMAIL, NAME, PASSWORD, program, TERM, study_year) VALUES (?, ?, ?, ?, ?, ?, ?)
+	bind => [70127, xstudent@stuba.sk, Test Student, null, null, null, null]
+[EL Fine]: sql: 2023-05-18 13:18:40.124--ClientSession(1929666266)--Connection(1403413933)--Thread(Thread[grizzly-http-server-0,5,main])--INSERT INTO vsa_user (AISID, PASSWORD, USERNAME) VALUES (?, ?, ?)
+	bind => [70127, $2a$13$AqdvKhurIvaA6G3MlzuXz.i9RF8RaD1teXjt3DF4klEJFLyLWn8lW, xstudent@stuba.sk]
+[EL Fine]: sql: 2023-05-18 13:18:40.126--ClientSession(1929666266)--Connection(1403413933)--Thread(Thread[grizzly-http-server-0,5,main])--INSERT INTO User_PERMISSIONS (User_AISID, PERMISSIONS) VALUES (?, ?)
+	bind => [70127, 0]
+[EL Fine]: sql: 2023-05-18 13:18:40.71--ClientSession(729649815)--Connection(1403413933)--Thread(Thread[grizzly-http-server-0,5,main])--UPDATE STUDENT SET PASSWORD = ?, program = ?, TERM = ?, study_year = ? WHERE (Id = ?)
+	bind => [$2a$13$2DNsHEzd0k4tLly8A1HCSeVEQrhMqzRd6aSY3m1rv503rP6pF9WdO, API, 18, 8, 70127]
+2023-05-18 13:18:40.884  INFO --- [y-http-server-1] .s.f.u.v.p.JAXRSApplicationConfiguration : Recieved credentials: xstudent@stuba.sk, password
+[EL Fine]: sql: 2023-05-18 13:18:40.885--ServerSession(1202547191)--Connection(1403413933)--Thread(Thread[grizzly-http-server-1,5,main])--SELECT AISID, PASSWORD, USERNAME FROM vsa_user WHERE (USERNAME = ?)
+	bind => [xstudent@stuba.sk]
+]]></system-out>
+    <system-err><![CDATA[May 18, 2023 1:18:37 PM org.glassfish.grizzly.http.server.NetworkListener start
+INFO: Started listener bound to [docker-desktop:8080]
+May 18, 2023 1:18:37 PM org.glassfish.grizzly.http.server.HttpServer start
+INFO: [HttpServer-1] Started.
+]]></system-err>
+  </testcase>
+  <testcase name="shouldCreateStudent" classname="sk.stuba.fei.uim.vsa.pr2.StudentResourceTest" time="1.097"/>
+  <testcase name="shouldReturnUnauthorized" classname="sk.stuba.fei.uim.vsa.pr2.StudentResourceTest" time="0.093">
+    <failure message="expected: &lt;true&gt; but was: &lt;false&gt;" type="org.opentest4j.AssertionFailedError"><![CDATA[org.opentest4j.AssertionFailedError: expected: <true> but was: <false>
+	at sk.stuba.fei.uim.vsa.pr2.StudentResourceTest.shouldReturnUnauthorized(StudentResourceTest.java:113)
+]]></failure>
+  </testcase>
+  <testcase name="shouldReturnForbiddenToDeleteWithWrongStudent" classname="sk.stuba.fei.uim.vsa.pr2.StudentResourceTest" time="2.63">
+    <failure message="expected: &lt;true&gt; but was: &lt;false&gt;" type="org.opentest4j.AssertionFailedError"><![CDATA[org.opentest4j.AssertionFailedError: expected: <true> but was: <false>
+	at sk.stuba.fei.uim.vsa.pr2.StudentResourceTest.shouldReturnForbiddenToDeleteWithWrongStudent(StudentResourceTest.java:225)
+]]></failure>
+    <system-out><![CDATA[[EL Fine]: sql: 2023-05-18 13:18:42.728--ServerSession(1202547191)--Connection(1403413933)--Thread(Thread[grizzly-http-server-4,5,main])--SELECT Id, EMAIL, NAME, PASSWORD, program, TERM, study_year FROM STUDENT WHERE (EMAIL = ?)
+	bind => [xstudent@stuba.sk]
+[EL Fine]: sql: 2023-05-18 13:18:42.729--ClientSession(799487019)--Connection(1403413933)--Thread(Thread[grizzly-http-server-4,5,main])--INSERT INTO STUDENT (Id, EMAIL, NAME, PASSWORD, program, TERM, study_year) VALUES (?, ?, ?, ?, ?, ?, ?)
+	bind => [70127, xstudent@stuba.sk, Test Student, null, null, null, null]
+[EL Fine]: sql: 2023-05-18 13:18:43.211--ClientSession(582211509)--Connection(1403413933)--Thread(Thread[grizzly-http-server-4,5,main])--INSERT INTO vsa_user (AISID, PASSWORD, USERNAME) VALUES (?, ?, ?)
+	bind => [70127, $2a$13$yJwMa1vQ3iao0PZyVGYAv.HFX3ym14j8isQqSoBw8KJgtTWHANYBW, xstudent@stuba.sk]
+[EL Fine]: sql: 2023-05-18 13:18:43.212--ClientSession(582211509)--Connection(1403413933)--Thread(Thread[grizzly-http-server-4,5,main])--INSERT INTO User_PERMISSIONS (User_AISID, PERMISSIONS) VALUES (?, ?)
+	bind => [70127, 0]
+[EL Fine]: sql: 2023-05-18 13:18:43.709--ClientSession(687339375)--Connection(1403413933)--Thread(Thread[grizzly-http-server-4,5,main])--UPDATE STUDENT SET PASSWORD = ?, program = ?, TERM = ?, study_year = ? WHERE (Id = ?)
+	bind => [$2a$13$Ki4WIeZYHWFN3yprU1lsqelzpdkUdBnnFRKBOov/cg68xq1/TpyyW, API, 18, 8, 70127]
+[EL Fine]: sql: 2023-05-18 13:18:43.725--ServerSession(1202547191)--Connection(1403413933)--Thread(Thread[grizzly-http-server-5,5,main])--SELECT Id, EMAIL, NAME, PASSWORD, program, TERM, study_year FROM STUDENT WHERE (EMAIL = ?)
+	bind => [xstu@stuba.sk]
+[EL Fine]: sql: 2023-05-18 13:18:43.726--ClientSession(385569275)--Connection(1403413933)--Thread(Thread[grizzly-http-server-5,5,main])--INSERT INTO STUDENT (Id, EMAIL, NAME, PASSWORD, program, TERM, study_year) VALUES (?, ?, ?, ?, ?, ?, ?)
+	bind => [81230, xstu@stuba.sk, Testovaci Studenttt, null, null, null, null]
+[EL Fine]: sql: 2023-05-18 13:18:44.226--ClientSession(1103616385)--Connection(1403413933)--Thread(Thread[grizzly-http-server-5,5,main])--INSERT INTO vsa_user (AISID, PASSWORD, USERNAME) VALUES (?, ?, ?)
+	bind => [81230, $2a$13$GYTjcCBDqCkwUC6lypRnROHEZUw1M/6BJP8ET6Vxy4kZm4j6vdV1u, xstu@stuba.sk]
+[EL Fine]: sql: 2023-05-18 13:18:44.227--ClientSession(1103616385)--Connection(1403413933)--Thread(Thread[grizzly-http-server-5,5,main])--INSERT INTO User_PERMISSIONS (User_AISID, PERMISSIONS) VALUES (?, ?)
+	bind => [81230, 0]
+[EL Fine]: sql: 2023-05-18 13:18:44.716--ClientSession(1226826389)--Connection(1403413933)--Thread(Thread[grizzly-http-server-5,5,main])--UPDATE STUDENT SET PASSWORD = ?, program = ?, TERM = ?, study_year = ? WHERE (Id = ?)
+	bind => [$2a$13$F2fI.WwdmMS3Got0.n3RNutr7vCXoKLVRsjapHUCvfwYtOB7U7xS6, B-API, 6, 3, 81230]
+2023-05-18 13:18:44.732  INFO --- [y-http-server-6] .s.f.u.v.p.JAXRSApplicationConfiguration : Recieved credentials: xstu@stuba.sk, password
+[EL Fine]: sql: 2023-05-18 13:18:44.733--ServerSession(1202547191)--Connection(1403413933)--Thread(Thread[grizzly-http-server-6,5,main])--SELECT AISID, PASSWORD, USERNAME FROM vsa_user WHERE (USERNAME = ?)
+	bind => [xstu@stuba.sk]
+]]></system-out>
+  </testcase>
+  <testcase name="shouldGetAllStudents" classname="sk.stuba.fei.uim.vsa.pr2.StudentResourceTest" time="2.645">
+    <failure message="expected: &lt;200&gt; but was: &lt;401&gt;" type="org.opentest4j.AssertionFailedError"><![CDATA[org.opentest4j.AssertionFailedError: expected: <200> but was: <401>
+	at sk.stuba.fei.uim.vsa.pr2.StudentResourceTest.shouldGetAllStudents(StudentResourceTest.java:94)
+]]></failure>
+    <system-out><![CDATA[[EL Fine]: sql: 2023-05-18 13:18:45.368--ServerSession(1202547191)--Connection(1403413933)--Thread(Thread[grizzly-http-server-7,5,main])--SELECT Id, EMAIL, NAME, PASSWORD, program, TERM, study_year FROM STUDENT WHERE (EMAIL = ?)
+	bind => [xstudent@stuba.sk]
+[EL Fine]: sql: 2023-05-18 13:18:45.369--ClientSession(794308568)--Connection(1403413933)--Thread(Thread[grizzly-http-server-7,5,main])--INSERT INTO STUDENT (Id, EMAIL, NAME, PASSWORD, program, TERM, study_year) VALUES (?, ?, ?, ?, ?, ?, ?)
+	bind => [70127, xstudent@stuba.sk, Test Student, null, null, null, null]
+[EL Fine]: sql: 2023-05-18 13:18:45.873--ClientSession(960576555)--Connection(1403413933)--Thread(Thread[grizzly-http-server-7,5,main])--INSERT INTO vsa_user (AISID, PASSWORD, USERNAME) VALUES (?, ?, ?)
+	bind => [70127, $2a$13$t5Akr2fFWbHTEFIwJID33.y6S4HBhdbOEjwG378DorJYVS.um7y.K, xstudent@stuba.sk]
+[EL Fine]: sql: 2023-05-18 13:18:45.874--ClientSession(960576555)--Connection(1403413933)--Thread(Thread[grizzly-http-server-7,5,main])--INSERT INTO User_PERMISSIONS (User_AISID, PERMISSIONS) VALUES (?, ?)
+	bind => [70127, 0]
+[EL Fine]: sql: 2023-05-18 13:18:46.378--ClientSession(836651433)--Connection(1403413933)--Thread(Thread[grizzly-http-server-7,5,main])--UPDATE STUDENT SET PASSWORD = ?, program = ?, TERM = ?, study_year = ? WHERE (Id = ?)
+	bind => [$2a$13$D047JsZT4djC7qHLyAlRWuU2YXsH3bWYOlLNyeB7J9vjoIhXhfdfa, API, 18, 8, 70127]
+[EL Fine]: sql: 2023-05-18 13:18:46.395--ServerSession(1202547191)--Connection(1403413933)--Thread(Thread[grizzly-http-server-8,5,main])--SELECT Id, EMAIL, NAME, PASSWORD, program, TERM, study_year FROM STUDENT WHERE (EMAIL = ?)
+	bind => [xstu@stuba.sk]
+[EL Fine]: sql: 2023-05-18 13:18:46.396--ClientSession(957026946)--Connection(1403413933)--Thread(Thread[grizzly-http-server-8,5,main])--INSERT INTO STUDENT (Id, EMAIL, NAME, PASSWORD, program, TERM, study_year) VALUES (?, ?, ?, ?, ?, ?, ?)
+	bind => [81230, xstu@stuba.sk, Testovaci Studenttt, null, null, null, null]
+[EL Fine]: sql: 2023-05-18 13:18:46.896--ClientSession(402604208)--Connection(1403413933)--Thread(Thread[grizzly-http-server-8,5,main])--INSERT INTO vsa_user (AISID, PASSWORD, USERNAME) VALUES (?, ?, ?)
+	bind => [81230, $2a$13$gJPlEBsU0RhyeWD9N3SjvurXNu03EBZDfVTP.SNb.ci0FVxmGJ46i, xstu@stuba.sk]
+[EL Fine]: sql: 2023-05-18 13:18:46.897--ClientSession(402604208)--Connection(1403413933)--Thread(Thread[grizzly-http-server-8,5,main])--INSERT INTO User_PERMISSIONS (User_AISID, PERMISSIONS) VALUES (?, ?)
+	bind => [81230, 0]
+[EL Fine]: sql: 2023-05-18 13:18:47.396--ClientSession(29358218)--Connection(1403413933)--Thread(Thread[grizzly-http-server-8,5,main])--UPDATE STUDENT SET PASSWORD = ?, program = ?, TERM = ?, study_year = ? WHERE (Id = ?)
+	bind => [$2a$13$wl0.aGeWleoBsSkwPTsK2.wxdCCWDTZRjwqEUEzJT0xlg8CyPCfSK, B-API, 6, 3, 81230]
+2023-05-18 13:18:47.411  INFO --- [y-http-server-9] .s.f.u.v.p.JAXRSApplicationConfiguration : Recieved credentials: xstudent@stuba.sk, password
+[EL Fine]: sql: 2023-05-18 13:18:47.412--ServerSession(1202547191)--Connection(1403413933)--Thread(Thread[grizzly-http-server-9,5,main])--SELECT AISID, PASSWORD, USERNAME FROM vsa_user WHERE (USERNAME = ?)
+	bind => [xstudent@stuba.sk]
+]]></system-out>
+  </testcase>
+  <testcase name="shouldCreateStudentWithOnlyRequiredProperties" classname="sk.stuba.fei.uim.vsa.pr2.StudentResourceTest" time="1.106"/>
+  <testcase name="shouldGetEmptyList" classname="sk.stuba.fei.uim.vsa.pr2.StudentResourceTest" time="1.136">
+    <failure message="expected: &lt;200&gt; but was: &lt;401&gt;" type="org.opentest4j.AssertionFailedError"><![CDATA[org.opentest4j.AssertionFailedError: expected: <200> but was: <401>
+	at sk.stuba.fei.uim.vsa.pr2.StudentResourceTest.shouldGetEmptyList(StudentResourceTest.java:126)
+]]></failure>
+    <system-out><![CDATA[[EL Fine]: sql: 2023-05-18 13:18:49.104--ServerSession(1202547191)--Connection(1403413933)--Thread(Thread[grizzly-http-server-11,5,main])--SELECT AISID, DEPARTMENT, EMAIL, INSTITUTE, NAME, PASSWORD FROM PEDAGOG WHERE (EMAIL = ?)
+	bind => [ucitel.test@stuba.sk]
+[EL Fine]: sql: 2023-05-18 13:18:49.106--ClientSession(1748444112)--Connection(1403413933)--Thread(Thread[grizzly-http-server-11,5,main])--INSERT INTO PEDAGOG (AISID, DEPARTMENT, EMAIL, INSTITUTE, NAME, PASSWORD) VALUES (?, ?, ?, ?, ?, ?)
+	bind => [45678, null, ucitel.test@stuba.sk, SI, Testovaci ucitel, null]
+[EL Fine]: sql: 2023-05-18 13:18:49.607--ClientSession(325273568)--Connection(1403413933)--Thread(Thread[grizzly-http-server-11,5,main])--INSERT INTO vsa_user (AISID, PASSWORD, USERNAME) VALUES (?, ?, ?)
+	bind => [45678, $2a$13$6rGI.HabRkY14FTiU1sazeQY7PO7fR18ULzBoL3zeBqGQ1y09bJ5q, ucitel.test@stuba.sk]
+[EL Fine]: sql: 2023-05-18 13:18:49.609--ClientSession(325273568)--Connection(1403413933)--Thread(Thread[grizzly-http-server-11,5,main])--INSERT INTO User_PERMISSIONS (User_AISID, PERMISSIONS) VALUES (?, ?)
+	bind => [45678, 1]
+[EL Fine]: sql: 2023-05-18 13:18:49.617--ClientSession(1499753733)--Connection(1403413933)--Thread(Thread[grizzly-http-server-11,5,main])--UPDATE PEDAGOG SET DEPARTMENT = ?, INSTITUTE = ? WHERE (AISID = ?)
+	bind => [SI, UIM, 45678]
+2023-05-18 13:18:49.639  INFO --- [-http-server-12] .s.f.u.v.p.JAXRSApplicationConfiguration : Recieved credentials: ucitel.test@stuba.sk, password
+[EL Fine]: sql: 2023-05-18 13:18:49.639--ServerSession(1202547191)--Connection(1403413933)--Thread(Thread[grizzly-http-server-12,5,main])--SELECT AISID, PASSWORD, USERNAME FROM vsa_user WHERE (USERNAME = ?)
+	bind => [ucitel.test@stuba.sk]
+]]></system-out>
+  </testcase>
+  <testcase name="shouldCallWithoutBodyAndReturnError" classname="sk.stuba.fei.uim.vsa.pr2.StudentResourceTest" time="0.087"/>
+  <testcase name="shouldDeleteStudent" classname="sk.stuba.fei.uim.vsa.pr2.StudentResourceTest" time="1.614">
+    <failure message="expected: &lt;200&gt; but was: &lt;401&gt;" type="org.opentest4j.AssertionFailedError"><![CDATA[org.opentest4j.AssertionFailedError: expected: <200> but was: <401>
+	at sk.stuba.fei.uim.vsa.pr2.StudentResourceTest.shouldDeleteStudent(StudentResourceTest.java:181)
+]]></failure>
+    <system-out><![CDATA[[EL Fine]: sql: 2023-05-18 13:18:50.339--ServerSession(1202547191)--Connection(1403413933)--Thread(Thread[grizzly-http-server-14,5,main])--SELECT Id, EMAIL, NAME, PASSWORD, program, TERM, study_year FROM STUDENT WHERE (EMAIL = ?)
+	bind => [xstudent@stuba.sk]
+[EL Fine]: sql: 2023-05-18 13:18:50.341--ClientSession(1085838079)--Connection(1403413933)--Thread(Thread[grizzly-http-server-14,5,main])--INSERT INTO STUDENT (Id, EMAIL, NAME, PASSWORD, program, TERM, study_year) VALUES (?, ?, ?, ?, ?, ?, ?)
+	bind => [70127, xstudent@stuba.sk, Test Student, null, null, null, null]
+[EL Fine]: sql: 2023-05-18 13:18:50.832--ClientSession(1595361034)--Connection(1403413933)--Thread(Thread[grizzly-http-server-14,5,main])--INSERT INTO vsa_user (AISID, PASSWORD, USERNAME) VALUES (?, ?, ?)
+	bind => [70127, $2a$13$QFPXov9boJVRE3uWh8Zqv.Ee8P7Gj0x.2NzB2WWQAm/zg/zbaFPmu, xstudent@stuba.sk]
+[EL Fine]: sql: 2023-05-18 13:18:50.833--ClientSession(1595361034)--Connection(1403413933)--Thread(Thread[grizzly-http-server-14,5,main])--INSERT INTO User_PERMISSIONS (User_AISID, PERMISSIONS) VALUES (?, ?)
+	bind => [70127, 0]
+[EL Fine]: sql: 2023-05-18 13:18:51.341--ClientSession(765235783)--Connection(1403413933)--Thread(Thread[grizzly-http-server-14,5,main])--UPDATE STUDENT SET PASSWORD = ?, program = ?, TERM = ?, study_year = ? WHERE (Id = ?)
+	bind => [$2a$13$DAGDcp.gaoGt9zqjIlPdIu/SuTPuZWh/OwX0iTOQEjDmyIpbefhQK, API, 18, 8, 70127]
+2023-05-18 13:18:51.357  INFO --- [-http-server-15] .s.f.u.v.p.JAXRSApplicationConfiguration : Recieved credentials: xstudent@stuba.sk, password
+[EL Fine]: sql: 2023-05-18 13:18:51.357--ServerSession(1202547191)--Connection(1403413933)--Thread(Thread[grizzly-http-server-15,5,main])--SELECT AISID, PASSWORD, USERNAME FROM vsa_user WHERE (USERNAME = ?)
+	bind => [xstudent@stuba.sk]
+]]></system-out>
+  </testcase>
+  <testcase name="shouldGetStudent" classname="sk.stuba.fei.uim.vsa.pr2.StudentResourceTest" time="1.63">
+    <failure message="expected: &lt;200&gt; but was: &lt;401&gt;" type="org.opentest4j.AssertionFailedError"><![CDATA[org.opentest4j.AssertionFailedError: expected: <200> but was: <401>
+	at sk.stuba.fei.uim.vsa.pr2.StudentResourceTest.shouldGetStudent(StudentResourceTest.java:145)
+]]></failure>
+    <system-out><![CDATA[[EL Fine]: sql: 2023-05-18 13:18:51.959--ServerSession(1202547191)--Connection(1403413933)--Thread(Thread[grizzly-http-server-16,5,main])--SELECT Id, EMAIL, NAME, PASSWORD, program, TERM, study_year FROM STUDENT WHERE (EMAIL = ?)
+	bind => [xstudent@stuba.sk]
+[EL Fine]: sql: 2023-05-18 13:18:51.959--ClientSession(2004712243)--Connection(1403413933)--Thread(Thread[grizzly-http-server-16,5,main])--INSERT INTO STUDENT (Id, EMAIL, NAME, PASSWORD, program, TERM, study_year) VALUES (?, ?, ?, ?, ?, ?, ?)
+	bind => [70127, xstudent@stuba.sk, Test Student, null, null, null, null]
+[EL Fine]: sql: 2023-05-18 13:18:52.474--ClientSession(1883351743)--Connection(1403413933)--Thread(Thread[grizzly-http-server-16,5,main])--INSERT INTO vsa_user (AISID, PASSWORD, USERNAME) VALUES (?, ?, ?)
+	bind => [70127, $2a$13$.vGFNXDt27pU2vbqYMT0TOzL2Vz.d77GUnq18OQPHuvl/8m3q6SaS, xstudent@stuba.sk]
+[EL Fine]: sql: 2023-05-18 13:18:52.474--ClientSession(1883351743)--Connection(1403413933)--Thread(Thread[grizzly-http-server-16,5,main])--INSERT INTO User_PERMISSIONS (User_AISID, PERMISSIONS) VALUES (?, ?)
+	bind => [70127, 0]
+[EL Fine]: sql: 2023-05-18 13:18:52.972--ClientSession(965665558)--Connection(1403413933)--Thread(Thread[grizzly-http-server-16,5,main])--UPDATE STUDENT SET PASSWORD = ?, program = ?, TERM = ?, study_year = ? WHERE (Id = ?)
+	bind => [$2a$13$oGakU/nZW1ZUTQvMTPO2XufYm.6BU8NaeS6L87qb7XgNgFDi7zTu., API, 18, 8, 70127]
+2023-05-18 13:18:52.987  INFO --- [-http-server-17] .s.f.u.v.p.JAXRSApplicationConfiguration : Recieved credentials: xstudent@stuba.sk, password
+[EL Fine]: sql: 2023-05-18 13:18:52.988--ServerSession(1202547191)--Connection(1403413933)--Thread(Thread[grizzly-http-server-17,5,main])--SELECT AISID, PASSWORD, USERNAME FROM vsa_user WHERE (USERNAME = ?)
+	bind => [xstudent@stuba.sk]
+]]></system-out>
+  </testcase>
+</testsuite>
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="sk.stuba.fei.uim.vsa.pr2.ThesisResourceTest" time="23.199" tests="21" errors="0" skipped="0" failures="21">
+  <properties>
+    <property name="awt.toolkit" value="sun.awt.X11.XToolkit"/>
+    <property name="file.encoding.pkg" value="sun.io"/>
+    <property name="java.specification.version" value="1.8"/>
+    <property name="sun.cpu.isalist" value=""/>
+    <property name="sun.jnu.encoding" value="UTF-8"/>
+    <property name="java.class.path" value="/tested--b-vsa-ls23-projekt-2/target/test-classes:/tested--b-vsa-ls23-projekt-2/target/classes:/root/.m2/repository/org/apache/derby/derbyclient/10.14.2.0/derbyclient-10.14.2.0.jar:/root/.m2/repository/org/glassfish/jersey/containers/jersey-container-grizzly2-http/2.39.1/jersey-container-grizzly2-http-2.39.1.jar:/root/.m2/repository/org/glassfish/hk2/external/jakarta.inject/2.6.1/jakarta.inject-2.6.1.jar:/root/.m2/repository/org/glassfish/grizzly/grizzly-http-server/2.4.4/grizzly-http-server-2.4.4.jar:/root/.m2/repository/org/glassfish/grizzly/grizzly-http/2.4.4/grizzly-http-2.4.4.jar:/root/.m2/repository/org/glassfish/grizzly/grizzly-framework/2.4.4/grizzly-framework-2.4.4.jar:/root/.m2/repository/org/glassfish/jersey/core/jersey-common/2.39.1/jersey-common-2.39.1.jar:/root/.m2/repository/jakarta/annotation/jakarta.annotation-api/1.3.5/jakarta.annotation-api-1.3.5.jar:/root/.m2/repository/org/glassfish/hk2/osgi-resource-locator/1.0.3/osgi-resource-locator-1.0.3.jar:/root/.m2/repository/org/glassfish/jersey/core/jersey-server/2.39.1/jersey-server-2.39.1.jar:/root/.m2/repository/org/glassfish/jersey/core/jersey-client/2.39.1/jersey-client-2.39.1.jar:/root/.m2/repository/jakarta/validation/jakarta.validation-api/2.0.2/jakarta.validation-api-2.0.2.jar:/root/.m2/repository/jakarta/ws/rs/jakarta.ws.rs-api/2.1.6/jakarta.ws.rs-api-2.1.6.jar:/root/.m2/repository/org/glassfish/jersey/media/jersey-media-moxy/2.39.1/jersey-media-moxy-2.39.1.jar:/root/.m2/repository/org/glassfish/jersey/ext/jersey-entity-filtering/2.39.1/jersey-entity-filtering-2.39.1.jar:/root/.m2/repository/jakarta/json/jakarta.json-api/1.1.6/jakarta.json-api-1.1.6.jar:/root/.m2/repository/org/glassfish/jakarta.json/1.1.6/jakarta.json-1.1.6.jar:/root/.m2/repository/org/eclipse/persistence/org.eclipse.persistence.moxy/2.7.10/org.eclipse.persistence.moxy-2.7.10.jar:/root/.m2/repository/org/eclipse/persistence/org.eclipse.persistence.core/2.7.10/org.eclipse.persistence.core-2.7.10.jar:/root/.m2/repository/org/eclipse/persistence/org.eclipse.persistence.asm/9.2.0/org.eclipse.persistence.asm-9.2.0.jar:/root/.m2/repository/org/glassfish/jersey/media/jersey-media-json-jackson/2.39.1/jersey-media-json-jackson-2.39.1.jar:/root/.m2/repository/com/fasterxml/jackson/core/jackson-annotations/2.14.1/jackson-annotations-2.14.1.jar:/root/.m2/repository/com/fasterxml/jackson/core/jackson-databind/2.14.1/jackson-databind-2.14.1.jar:/root/.m2/repository/com/fasterxml/jackson/module/jackson-module-jaxb-annotations/2.14.1/jackson-module-jaxb-annotations-2.14.1.jar:/root/.m2/repository/jakarta/xml/bind/jakarta.xml.bind-api/2.3.3/jakarta.xml.bind-api-2.3.3.jar:/root/.m2/repository/org/glassfish/jersey/inject/jersey-hk2/2.39.1/jersey-hk2-2.39.1.jar:/root/.m2/repository/org/glassfish/hk2/hk2-locator/2.6.1/hk2-locator-2.6.1.jar:/root/.m2/repository/org/glassfish/hk2/external/aopalliance-repackaged/2.6.1/aopalliance-repackaged-2.6.1.jar:/root/.m2/repository/org/glassfish/hk2/hk2-api/2.6.1/hk2-api-2.6.1.jar:/root/.m2/repository/org/glassfish/hk2/hk2-utils/2.6.1/hk2-utils-2.6.1.jar:/root/.m2/repository/org/javassist/javassist/3.29.0-GA/javassist-3.29.0-GA.jar:/root/.m2/repository/at/favre/lib/bcrypt/0.10.2/bcrypt-0.10.2.jar:/root/.m2/repository/at/favre/lib/bytes/1.5.0/bytes-1.5.0.jar:/root/.m2/repository/org/postgresql/postgresql/42.5.4/postgresql-42.5.4.jar:/root/.m2/repository/org/checkerframework/checker-qual/3.5.0/checker-qual-3.5.0.jar:/root/.m2/repository/org/eclipse/persistence/eclipselink/2.7.11/eclipselink-2.7.11.jar:/root/.m2/repository/org/eclipse/persistence/jakarta.persistence/2.2.3/jakarta.persistence-2.2.3.jar:/root/.m2/repository/org/eclipse/persistence/commonj.sdo/2.1.1/commonj.sdo-2.1.1.jar:/root/.m2/repository/org/eclipse/persistence/javax.persistence/2.2.1/javax.persistence-2.2.1.jar:/root/.m2/repository/org/projectlombok/lombok/1.18.24/lombok-1.18.24.jar:/root/.m2/repository/org/reflections/reflections/0.10.2/reflections-0.10.2.jar:/root/.m2/repository/com/google/code/findbugs/jsr305/3.0.2/jsr305-3.0.2.jar:/root/.m2/repository/org/junit/jupiter/junit-jupiter-engine/5.8.2/junit-jupiter-engine-5.8.2.jar:/root/.m2/repository/org/junit/platform/junit-platform-engine/1.8.2/junit-platform-engine-1.8.2.jar:/root/.m2/repository/org/apiguardian/apiguardian-api/1.1.2/apiguardian-api-1.1.2.jar:/root/.m2/repository/org/junit/jupiter/junit-jupiter-api/5.8.2/junit-jupiter-api-5.8.2.jar:/root/.m2/repository/org/opentest4j/opentest4j/1.2.0/opentest4j-1.2.0.jar:/root/.m2/repository/org/junit/platform/junit-platform-commons/1.8.2/junit-platform-commons-1.8.2.jar:/root/.m2/repository/ch/qos/logback/logback-core/1.3.5/logback-core-1.3.5.jar:/root/.m2/repository/org/slf4j/slf4j-api/2.0.4/slf4j-api-2.0.4.jar:/root/.m2/repository/ch/qos/logback/logback-classic/1.3.5/logback-classic-1.3.5.jar:/root/.m2/repository/com/fasterxml/jackson/datatype/jackson-datatype-jsr310/2.15.1/jackson-datatype-jsr310-2.15.1.jar:/root/.m2/repository/com/fasterxml/jackson/core/jackson-core/2.15.1/jackson-core-2.15.1.jar:"/>
+    <property name="java.vm.vendor" value="Oracle Corporation"/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="java.vendor.url" value="http://java.oracle.com/"/>
+    <property name="user.timezone" value=""/>
+    <property name="java.vm.specification.version" value="1.8"/>
+    <property name="os.name" value="Linux"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="sun.boot.library.path" value="/usr/local/openjdk-8/jre/lib/amd64"/>
+    <property name="sun.java.command" value="/tested--b-vsa-ls23-projekt-2/target/surefire/surefirebooter3639320439650527394.jar /tested--b-vsa-ls23-projekt-2/target/surefire 2023-05-18T13-18-35_499-jvmRun1 surefire8438766231838400500tmp surefire_02617501296421621447tmp"/>
+    <property name="surefire.test.class.path" value="/tested--b-vsa-ls23-projekt-2/target/test-classes:/tested--b-vsa-ls23-projekt-2/target/classes:/root/.m2/repository/org/apache/derby/derbyclient/10.14.2.0/derbyclient-10.14.2.0.jar:/root/.m2/repository/org/glassfish/jersey/containers/jersey-container-grizzly2-http/2.39.1/jersey-container-grizzly2-http-2.39.1.jar:/root/.m2/repository/org/glassfish/hk2/external/jakarta.inject/2.6.1/jakarta.inject-2.6.1.jar:/root/.m2/repository/org/glassfish/grizzly/grizzly-http-server/2.4.4/grizzly-http-server-2.4.4.jar:/root/.m2/repository/org/glassfish/grizzly/grizzly-http/2.4.4/grizzly-http-2.4.4.jar:/root/.m2/repository/org/glassfish/grizzly/grizzly-framework/2.4.4/grizzly-framework-2.4.4.jar:/root/.m2/repository/org/glassfish/jersey/core/jersey-common/2.39.1/jersey-common-2.39.1.jar:/root/.m2/repository/jakarta/annotation/jakarta.annotation-api/1.3.5/jakarta.annotation-api-1.3.5.jar:/root/.m2/repository/org/glassfish/hk2/osgi-resource-locator/1.0.3/osgi-resource-locator-1.0.3.jar:/root/.m2/repository/org/glassfish/jersey/core/jersey-server/2.39.1/jersey-server-2.39.1.jar:/root/.m2/repository/org/glassfish/jersey/core/jersey-client/2.39.1/jersey-client-2.39.1.jar:/root/.m2/repository/jakarta/validation/jakarta.validation-api/2.0.2/jakarta.validation-api-2.0.2.jar:/root/.m2/repository/jakarta/ws/rs/jakarta.ws.rs-api/2.1.6/jakarta.ws.rs-api-2.1.6.jar:/root/.m2/repository/org/glassfish/jersey/media/jersey-media-moxy/2.39.1/jersey-media-moxy-2.39.1.jar:/root/.m2/repository/org/glassfish/jersey/ext/jersey-entity-filtering/2.39.1/jersey-entity-filtering-2.39.1.jar:/root/.m2/repository/jakarta/json/jakarta.json-api/1.1.6/jakarta.json-api-1.1.6.jar:/root/.m2/repository/org/glassfish/jakarta.json/1.1.6/jakarta.json-1.1.6.jar:/root/.m2/repository/org/eclipse/persistence/org.eclipse.persistence.moxy/2.7.10/org.eclipse.persistence.moxy-2.7.10.jar:/root/.m2/repository/org/eclipse/persistence/org.eclipse.persistence.core/2.7.10/org.eclipse.persistence.core-2.7.10.jar:/root/.m2/repository/org/eclipse/persistence/org.eclipse.persistence.asm/9.2.0/org.eclipse.persistence.asm-9.2.0.jar:/root/.m2/repository/org/glassfish/jersey/media/jersey-media-json-jackson/2.39.1/jersey-media-json-jackson-2.39.1.jar:/root/.m2/repository/com/fasterxml/jackson/core/jackson-annotations/2.14.1/jackson-annotations-2.14.1.jar:/root/.m2/repository/com/fasterxml/jackson/core/jackson-databind/2.14.1/jackson-databind-2.14.1.jar:/root/.m2/repository/com/fasterxml/jackson/module/jackson-module-jaxb-annotations/2.14.1/jackson-module-jaxb-annotations-2.14.1.jar:/root/.m2/repository/jakarta/xml/bind/jakarta.xml.bind-api/2.3.3/jakarta.xml.bind-api-2.3.3.jar:/root/.m2/repository/org/glassfish/jersey/inject/jersey-hk2/2.39.1/jersey-hk2-2.39.1.jar:/root/.m2/repository/org/glassfish/hk2/hk2-locator/2.6.1/hk2-locator-2.6.1.jar:/root/.m2/repository/org/glassfish/hk2/external/aopalliance-repackaged/2.6.1/aopalliance-repackaged-2.6.1.jar:/root/.m2/repository/org/glassfish/hk2/hk2-api/2.6.1/hk2-api-2.6.1.jar:/root/.m2/repository/org/glassfish/hk2/hk2-utils/2.6.1/hk2-utils-2.6.1.jar:/root/.m2/repository/org/javassist/javassist/3.29.0-GA/javassist-3.29.0-GA.jar:/root/.m2/repository/at/favre/lib/bcrypt/0.10.2/bcrypt-0.10.2.jar:/root/.m2/repository/at/favre/lib/bytes/1.5.0/bytes-1.5.0.jar:/root/.m2/repository/org/postgresql/postgresql/42.5.4/postgresql-42.5.4.jar:/root/.m2/repository/org/checkerframework/checker-qual/3.5.0/checker-qual-3.5.0.jar:/root/.m2/repository/org/eclipse/persistence/eclipselink/2.7.11/eclipselink-2.7.11.jar:/root/.m2/repository/org/eclipse/persistence/jakarta.persistence/2.2.3/jakarta.persistence-2.2.3.jar:/root/.m2/repository/org/eclipse/persistence/commonj.sdo/2.1.1/commonj.sdo-2.1.1.jar:/root/.m2/repository/org/eclipse/persistence/javax.persistence/2.2.1/javax.persistence-2.2.1.jar:/root/.m2/repository/org/projectlombok/lombok/1.18.24/lombok-1.18.24.jar:/root/.m2/repository/org/reflections/reflections/0.10.2/reflections-0.10.2.jar:/root/.m2/repository/com/google/code/findbugs/jsr305/3.0.2/jsr305-3.0.2.jar:/root/.m2/repository/org/junit/jupiter/junit-jupiter-engine/5.8.2/junit-jupiter-engine-5.8.2.jar:/root/.m2/repository/org/junit/platform/junit-platform-engine/1.8.2/junit-platform-engine-1.8.2.jar:/root/.m2/repository/org/apiguardian/apiguardian-api/1.1.2/apiguardian-api-1.1.2.jar:/root/.m2/repository/org/junit/jupiter/junit-jupiter-api/5.8.2/junit-jupiter-api-5.8.2.jar:/root/.m2/repository/org/opentest4j/opentest4j/1.2.0/opentest4j-1.2.0.jar:/root/.m2/repository/org/junit/platform/junit-platform-commons/1.8.2/junit-platform-commons-1.8.2.jar:/root/.m2/repository/ch/qos/logback/logback-core/1.3.5/logback-core-1.3.5.jar:/root/.m2/repository/org/slf4j/slf4j-api/2.0.4/slf4j-api-2.0.4.jar:/root/.m2/repository/ch/qos/logback/logback-classic/1.3.5/logback-classic-1.3.5.jar:/root/.m2/repository/com/fasterxml/jackson/datatype/jackson-datatype-jsr310/2.15.1/jackson-datatype-jsr310-2.15.1.jar:/root/.m2/repository/com/fasterxml/jackson/core/jackson-core/2.15.1/jackson-core-2.15.1.jar:"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="user.home" value="/root"/>
+    <property name="user.language" value="en"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.home" value="/usr/local/openjdk-8/jre"/>
+    <property name="basedir" value="/tested--b-vsa-ls23-projekt-2"/>
+    <property name="file.separator" value="/"/>
+    <property name="line.separator" value="&#10;"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="java.awt.graphicsenv" value="sun.awt.X11GraphicsEnvironment"/>
+    <property name="surefire.real.class.path" value="/tested--b-vsa-ls23-projekt-2/target/surefire/surefirebooter3639320439650527394.jar"/>
+    <property name="sun.boot.class.path" value="/usr/local/openjdk-8/jre/lib/resources.jar:/usr/local/openjdk-8/jre/lib/rt.jar:/usr/local/openjdk-8/jre/lib/sunrsasign.jar:/usr/local/openjdk-8/jre/lib/jsse.jar:/usr/local/openjdk-8/jre/lib/jce.jar:/usr/local/openjdk-8/jre/lib/charsets.jar:/usr/local/openjdk-8/jre/lib/jfr.jar:/usr/local/openjdk-8/jre/classes"/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="java.runtime.version" value="1.8.0_342-b07"/>
+    <property name="user.name" value="root"/>
+    <property name="path.separator" value=":"/>
+    <property name="os.version" value="5.15.90.1-microsoft-standard-WSL2"/>
+    <property name="java.endorsed.dirs" value="/usr/local/openjdk-8/jre/lib/endorsed"/>
+    <property name="java.runtime.name" value="OpenJDK Runtime Environment"/>
+    <property name="file.encoding" value="UTF-8"/>
+    <property name="java.vm.name" value="OpenJDK 64-Bit Server VM"/>
+    <property name="localRepository" value="/root/.m2/repository"/>
+    <property name="java.vendor.url.bug" value="http://bugreport.sun.com/bugreport/"/>
+    <property name="java.io.tmpdir" value="/tmp"/>
+    <property name="java.version" value="1.8.0_342"/>
+    <property name="user.dir" value="/tested--b-vsa-ls23-projekt-2"/>
+    <property name="os.arch" value="amd64"/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="java.awt.printerjob" value="sun.print.PSPrinterJob"/>
+    <property name="sun.os.patch.level" value="unknown"/>
+    <property name="java.library.path" value="/usr/java/packages/lib/amd64:/usr/lib64:/lib64:/lib:/usr/lib"/>
+    <property name="java.vm.info" value="mixed mode"/>
+    <property name="java.vendor" value="Oracle Corporation"/>
+    <property name="java.vm.version" value="25.342-b07"/>
+    <property name="java.ext.dirs" value="/usr/local/openjdk-8/jre/lib/ext:/usr/java/packages/lib/ext"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
+    <property name="java.class.version" value="52.0"/>
+  </properties>
+  <testcase name="shouldCallCreateThesisWithLoggedStudent" classname="sk.stuba.fei.uim.vsa.pr2.ThesisResourceTest" time="1.796">
+    <failure message="expected: &lt;true&gt; but was: &lt;false&gt;" type="org.opentest4j.AssertionFailedError"><![CDATA[org.opentest4j.AssertionFailedError: expected: <true> but was: <false>
+	at sk.stuba.fei.uim.vsa.pr2.ThesisResourceTest.shouldCallCreateThesisWithLoggedStudent(ThesisResourceTest.java:130)
+]]></failure>
+    <system-out><![CDATA[2023-05-18 13:18:53.482  INFO --- [           main] s.s.fei.uim.vsa.pr2.utils.ResourceTest   : Starting HTTP server for testing
+2023-05-18 13:18:53.482  INFO --- [           main] s.s.fei.uim.vsa.pr2.Project2Application  : Starting Grizzly2 HTTP server...
+2023-05-18 13:18:53.482  INFO --- [           main] s.s.fei.uim.vsa.pr2.Project2Application  : Server listening on http://docker-desktop:8080/api
+2023-05-18 13:18:53.497  INFO --- [           main] org.reflections.Reflections              : Reflections took 7 ms to scan 2 urls, producing 13 keys and 29 values
+2023-05-18 13:18:53.497  INFO --- [           main] .s.f.u.v.p.JAXRSApplicationConfiguration : Registered resource classes: [class sk.stuba.fei.uim.vsa.pr2.api.StudentResource, class sk.stuba.fei.uim.vsa.pr2.api.TeacherResource, class sk.stuba.fei.uim.vsa.pr2.api.ThesisResource]
+2023-05-18 13:18:53.497  INFO --- [           main] .s.f.u.v.p.JAXRSApplicationConfiguration : Registered feature providers: []
+2023-05-18 13:18:53.558  INFO --- [           main] s.s.fei.uim.vsa.pr2.utils.ResourceTest   : Creating client for HTTP server
+2023-05-18 13:18:53.559  INFO --- [           main] s.s.fei.uim.vsa.pr2.utils.ResourceTest   : Client created JerseyWebTarget { http://docker-desktop:8080/api }
+[EL Fine]: sql: 2023-05-18 13:18:53.697--ServerSession(1202547191)--Connection(1403413933)--Thread(Thread[grizzly-http-server-0,5,main])--SELECT Id, EMAIL, NAME, PASSWORD, program, TERM, study_year FROM STUDENT WHERE (EMAIL = ?)
+	bind => [xstudent@stuba.sk]
+[EL Fine]: sql: 2023-05-18 13:18:53.698--ClientSession(931411544)--Connection(1403413933)--Thread(Thread[grizzly-http-server-0,5,main])--INSERT INTO STUDENT (Id, EMAIL, NAME, PASSWORD, program, TERM, study_year) VALUES (?, ?, ?, ?, ?, ?, ?)
+	bind => [70127, xstudent@stuba.sk, Test Student, null, null, null, null]
+[EL Fine]: sql: 2023-05-18 13:18:54.258--ClientSession(2101793391)--Connection(1403413933)--Thread(Thread[grizzly-http-server-0,5,main])--INSERT INTO vsa_user (AISID, PASSWORD, USERNAME) VALUES (?, ?, ?)
+	bind => [70127, $2a$13$WBSZ3C1EFO1yP1UU1GZWO.J6A/XuWpSXdt.p8fRktJ24n34qLB8NO, xstudent@stuba.sk]
+[EL Fine]: sql: 2023-05-18 13:18:54.259--ClientSession(2101793391)--Connection(1403413933)--Thread(Thread[grizzly-http-server-0,5,main])--INSERT INTO User_PERMISSIONS (User_AISID, PERMISSIONS) VALUES (?, ?)
+	bind => [70127, 0]
+[EL Fine]: sql: 2023-05-18 13:18:54.854--ClientSession(1205581665)--Connection(1403413933)--Thread(Thread[grizzly-http-server-0,5,main])--UPDATE STUDENT SET PASSWORD = ?, program = ?, TERM = ?, study_year = ? WHERE (Id = ?)
+	bind => [$2a$13$EgK6dXNaLhHBWV2/Hufz9uNig8AYyLrPVb0deSVfs5mPwe/pQpf1K, API, 18, 8, 70127]
+2023-05-18 13:18:54.878  INFO --- [y-http-server-1] .s.f.u.v.p.JAXRSApplicationConfiguration : Recieved credentials: xstudent@stuba.sk, password
+[EL Fine]: sql: 2023-05-18 13:18:54.879--ServerSession(1202547191)--Connection(1403413933)--Thread(Thread[grizzly-http-server-1,5,main])--SELECT AISID, PASSWORD, USERNAME FROM vsa_user WHERE (USERNAME = ?)
+	bind => [xstudent@stuba.sk]
+]]></system-out>
+    <system-err><![CDATA[May 18, 2023 1:18:53 PM org.glassfish.grizzly.http.server.NetworkListener start
+INFO: Started listener bound to [docker-desktop:8080]
+May 18, 2023 1:18:53 PM org.glassfish.grizzly.http.server.HttpServer start
+INFO: [HttpServer-2] Started.
+]]></system-err>
+  </testcase>
+  <testcase name="shouldGetNotFoundForNonExistingThesis" classname="sk.stuba.fei.uim.vsa.pr2.ThesisResourceTest" time="1.137">
+    <failure message="expected: &lt;201&gt; but was: &lt;401&gt;" type="org.opentest4j.AssertionFailedError"><![CDATA[org.opentest4j.AssertionFailedError: expected: <201> but was: <401>
+	at sk.stuba.fei.uim.vsa.pr2.ThesisResourceTest.createThesis(ThesisResourceTest.java:642)
+	at sk.stuba.fei.uim.vsa.pr2.ThesisResourceTest.shouldGetNotFoundForNonExistingThesis(ThesisResourceTest.java:226)
+]]></failure>
+    <system-out><![CDATA[[EL Fine]: sql: 2023-05-18 13:18:55.494--ServerSession(1202547191)--Connection(1403413933)--Thread(Thread[grizzly-http-server-2,5,main])--SELECT AISID, DEPARTMENT, EMAIL, INSTITUTE, NAME, PASSWORD FROM PEDAGOG WHERE (EMAIL = ?)
+	bind => [ucitel.test@stuba.sk]
+[EL Fine]: sql: 2023-05-18 13:18:55.496--ClientSession(1916131303)--Connection(1403413933)--Thread(Thread[grizzly-http-server-2,5,main])--INSERT INTO PEDAGOG (AISID, DEPARTMENT, EMAIL, INSTITUTE, NAME, PASSWORD) VALUES (?, ?, ?, ?, ?, ?)
+	bind => [45678, null, ucitel.test@stuba.sk, SI, Testovaci ucitel, null]
+[EL Fine]: sql: 2023-05-18 13:18:55.997--ClientSession(1649775377)--Connection(1403413933)--Thread(Thread[grizzly-http-server-2,5,main])--INSERT INTO vsa_user (AISID, PASSWORD, USERNAME) VALUES (?, ?, ?)
+	bind => [45678, $2a$13$.jAhnjh171/AM3v/JOjokeNS5SxbKUQV2ooE9gU.HJf65VWsD4fhu, ucitel.test@stuba.sk]
+[EL Fine]: sql: 2023-05-18 13:18:55.998--ClientSession(1649775377)--Connection(1403413933)--Thread(Thread[grizzly-http-server-2,5,main])--INSERT INTO User_PERMISSIONS (User_AISID, PERMISSIONS) VALUES (?, ?)
+	bind => [45678, 1]
+[EL Fine]: sql: 2023-05-18 13:18:56.008--ClientSession(679902802)--Connection(1403413933)--Thread(Thread[grizzly-http-server-2,5,main])--UPDATE PEDAGOG SET DEPARTMENT = ?, INSTITUTE = ? WHERE (AISID = ?)
+	bind => [SI, UIM, 45678]
+2023-05-18 13:18:56.019  INFO --- [y-http-server-3] .s.f.u.v.p.JAXRSApplicationConfiguration : Recieved credentials: ucitel.test@stuba.sk, password
+[EL Fine]: sql: 2023-05-18 13:18:56.02--ServerSession(1202547191)--Connection(1403413933)--Thread(Thread[grizzly-http-server-3,5,main])--SELECT AISID, PASSWORD, USERNAME FROM vsa_user WHERE (USERNAME = ?)
+	bind => [ucitel.test@stuba.sk]
+]]></system-out>
+  </testcase>
+  <testcase name="shouldFindThesisByStudent" classname="sk.stuba.fei.uim.vsa.pr2.ThesisResourceTest" time="1.177">
+    <failure message="expected: &lt;201&gt; but was: &lt;401&gt;" type="org.opentest4j.AssertionFailedError"><![CDATA[org.opentest4j.AssertionFailedError: expected: <201> but was: <401>
+	at sk.stuba.fei.uim.vsa.pr2.ThesisResourceTest.createThesis(ThesisResourceTest.java:642)
+	at sk.stuba.fei.uim.vsa.pr2.ThesisResourceTest.shouldFindThesisByStudent(ThesisResourceTest.java:528)
+]]></failure>
+    <system-out><![CDATA[[EL Fine]: sql: 2023-05-18 13:18:56.651--ServerSession(1202547191)--Connection(1403413933)--Thread(Thread[grizzly-http-server-5,5,main])--SELECT AISID, DEPARTMENT, EMAIL, INSTITUTE, NAME, PASSWORD FROM PEDAGOG WHERE (EMAIL = ?)
+	bind => [ucitel.test@stuba.sk]
+[EL Fine]: sql: 2023-05-18 13:18:56.652--ClientSession(1918703470)--Connection(1403413933)--Thread(Thread[grizzly-http-server-5,5,main])--INSERT INTO PEDAGOG (AISID, DEPARTMENT, EMAIL, INSTITUTE, NAME, PASSWORD) VALUES (?, ?, ?, ?, ?, ?)
+	bind => [45678, null, ucitel.test@stuba.sk, SI, Testovaci ucitel, null]
+[EL Fine]: sql: 2023-05-18 13:18:57.178--ClientSession(752420405)--Connection(1403413933)--Thread(Thread[grizzly-http-server-5,5,main])--INSERT INTO vsa_user (AISID, PASSWORD, USERNAME) VALUES (?, ?, ?)
+	bind => [45678, $2a$13$jsWkik.Ca.C7dxz5UeiRIuBbuEYCQTgtbR1ODJZLZvYVk3qW8s9/., ucitel.test@stuba.sk]
+[EL Fine]: sql: 2023-05-18 13:18:57.179--ClientSession(752420405)--Connection(1403413933)--Thread(Thread[grizzly-http-server-5,5,main])--INSERT INTO User_PERMISSIONS (User_AISID, PERMISSIONS) VALUES (?, ?)
+	bind => [45678, 1]
+[EL Fine]: sql: 2023-05-18 13:18:57.189--ClientSession(1136203172)--Connection(1403413933)--Thread(Thread[grizzly-http-server-5,5,main])--UPDATE PEDAGOG SET DEPARTMENT = ?, INSTITUTE = ? WHERE (AISID = ?)
+	bind => [SI, UIM, 45678]
+2023-05-18 13:18:57.199  INFO --- [y-http-server-6] .s.f.u.v.p.JAXRSApplicationConfiguration : Recieved credentials: ucitel.test@stuba.sk, password
+[EL Fine]: sql: 2023-05-18 13:18:57.2--ServerSession(1202547191)--Connection(1403413933)--Thread(Thread[grizzly-http-server-6,5,main])--SELECT AISID, PASSWORD, USERNAME FROM vsa_user WHERE (USERNAME = ?)
+	bind => [ucitel.test@stuba.sk]
+]]></system-out>
+  </testcase>
+  <testcase name="shouldCreateThesis" classname="sk.stuba.fei.uim.vsa.pr2.ThesisResourceTest" time="1.136">
+    <failure message="expected: &lt;201&gt; but was: &lt;401&gt;" type="org.opentest4j.AssertionFailedError"><![CDATA[org.opentest4j.AssertionFailedError: expected: <201> but was: <401>
+	at sk.stuba.fei.uim.vsa.pr2.ThesisResourceTest.createThesis(ThesisResourceTest.java:642)
+	at sk.stuba.fei.uim.vsa.pr2.ThesisResourceTest.shouldCreateThesis(ThesisResourceTest.java:35)
+]]></failure>
+    <system-out><![CDATA[[EL Fine]: sql: 2023-05-18 13:18:57.792--ServerSession(1202547191)--Connection(1403413933)--Thread(Thread[grizzly-http-server-7,5,main])--SELECT AISID, DEPARTMENT, EMAIL, INSTITUTE, NAME, PASSWORD FROM PEDAGOG WHERE (EMAIL = ?)
+	bind => [ucitel.test@stuba.sk]
+[EL Fine]: sql: 2023-05-18 13:18:57.792--ClientSession(696770940)--Connection(1403413933)--Thread(Thread[grizzly-http-server-7,5,main])--INSERT INTO PEDAGOG (AISID, DEPARTMENT, EMAIL, INSTITUTE, NAME, PASSWORD) VALUES (?, ?, ?, ?, ?, ?)
+	bind => [45678, null, ucitel.test@stuba.sk, SI, Testovaci ucitel, null]
+[EL Fine]: sql: 2023-05-18 13:18:58.301--ClientSession(975544901)--Connection(1403413933)--Thread(Thread[grizzly-http-server-7,5,main])--INSERT INTO vsa_user (AISID, PASSWORD, USERNAME) VALUES (?, ?, ?)
+	bind => [45678, $2a$13$De/P//8z79P4uARxCcOQre8A01xtIxEnWU47Pdpg/jXaxOPrlAPQK, ucitel.test@stuba.sk]
+[EL Fine]: sql: 2023-05-18 13:18:58.302--ClientSession(975544901)--Connection(1403413933)--Thread(Thread[grizzly-http-server-7,5,main])--INSERT INTO User_PERMISSIONS (User_AISID, PERMISSIONS) VALUES (?, ?)
+	bind => [45678, 1]
+[EL Fine]: sql: 2023-05-18 13:18:58.312--ClientSession(1796479661)--Connection(1403413933)--Thread(Thread[grizzly-http-server-7,5,main])--UPDATE PEDAGOG SET DEPARTMENT = ?, INSTITUTE = ? WHERE (AISID = ?)
+	bind => [SI, UIM, 45678]
+2023-05-18 13:18:58.322  INFO --- [y-http-server-8] .s.f.u.v.p.JAXRSApplicationConfiguration : Recieved credentials: ucitel.test@stuba.sk, password
+[EL Fine]: sql: 2023-05-18 13:18:58.322--ServerSession(1202547191)--Connection(1403413933)--Thread(Thread[grizzly-http-server-8,5,main])--SELECT AISID, PASSWORD, USERNAME FROM vsa_user WHERE (USERNAME = ?)
+	bind => [ucitel.test@stuba.sk]
+]]></system-out>
+  </testcase>
+  <testcase name="shouldReturnUnauthorized" classname="sk.stuba.fei.uim.vsa.pr2.ThesisResourceTest" time="0.096">
+    <failure message="expected: &lt;true&gt; but was: &lt;false&gt;" type="org.opentest4j.AssertionFailedError"><![CDATA[org.opentest4j.AssertionFailedError: expected: <true> but was: <false>
+	at sk.stuba.fei.uim.vsa.pr2.ThesisResourceTest.shouldReturnUnauthorized(ThesisResourceTest.java:166)
+]]></failure>
+  </testcase>
+  <testcase name="shouldFindThesisByTeacher" classname="sk.stuba.fei.uim.vsa.pr2.ThesisResourceTest" time="1.107">
+    <failure message="expected: &lt;201&gt; but was: &lt;401&gt;" type="org.opentest4j.AssertionFailedError"><![CDATA[org.opentest4j.AssertionFailedError: expected: <201> but was: <401>
+	at sk.stuba.fei.uim.vsa.pr2.ThesisResourceTest.createThesis(ThesisResourceTest.java:642)
+	at sk.stuba.fei.uim.vsa.pr2.ThesisResourceTest.shouldFindThesisByTeacher(ThesisResourceTest.java:486)
+]]></failure>
+    <system-out><![CDATA[[EL Fine]: sql: 2023-05-18 13:18:59.018--ServerSession(1202547191)--Connection(1403413933)--Thread(Thread[grizzly-http-server-11,5,main])--SELECT AISID, DEPARTMENT, EMAIL, INSTITUTE, NAME, PASSWORD FROM PEDAGOG WHERE (EMAIL = ?)
+	bind => [ucitel.test@stuba.sk]
+[EL Fine]: sql: 2023-05-18 13:18:59.019--ClientSession(1415027968)--Connection(1403413933)--Thread(Thread[grizzly-http-server-11,5,main])--INSERT INTO PEDAGOG (AISID, DEPARTMENT, EMAIL, INSTITUTE, NAME, PASSWORD) VALUES (?, ?, ?, ?, ?, ?)
+	bind => [45678, null, ucitel.test@stuba.sk, SI, Testovaci ucitel, null]
+[EL Fine]: sql: 2023-05-18 13:18:59.516--ClientSession(1330885288)--Connection(1403413933)--Thread(Thread[grizzly-http-server-11,5,main])--INSERT INTO vsa_user (AISID, PASSWORD, USERNAME) VALUES (?, ?, ?)
+	bind => [45678, $2a$13$fKLHw/WZRIF1mpwdQCDZreu9TAtr6tt9.96raqZ1tNlF/57AjcIqy, ucitel.test@stuba.sk]
+[EL Fine]: sql: 2023-05-18 13:18:59.517--ClientSession(1330885288)--Connection(1403413933)--Thread(Thread[grizzly-http-server-11,5,main])--INSERT INTO User_PERMISSIONS (User_AISID, PERMISSIONS) VALUES (?, ?)
+	bind => [45678, 1]
+[EL Fine]: sql: 2023-05-18 13:18:59.528--ClientSession(182581892)--Connection(1403413933)--Thread(Thread[grizzly-http-server-11,5,main])--UPDATE PEDAGOG SET DEPARTMENT = ?, INSTITUTE = ? WHERE (AISID = ?)
+	bind => [SI, UIM, 45678]
+2023-05-18 13:18:59.537  INFO --- [-http-server-12] .s.f.u.v.p.JAXRSApplicationConfiguration : Recieved credentials: ucitel.test@stuba.sk, password
+[EL Fine]: sql: 2023-05-18 13:18:59.538--ServerSession(1202547191)--Connection(1403413933)--Thread(Thread[grizzly-http-server-12,5,main])--SELECT AISID, PASSWORD, USERNAME FROM vsa_user WHERE (USERNAME = ?)
+	bind => [ucitel.test@stuba.sk]
+]]></system-out>
+  </testcase>
+  <testcase name="shouldAssignThesisWithStudent" classname="sk.stuba.fei.uim.vsa.pr2.ThesisResourceTest" time="1.094">
+    <failure message="expected: &lt;201&gt; but was: &lt;401&gt;" type="org.opentest4j.AssertionFailedError"><![CDATA[org.opentest4j.AssertionFailedError: expected: <201> but was: <401>
+	at sk.stuba.fei.uim.vsa.pr2.ThesisResourceTest.createThesis(ThesisResourceTest.java:642)
+	at sk.stuba.fei.uim.vsa.pr2.ThesisResourceTest.shouldAssignThesisWithStudent(ThesisResourceTest.java:323)
+]]></failure>
+    <system-out><![CDATA[[EL Fine]: sql: 2023-05-18 13:19:00.117--ServerSession(1202547191)--Connection(1403413933)--Thread(Thread[grizzly-http-server-13,5,main])--SELECT AISID, DEPARTMENT, EMAIL, INSTITUTE, NAME, PASSWORD FROM PEDAGOG WHERE (EMAIL = ?)
+	bind => [ucitel.test@stuba.sk]
+[EL Fine]: sql: 2023-05-18 13:19:00.118--ClientSession(306638693)--Connection(1403413933)--Thread(Thread[grizzly-http-server-13,5,main])--INSERT INTO PEDAGOG (AISID, DEPARTMENT, EMAIL, INSTITUTE, NAME, PASSWORD) VALUES (?, ?, ?, ?, ?, ?)
+	bind => [45678, null, ucitel.test@stuba.sk, SI, Testovaci ucitel, null]
+[EL Fine]: sql: 2023-05-18 13:19:00.6--ClientSession(702252601)--Connection(1403413933)--Thread(Thread[grizzly-http-server-13,5,main])--INSERT INTO vsa_user (AISID, PASSWORD, USERNAME) VALUES (?, ?, ?)
+	bind => [45678, $2a$13$jlIlcBMtXtx.C3dB38wgpud4aEpTxvEAWnONxxCVgsxex9pdP2Uee, ucitel.test@stuba.sk]
+[EL Fine]: sql: 2023-05-18 13:19:00.601--ClientSession(702252601)--Connection(1403413933)--Thread(Thread[grizzly-http-server-13,5,main])--INSERT INTO User_PERMISSIONS (User_AISID, PERMISSIONS) VALUES (?, ?)
+	bind => [45678, 1]
+[EL Fine]: sql: 2023-05-18 13:19:00.608--ClientSession(844230843)--Connection(1403413933)--Thread(Thread[grizzly-http-server-13,5,main])--UPDATE PEDAGOG SET DEPARTMENT = ?, INSTITUTE = ? WHERE (AISID = ?)
+	bind => [SI, UIM, 45678]
+2023-05-18 13:19:00.618  INFO --- [-http-server-14] .s.f.u.v.p.JAXRSApplicationConfiguration : Recieved credentials: ucitel.test@stuba.sk, password
+[EL Fine]: sql: 2023-05-18 13:19:00.618--ServerSession(1202547191)--Connection(1403413933)--Thread(Thread[grizzly-http-server-14,5,main])--SELECT AISID, PASSWORD, USERNAME FROM vsa_user WHERE (USERNAME = ?)
+	bind => [ucitel.test@stuba.sk]
+]]></system-out>
+  </testcase>
+  <testcase name="shouldGetThesis" classname="sk.stuba.fei.uim.vsa.pr2.ThesisResourceTest" time="1.107">
+    <failure message="expected: &lt;201&gt; but was: &lt;401&gt;" type="org.opentest4j.AssertionFailedError"><![CDATA[org.opentest4j.AssertionFailedError: expected: <201> but was: <401>
+	at sk.stuba.fei.uim.vsa.pr2.ThesisResourceTest.createThesis(ThesisResourceTest.java:642)
+	at sk.stuba.fei.uim.vsa.pr2.ThesisResourceTest.shouldGetThesis(ThesisResourceTest.java:194)
+]]></failure>
+    <system-out><![CDATA[[EL Fine]: sql: 2023-05-18 13:19:01.222--ServerSession(1202547191)--Connection(1403413933)--Thread(Thread[grizzly-http-server-15,5,main])--SELECT AISID, DEPARTMENT, EMAIL, INSTITUTE, NAME, PASSWORD FROM PEDAGOG WHERE (EMAIL = ?)
+	bind => [ucitel.test@stuba.sk]
+[EL Fine]: sql: 2023-05-18 13:19:01.223--ClientSession(1737547705)--Connection(1403413933)--Thread(Thread[grizzly-http-server-15,5,main])--INSERT INTO PEDAGOG (AISID, DEPARTMENT, EMAIL, INSTITUTE, NAME, PASSWORD) VALUES (?, ?, ?, ?, ?, ?)
+	bind => [45678, null, ucitel.test@stuba.sk, SI, Testovaci ucitel, null]
+[EL Fine]: sql: 2023-05-18 13:19:01.73--ClientSession(482666640)--Connection(1403413933)--Thread(Thread[grizzly-http-server-15,5,main])--INSERT INTO vsa_user (AISID, PASSWORD, USERNAME) VALUES (?, ?, ?)
+	bind => [45678, $2a$13$r/Jmr0JS2w7VFQP1Wm.FrOFh3vysuwHgYEtJ.F891nyIFBkgYoffy, ucitel.test@stuba.sk]
+[EL Fine]: sql: 2023-05-18 13:19:01.731--ClientSession(482666640)--Connection(1403413933)--Thread(Thread[grizzly-http-server-15,5,main])--INSERT INTO User_PERMISSIONS (User_AISID, PERMISSIONS) VALUES (?, ?)
+	bind => [45678, 1]
+[EL Fine]: sql: 2023-05-18 13:19:01.742--ClientSession(156643748)--Connection(1403413933)--Thread(Thread[grizzly-http-server-15,5,main])--UPDATE PEDAGOG SET DEPARTMENT = ?, INSTITUTE = ? WHERE (AISID = ?)
+	bind => [SI, UIM, 45678]
+2023-05-18 13:19:01.749  INFO --- [-http-server-16] .s.f.u.v.p.JAXRSApplicationConfiguration : Recieved credentials: ucitel.test@stuba.sk, password
+[EL Fine]: sql: 2023-05-18 13:19:01.75--ServerSession(1202547191)--Connection(1403413933)--Thread(Thread[grizzly-http-server-16,5,main])--SELECT AISID, PASSWORD, USERNAME FROM vsa_user WHERE (USERNAME = ?)
+	bind => [ucitel.test@stuba.sk]
+]]></system-out>
+  </testcase>
+  <testcase name="shouldAssignThesisWithTeacher" classname="sk.stuba.fei.uim.vsa.pr2.ThesisResourceTest" time="1.108">
+    <failure message="expected: &lt;201&gt; but was: &lt;401&gt;" type="org.opentest4j.AssertionFailedError"><![CDATA[org.opentest4j.AssertionFailedError: expected: <201> but was: <401>
+	at sk.stuba.fei.uim.vsa.pr2.ThesisResourceTest.createThesis(ThesisResourceTest.java:642)
+	at sk.stuba.fei.uim.vsa.pr2.ThesisResourceTest.shouldAssignThesisWithTeacher(ThesisResourceTest.java:285)
+]]></failure>
+    <system-out><![CDATA[[EL Fine]: sql: 2023-05-18 13:19:02.336--ServerSession(1202547191)--Connection(1403413933)--Thread(Thread[grizzly-http-server-17,5,main])--SELECT AISID, DEPARTMENT, EMAIL, INSTITUTE, NAME, PASSWORD FROM PEDAGOG WHERE (EMAIL = ?)
+	bind => [ucitel.test@stuba.sk]
+[EL Fine]: sql: 2023-05-18 13:19:02.337--ClientSession(738280518)--Connection(1403413933)--Thread(Thread[grizzly-http-server-17,5,main])--INSERT INTO PEDAGOG (AISID, DEPARTMENT, EMAIL, INSTITUTE, NAME, PASSWORD) VALUES (?, ?, ?, ?, ?, ?)
+	bind => [45678, null, ucitel.test@stuba.sk, SI, Testovaci ucitel, null]
+[EL Fine]: sql: 2023-05-18 13:19:02.824--ClientSession(147293518)--Connection(1403413933)--Thread(Thread[grizzly-http-server-17,5,main])--INSERT INTO vsa_user (AISID, PASSWORD, USERNAME) VALUES (?, ?, ?)
+	bind => [45678, $2a$13$iMxUCb7fD1M7P4RgPT0Sj.WQeLLgd4xDJt/LedNa..At4T2uGOrYe, ucitel.test@stuba.sk]
+[EL Fine]: sql: 2023-05-18 13:19:02.824--ClientSession(147293518)--Connection(1403413933)--Thread(Thread[grizzly-http-server-17,5,main])--INSERT INTO User_PERMISSIONS (User_AISID, PERMISSIONS) VALUES (?, ?)
+	bind => [45678, 1]
+[EL Fine]: sql: 2023-05-18 13:19:02.835--ClientSession(1299093872)--Connection(1403413933)--Thread(Thread[grizzly-http-server-17,5,main])--UPDATE PEDAGOG SET DEPARTMENT = ?, INSTITUTE = ? WHERE (AISID = ?)
+	bind => [SI, UIM, 45678]
+2023-05-18 13:19:02.844  INFO --- [-http-server-18] .s.f.u.v.p.JAXRSApplicationConfiguration : Recieved credentials: ucitel.test@stuba.sk, password
+[EL Fine]: sql: 2023-05-18 13:19:02.845--ServerSession(1202547191)--Connection(1403413933)--Thread(Thread[grizzly-http-server-18,5,main])--SELECT AISID, PASSWORD, USERNAME FROM vsa_user WHERE (USERNAME = ?)
+	bind => [ucitel.test@stuba.sk]
+]]></system-out>
+  </testcase>
+  <testcase name="shouldCallDeleteThesisWithAnotherTeacher" classname="sk.stuba.fei.uim.vsa.pr2.ThesisResourceTest" time="1.097">
+    <failure message="expected: &lt;201&gt; but was: &lt;401&gt;" type="org.opentest4j.AssertionFailedError"><![CDATA[org.opentest4j.AssertionFailedError: expected: <201> but was: <401>
+	at sk.stuba.fei.uim.vsa.pr2.ThesisResourceTest.createThesis(ThesisResourceTest.java:642)
+	at sk.stuba.fei.uim.vsa.pr2.ThesisResourceTest.shouldCallDeleteThesisWithAnotherTeacher(ThesisResourceTest.java:259)
+]]></failure>
+    <system-out><![CDATA[[EL Fine]: sql: 2023-05-18 13:19:03.43--ServerSession(1202547191)--Connection(1403413933)--Thread(Thread[grizzly-http-server-19,5,main])--SELECT AISID, DEPARTMENT, EMAIL, INSTITUTE, NAME, PASSWORD FROM PEDAGOG WHERE (EMAIL = ?)
+	bind => [ucitel.test@stuba.sk]
+[EL Fine]: sql: 2023-05-18 13:19:03.431--ClientSession(1749458250)--Connection(1403413933)--Thread(Thread[grizzly-http-server-19,5,main])--INSERT INTO PEDAGOG (AISID, DEPARTMENT, EMAIL, INSTITUTE, NAME, PASSWORD) VALUES (?, ?, ?, ?, ?, ?)
+	bind => [45678, null, ucitel.test@stuba.sk, SI, Testovaci ucitel, null]
+[EL Fine]: sql: 2023-05-18 13:19:03.933--ClientSession(329886338)--Connection(1403413933)--Thread(Thread[grizzly-http-server-19,5,main])--INSERT INTO vsa_user (AISID, PASSWORD, USERNAME) VALUES (?, ?, ?)
+	bind => [45678, $2a$13$An3Vd5RQsT41EqkCJtwtxuBgAuDk7h00tRFoX563IMP3yUeO8efCO, ucitel.test@stuba.sk]
+[EL Fine]: sql: 2023-05-18 13:19:03.935--ClientSession(329886338)--Connection(1403413933)--Thread(Thread[grizzly-http-server-19,5,main])--INSERT INTO User_PERMISSIONS (User_AISID, PERMISSIONS) VALUES (?, ?)
+	bind => [45678, 1]
+[EL Fine]: sql: 2023-05-18 13:19:03.945--ClientSession(1662457065)--Connection(1403413933)--Thread(Thread[grizzly-http-server-19,5,main])--UPDATE PEDAGOG SET DEPARTMENT = ?, INSTITUTE = ? WHERE (AISID = ?)
+	bind => [SI, UIM, 45678]
+2023-05-18 13:19:03.953  INFO --- [-http-server-20] .s.f.u.v.p.JAXRSApplicationConfiguration : Recieved credentials: ucitel.test@stuba.sk, password
+[EL Fine]: sql: 2023-05-18 13:19:03.954--ServerSession(1202547191)--Connection(1403413933)--Thread(Thread[grizzly-http-server-20,5,main])--SELECT AISID, PASSWORD, USERNAME FROM vsa_user WHERE (USERNAME = ?)
+	bind => [ucitel.test@stuba.sk]
+]]></system-out>
+  </testcase>
+  <testcase name="shouldGetEmptyList" classname="sk.stuba.fei.uim.vsa.pr2.ThesisResourceTest" time="1.11">
+    <failure message="expected: &lt;200&gt; but was: &lt;401&gt;" type="org.opentest4j.AssertionFailedError"><![CDATA[org.opentest4j.AssertionFailedError: expected: <200> but was: <401>
+	at sk.stuba.fei.uim.vsa.pr2.ThesisResourceTest.shouldGetEmptyList(ThesisResourceTest.java:179)
+]]></failure>
+    <system-out><![CDATA[[EL Fine]: sql: 2023-05-18 13:19:04.517--ServerSession(1202547191)--Connection(1403413933)--Thread(Thread[grizzly-http-server-21,5,main])--SELECT AISID, DEPARTMENT, EMAIL, INSTITUTE, NAME, PASSWORD FROM PEDAGOG WHERE (EMAIL = ?)
+	bind => [ucitel.test@stuba.sk]
+[EL Fine]: sql: 2023-05-18 13:19:04.518--ClientSession(851341154)--Connection(1403413933)--Thread(Thread[grizzly-http-server-21,5,main])--INSERT INTO PEDAGOG (AISID, DEPARTMENT, EMAIL, INSTITUTE, NAME, PASSWORD) VALUES (?, ?, ?, ?, ?, ?)
+	bind => [45678, null, ucitel.test@stuba.sk, SI, Testovaci ucitel, null]
+[EL Fine]: sql: 2023-05-18 13:19:05.018--ClientSession(1532912684)--Connection(1403413933)--Thread(Thread[grizzly-http-server-21,5,main])--INSERT INTO vsa_user (AISID, PASSWORD, USERNAME) VALUES (?, ?, ?)
+	bind => [45678, $2a$13$M8SxdymWBgXkCjybdFglx.FrRG8vmJBXRbkshi7rSeIly/9brLvDS, ucitel.test@stuba.sk]
+[EL Fine]: sql: 2023-05-18 13:19:05.019--ClientSession(1532912684)--Connection(1403413933)--Thread(Thread[grizzly-http-server-21,5,main])--INSERT INTO User_PERMISSIONS (User_AISID, PERMISSIONS) VALUES (?, ?)
+	bind => [45678, 1]
+[EL Fine]: sql: 2023-05-18 13:19:05.028--ClientSession(1338112924)--Connection(1403413933)--Thread(Thread[grizzly-http-server-21,5,main])--UPDATE PEDAGOG SET DEPARTMENT = ?, INSTITUTE = ? WHERE (AISID = ?)
+	bind => [SI, UIM, 45678]
+2023-05-18 13:19:05.050  INFO --- [-http-server-22] .s.f.u.v.p.JAXRSApplicationConfiguration : Recieved credentials: ucitel.test@stuba.sk, password
+[EL Fine]: sql: 2023-05-18 13:19:05.05--ServerSession(1202547191)--Connection(1403413933)--Thread(Thread[grizzly-http-server-22,5,main])--SELECT AISID, PASSWORD, USERNAME FROM vsa_user WHERE (USERNAME = ?)
+	bind => [ucitel.test@stuba.sk]
+]]></system-out>
+  </testcase>
+  <testcase name="shouldCallFindThesesWithEmptyCriteria" classname="sk.stuba.fei.uim.vsa.pr2.ThesisResourceTest" time="1.091">
+    <failure message="expected: &lt;201&gt; but was: &lt;401&gt;" type="org.opentest4j.AssertionFailedError"><![CDATA[org.opentest4j.AssertionFailedError: expected: <201> but was: <401>
+	at sk.stuba.fei.uim.vsa.pr2.ThesisResourceTest.createThesis(ThesisResourceTest.java:642)
+	at sk.stuba.fei.uim.vsa.pr2.ThesisResourceTest.shouldCallFindThesesWithEmptyCriteria(ThesisResourceTest.java:579)
+]]></failure>
+    <system-out><![CDATA[[EL Fine]: sql: 2023-05-18 13:19:05.635--ServerSession(1202547191)--Connection(1403413933)--Thread(Thread[grizzly-http-server-24,5,main])--SELECT AISID, DEPARTMENT, EMAIL, INSTITUTE, NAME, PASSWORD FROM PEDAGOG WHERE (EMAIL = ?)
+	bind => [ucitel.test@stuba.sk]
+[EL Fine]: sql: 2023-05-18 13:19:05.636--ClientSession(1393932247)--Connection(1403413933)--Thread(Thread[grizzly-http-server-24,5,main])--INSERT INTO PEDAGOG (AISID, DEPARTMENT, EMAIL, INSTITUTE, NAME, PASSWORD) VALUES (?, ?, ?, ?, ?, ?)
+	bind => [45678, null, ucitel.test@stuba.sk, SI, Testovaci ucitel, null]
+[EL Fine]: sql: 2023-05-18 13:19:06.128--ClientSession(885786345)--Connection(1403413933)--Thread(Thread[grizzly-http-server-24,5,main])--INSERT INTO vsa_user (AISID, PASSWORD, USERNAME) VALUES (?, ?, ?)
+	bind => [45678, $2a$13$MsGR5UkU.O6ZvDh5tHS8we0PoOVT6co0y26zkS/jRPcVhdGpskqVa, ucitel.test@stuba.sk]
+[EL Fine]: sql: 2023-05-18 13:19:06.129--ClientSession(885786345)--Connection(1403413933)--Thread(Thread[grizzly-http-server-24,5,main])--INSERT INTO User_PERMISSIONS (User_AISID, PERMISSIONS) VALUES (?, ?)
+	bind => [45678, 1]
+[EL Fine]: sql: 2023-05-18 13:19:06.138--ClientSession(1383277544)--Connection(1403413933)--Thread(Thread[grizzly-http-server-24,5,main])--UPDATE PEDAGOG SET DEPARTMENT = ?, INSTITUTE = ? WHERE (AISID = ?)
+	bind => [SI, UIM, 45678]
+2023-05-18 13:19:06.145  INFO --- [-http-server-25] .s.f.u.v.p.JAXRSApplicationConfiguration : Recieved credentials: ucitel.test@stuba.sk, password
+[EL Fine]: sql: 2023-05-18 13:19:06.146--ServerSession(1202547191)--Connection(1403413933)--Thread(Thread[grizzly-http-server-25,5,main])--SELECT AISID, PASSWORD, USERNAME FROM vsa_user WHERE (USERNAME = ?)
+	bind => [ucitel.test@stuba.sk]
+]]></system-out>
+  </testcase>
+  <testcase name="shouldCreateThesisWithOnlyRequiredProperties" classname="sk.stuba.fei.uim.vsa.pr2.ThesisResourceTest" time="1.1">
+    <failure message="expected: &lt;201&gt; but was: &lt;401&gt;" type="org.opentest4j.AssertionFailedError"><![CDATA[org.opentest4j.AssertionFailedError: expected: <201> but was: <401>
+	at sk.stuba.fei.uim.vsa.pr2.ThesisResourceTest.shouldCreateThesisWithOnlyRequiredProperties(ThesisResourceTest.java:68)
+]]></failure>
+    <system-out><![CDATA[[EL Fine]: sql: 2023-05-18 13:19:06.724--ServerSession(1202547191)--Connection(1403413933)--Thread(Thread[grizzly-http-server-26,5,main])--SELECT AISID, DEPARTMENT, EMAIL, INSTITUTE, NAME, PASSWORD FROM PEDAGOG WHERE (EMAIL = ?)
+	bind => [ucitel.test@stuba.sk]
+[EL Fine]: sql: 2023-05-18 13:19:06.725--ClientSession(1771351495)--Connection(1403413933)--Thread(Thread[grizzly-http-server-26,5,main])--INSERT INTO PEDAGOG (AISID, DEPARTMENT, EMAIL, INSTITUTE, NAME, PASSWORD) VALUES (?, ?, ?, ?, ?, ?)
+	bind => [45678, null, ucitel.test@stuba.sk, SI, Testovaci ucitel, null]
+[EL Fine]: sql: 2023-05-18 13:19:07.211--ClientSession(2122726325)--Connection(1403413933)--Thread(Thread[grizzly-http-server-26,5,main])--INSERT INTO vsa_user (AISID, PASSWORD, USERNAME) VALUES (?, ?, ?)
+	bind => [45678, $2a$13$pD8Lytns.NKkSY5vgcMvTuryazR2t..FhH1s9t7hxxu2iknNBvBqe, ucitel.test@stuba.sk]
+[EL Fine]: sql: 2023-05-18 13:19:07.212--ClientSession(2122726325)--Connection(1403413933)--Thread(Thread[grizzly-http-server-26,5,main])--INSERT INTO User_PERMISSIONS (User_AISID, PERMISSIONS) VALUES (?, ?)
+	bind => [45678, 1]
+[EL Fine]: sql: 2023-05-18 13:19:07.218--ClientSession(1945368754)--Connection(1403413933)--Thread(Thread[grizzly-http-server-26,5,main])--UPDATE PEDAGOG SET DEPARTMENT = ?, INSTITUTE = ? WHERE (AISID = ?)
+	bind => [SI, UIM, 45678]
+2023-05-18 13:19:07.226  INFO --- [-http-server-27] .s.f.u.v.p.JAXRSApplicationConfiguration : Recieved credentials: ucitel.test@stuba.sk, password
+[EL Fine]: sql: 2023-05-18 13:19:07.226--ServerSession(1202547191)--Connection(1403413933)--Thread(Thread[grizzly-http-server-27,5,main])--SELECT AISID, PASSWORD, USERNAME FROM vsa_user WHERE (USERNAME = ?)
+	bind => [ucitel.test@stuba.sk]
+]]></system-out>
+  </testcase>
+  <testcase name="shouldCallWithoutBodyAndReturnError" classname="sk.stuba.fei.uim.vsa.pr2.ThesisResourceTest" time="1.184">
+    <failure message="expected: &lt;true&gt; but was: &lt;false&gt;" type="org.opentest4j.AssertionFailedError"><![CDATA[org.opentest4j.AssertionFailedError: expected: <true> but was: <false>
+	at sk.stuba.fei.uim.vsa.pr2.ThesisResourceTest.shouldCallWithoutBodyAndReturnError(ThesisResourceTest.java:112)
+]]></failure>
+    <system-out><![CDATA[[EL Fine]: sql: 2023-05-18 13:19:07.832--ServerSession(1202547191)--Connection(1403413933)--Thread(Thread[grizzly-http-server-28,5,main])--SELECT AISID, DEPARTMENT, EMAIL, INSTITUTE, NAME, PASSWORD FROM PEDAGOG WHERE (EMAIL = ?)
+	bind => [ucitel.test@stuba.sk]
+[EL Fine]: sql: 2023-05-18 13:19:07.833--ClientSession(1879907306)--Connection(1403413933)--Thread(Thread[grizzly-http-server-28,5,main])--INSERT INTO PEDAGOG (AISID, DEPARTMENT, EMAIL, INSTITUTE, NAME, PASSWORD) VALUES (?, ?, ?, ?, ?, ?)
+	bind => [45678, null, ucitel.test@stuba.sk, SI, Testovaci ucitel, null]
+[EL Fine]: sql: 2023-05-18 13:19:08.396--ClientSession(762903289)--Connection(1403413933)--Thread(Thread[grizzly-http-server-28,5,main])--INSERT INTO vsa_user (AISID, PASSWORD, USERNAME) VALUES (?, ?, ?)
+	bind => [45678, $2a$13$fl4bCsxAWWoOUnmaEhPYxeFYefjwUP/6X2MF0xgB6Amo018316iEC, ucitel.test@stuba.sk]
+[EL Fine]: sql: 2023-05-18 13:19:08.397--ClientSession(762903289)--Connection(1403413933)--Thread(Thread[grizzly-http-server-28,5,main])--INSERT INTO User_PERMISSIONS (User_AISID, PERMISSIONS) VALUES (?, ?)
+	bind => [45678, 1]
+[EL Fine]: sql: 2023-05-18 13:19:08.407--ClientSession(1336021110)--Connection(1403413933)--Thread(Thread[grizzly-http-server-28,5,main])--UPDATE PEDAGOG SET DEPARTMENT = ?, INSTITUTE = ? WHERE (AISID = ?)
+	bind => [SI, UIM, 45678]
+2023-05-18 13:19:08.415  INFO --- [-http-server-29] .s.f.u.v.p.JAXRSApplicationConfiguration : Recieved credentials: ucitel.test@stuba.sk, password
+[EL Fine]: sql: 2023-05-18 13:19:08.416--ServerSession(1202547191)--Connection(1403413933)--Thread(Thread[grizzly-http-server-29,5,main])--SELECT AISID, PASSWORD, USERNAME FROM vsa_user WHERE (USERNAME = ?)
+	bind => [ucitel.test@stuba.sk]
+]]></system-out>
+  </testcase>
+  <testcase name="shouldSubmitThesisWithStudent" classname="sk.stuba.fei.uim.vsa.pr2.ThesisResourceTest" time="1.091">
+    <failure message="expected: &lt;201&gt; but was: &lt;401&gt;" type="org.opentest4j.AssertionFailedError"><![CDATA[org.opentest4j.AssertionFailedError: expected: <201> but was: <401>
+	at sk.stuba.fei.uim.vsa.pr2.ThesisResourceTest.createThesis(ThesisResourceTest.java:642)
+	at sk.stuba.fei.uim.vsa.pr2.ThesisResourceTest.shouldSubmitThesisWithStudent(ThesisResourceTest.java:409)
+]]></failure>
+    <system-out><![CDATA[[EL Fine]: sql: 2023-05-18 13:19:09.02--ServerSession(1202547191)--Connection(1403413933)--Thread(Thread[grizzly-http-server-30,5,main])--SELECT AISID, DEPARTMENT, EMAIL, INSTITUTE, NAME, PASSWORD FROM PEDAGOG WHERE (EMAIL = ?)
+	bind => [ucitel.test@stuba.sk]
+[EL Fine]: sql: 2023-05-18 13:19:09.021--ClientSession(1813942707)--Connection(1403413933)--Thread(Thread[grizzly-http-server-30,5,main])--INSERT INTO PEDAGOG (AISID, DEPARTMENT, EMAIL, INSTITUTE, NAME, PASSWORD) VALUES (?, ?, ?, ?, ?, ?)
+	bind => [45678, null, ucitel.test@stuba.sk, SI, Testovaci ucitel, null]
+[EL Fine]: sql: 2023-05-18 13:19:09.505--ClientSession(2051383423)--Connection(1403413933)--Thread(Thread[grizzly-http-server-30,5,main])--INSERT INTO vsa_user (AISID, PASSWORD, USERNAME) VALUES (?, ?, ?)
+	bind => [45678, $2a$13$X20T7C5dIb9js024y8sNWOoe6E360IuTH04R2qomGnPCqUWytQPnu, ucitel.test@stuba.sk]
+[EL Fine]: sql: 2023-05-18 13:19:09.507--ClientSession(2051383423)--Connection(1403413933)--Thread(Thread[grizzly-http-server-30,5,main])--INSERT INTO User_PERMISSIONS (User_AISID, PERMISSIONS) VALUES (?, ?)
+	bind => [45678, 1]
+[EL Fine]: sql: 2023-05-18 13:19:09.517--ClientSession(1853461960)--Connection(1403413933)--Thread(Thread[grizzly-http-server-30,5,main])--UPDATE PEDAGOG SET DEPARTMENT = ?, INSTITUTE = ? WHERE (AISID = ?)
+	bind => [SI, UIM, 45678]
+2023-05-18 13:19:09.525  INFO --- [-http-server-31] .s.f.u.v.p.JAXRSApplicationConfiguration : Recieved credentials: ucitel.test@stuba.sk, password
+[EL Fine]: sql: 2023-05-18 13:19:09.525--ServerSession(1202547191)--Connection(1403413933)--Thread(Thread[grizzly-http-server-31,5,main])--SELECT AISID, PASSWORD, USERNAME FROM vsa_user WHERE (USERNAME = ?)
+	bind => [ucitel.test@stuba.sk]
+]]></system-out>
+  </testcase>
+  <testcase name="shouldCallDeleteThesisWithStudent" classname="sk.stuba.fei.uim.vsa.pr2.ThesisResourceTest" time="1.091">
+    <failure message="expected: &lt;201&gt; but was: &lt;401&gt;" type="org.opentest4j.AssertionFailedError"><![CDATA[org.opentest4j.AssertionFailedError: expected: <201> but was: <401>
+	at sk.stuba.fei.uim.vsa.pr2.ThesisResourceTest.createThesis(ThesisResourceTest.java:642)
+	at sk.stuba.fei.uim.vsa.pr2.ThesisResourceTest.shouldCallDeleteThesisWithStudent(ThesisResourceTest.java:272)
+]]></failure>
+    <system-out><![CDATA[[EL Fine]: sql: 2023-05-18 13:19:10.101--ServerSession(1202547191)--Connection(1403413933)--Thread(Thread[grizzly-http-server-32,5,main])--SELECT AISID, DEPARTMENT, EMAIL, INSTITUTE, NAME, PASSWORD FROM PEDAGOG WHERE (EMAIL = ?)
+	bind => [ucitel.test@stuba.sk]
+[EL Fine]: sql: 2023-05-18 13:19:10.102--ClientSession(1160390084)--Connection(1403413933)--Thread(Thread[grizzly-http-server-32,5,main])--INSERT INTO PEDAGOG (AISID, DEPARTMENT, EMAIL, INSTITUTE, NAME, PASSWORD) VALUES (?, ?, ?, ?, ?, ?)
+	bind => [45678, null, ucitel.test@stuba.sk, SI, Testovaci ucitel, null]
+[EL Fine]: sql: 2023-05-18 13:19:10.593--ClientSession(1138246177)--Connection(1403413933)--Thread(Thread[grizzly-http-server-32,5,main])--INSERT INTO vsa_user (AISID, PASSWORD, USERNAME) VALUES (?, ?, ?)
+	bind => [45678, $2a$13$VOF2rAmb.tFi0SXoqEJ1NOEuN09zv/tJyR2i3o98o3zGzeflK9E1y, ucitel.test@stuba.sk]
+[EL Fine]: sql: 2023-05-18 13:19:10.594--ClientSession(1138246177)--Connection(1403413933)--Thread(Thread[grizzly-http-server-32,5,main])--INSERT INTO User_PERMISSIONS (User_AISID, PERMISSIONS) VALUES (?, ?)
+	bind => [45678, 1]
+[EL Fine]: sql: 2023-05-18 13:19:10.601--ClientSession(297608261)--Connection(1403413933)--Thread(Thread[grizzly-http-server-32,5,main])--UPDATE PEDAGOG SET DEPARTMENT = ?, INSTITUTE = ? WHERE (AISID = ?)
+	bind => [SI, UIM, 45678]
+2023-05-18 13:19:10.609  INFO --- [-http-server-33] .s.f.u.v.p.JAXRSApplicationConfiguration : Recieved credentials: ucitel.test@stuba.sk, password
+[EL Fine]: sql: 2023-05-18 13:19:10.609--ServerSession(1202547191)--Connection(1403413933)--Thread(Thread[grizzly-http-server-33,5,main])--SELECT AISID, PASSWORD, USERNAME FROM vsa_user WHERE (USERNAME = ?)
+	bind => [ucitel.test@stuba.sk]
+]]></system-out>
+  </testcase>
+  <testcase name="shouldSubmitThesisWithTeacher" classname="sk.stuba.fei.uim.vsa.pr2.ThesisResourceTest" time="1.088">
+    <failure message="expected: &lt;201&gt; but was: &lt;401&gt;" type="org.opentest4j.AssertionFailedError"><![CDATA[org.opentest4j.AssertionFailedError: expected: <201> but was: <401>
+	at sk.stuba.fei.uim.vsa.pr2.ThesisResourceTest.createThesis(ThesisResourceTest.java:642)
+	at sk.stuba.fei.uim.vsa.pr2.ThesisResourceTest.shouldSubmitThesisWithTeacher(ThesisResourceTest.java:363)
+]]></failure>
+    <system-out><![CDATA[[EL Fine]: sql: 2023-05-18 13:19:11.191--ServerSession(1202547191)--Connection(1403413933)--Thread(Thread[grizzly-http-server-34,5,main])--SELECT AISID, DEPARTMENT, EMAIL, INSTITUTE, NAME, PASSWORD FROM PEDAGOG WHERE (EMAIL = ?)
+	bind => [ucitel.test@stuba.sk]
+[EL Fine]: sql: 2023-05-18 13:19:11.192--ClientSession(67066842)--Connection(1403413933)--Thread(Thread[grizzly-http-server-34,5,main])--INSERT INTO PEDAGOG (AISID, DEPARTMENT, EMAIL, INSTITUTE, NAME, PASSWORD) VALUES (?, ?, ?, ?, ?, ?)
+	bind => [45678, null, ucitel.test@stuba.sk, SI, Testovaci ucitel, null]
+[EL Fine]: sql: 2023-05-18 13:19:11.676--ClientSession(1289290061)--Connection(1403413933)--Thread(Thread[grizzly-http-server-34,5,main])--INSERT INTO vsa_user (AISID, PASSWORD, USERNAME) VALUES (?, ?, ?)
+	bind => [45678, $2a$13$yMCDeuqvesFQQCS5IIsec.AXWhmlY0oQeG0ybxq07ews2llqFmK3W, ucitel.test@stuba.sk]
+[EL Fine]: sql: 2023-05-18 13:19:11.677--ClientSession(1289290061)--Connection(1403413933)--Thread(Thread[grizzly-http-server-34,5,main])--INSERT INTO User_PERMISSIONS (User_AISID, PERMISSIONS) VALUES (?, ?)
+	bind => [45678, 1]
+[EL Fine]: sql: 2023-05-18 13:19:11.687--ClientSession(128281130)--Connection(1403413933)--Thread(Thread[grizzly-http-server-34,5,main])--UPDATE PEDAGOG SET DEPARTMENT = ?, INSTITUTE = ? WHERE (AISID = ?)
+	bind => [SI, UIM, 45678]
+2023-05-18 13:19:11.697  INFO --- [-http-server-35] .s.f.u.v.p.JAXRSApplicationConfiguration : Recieved credentials: ucitel.test@stuba.sk, password
+[EL Fine]: sql: 2023-05-18 13:19:11.697--ServerSession(1202547191)--Connection(1403413933)--Thread(Thread[grizzly-http-server-35,5,main])--SELECT AISID, PASSWORD, USERNAME FROM vsa_user WHERE (USERNAME = ?)
+	bind => [ucitel.test@stuba.sk]
+]]></system-out>
+  </testcase>
+  <testcase name="shouldDeleteThesis" classname="sk.stuba.fei.uim.vsa.pr2.ThesisResourceTest" time="1.097">
+    <failure message="expected: &lt;201&gt; but was: &lt;401&gt;" type="org.opentest4j.AssertionFailedError"><![CDATA[org.opentest4j.AssertionFailedError: expected: <201> but was: <401>
+	at sk.stuba.fei.uim.vsa.pr2.ThesisResourceTest.createThesis(ThesisResourceTest.java:642)
+	at sk.stuba.fei.uim.vsa.pr2.ThesisResourceTest.shouldDeleteThesis(ThesisResourceTest.java:238)
+]]></failure>
+    <system-out><![CDATA[[EL Fine]: sql: 2023-05-18 13:19:12.286--ServerSession(1202547191)--Connection(1403413933)--Thread(Thread[grizzly-http-server-36,5,main])--SELECT AISID, DEPARTMENT, EMAIL, INSTITUTE, NAME, PASSWORD FROM PEDAGOG WHERE (EMAIL = ?)
+	bind => [ucitel.test@stuba.sk]
+[EL Fine]: sql: 2023-05-18 13:19:12.287--ClientSession(1341883272)--Connection(1403413933)--Thread(Thread[grizzly-http-server-36,5,main])--INSERT INTO PEDAGOG (AISID, DEPARTMENT, EMAIL, INSTITUTE, NAME, PASSWORD) VALUES (?, ?, ?, ?, ?, ?)
+	bind => [45678, null, ucitel.test@stuba.sk, SI, Testovaci ucitel, null]
+[EL Fine]: sql: 2023-05-18 13:19:12.777--ClientSession(833287083)--Connection(1403413933)--Thread(Thread[grizzly-http-server-36,5,main])--INSERT INTO vsa_user (AISID, PASSWORD, USERNAME) VALUES (?, ?, ?)
+	bind => [45678, $2a$13$grJfHXPxRuJyQpeRx.ESDOl6FJzlTiRphz8RZSvcnGDi0VhTkG2ya, ucitel.test@stuba.sk]
+[EL Fine]: sql: 2023-05-18 13:19:12.778--ClientSession(833287083)--Connection(1403413933)--Thread(Thread[grizzly-http-server-36,5,main])--INSERT INTO User_PERMISSIONS (User_AISID, PERMISSIONS) VALUES (?, ?)
+	bind => [45678, 1]
+[EL Fine]: sql: 2023-05-18 13:19:12.784--ClientSession(2097108831)--Connection(1403413933)--Thread(Thread[grizzly-http-server-36,5,main])--UPDATE PEDAGOG SET DEPARTMENT = ?, INSTITUTE = ? WHERE (AISID = ?)
+	bind => [SI, UIM, 45678]
+2023-05-18 13:19:12.793  INFO --- [-http-server-37] .s.f.u.v.p.JAXRSApplicationConfiguration : Recieved credentials: ucitel.test@stuba.sk, password
+[EL Fine]: sql: 2023-05-18 13:19:12.793--ServerSession(1202547191)--Connection(1403413933)--Thread(Thread[grizzly-http-server-37,5,main])--SELECT AISID, PASSWORD, USERNAME FROM vsa_user WHERE (USERNAME = ?)
+	bind => [ucitel.test@stuba.sk]
+]]></system-out>
+  </testcase>
+  <testcase name="shouldCallFindThesesWithWrongCriteria" classname="sk.stuba.fei.uim.vsa.pr2.ThesisResourceTest" time="1.121">
+    <failure message="expected: &lt;201&gt; but was: &lt;401&gt;" type="org.opentest4j.AssertionFailedError"><![CDATA[org.opentest4j.AssertionFailedError: expected: <201> but was: <401>
+	at sk.stuba.fei.uim.vsa.pr2.ThesisResourceTest.createThesis(ThesisResourceTest.java:642)
+	at sk.stuba.fei.uim.vsa.pr2.ThesisResourceTest.shouldCallFindThesesWithWrongCriteria(ThesisResourceTest.java:619)
+]]></failure>
+    <system-out><![CDATA[[EL Fine]: sql: 2023-05-18 13:19:13.39--ServerSession(1202547191)--Connection(1403413933)--Thread(Thread[grizzly-http-server-39,5,main])--SELECT AISID, DEPARTMENT, EMAIL, INSTITUTE, NAME, PASSWORD FROM PEDAGOG WHERE (EMAIL = ?)
+	bind => [ucitel.test@stuba.sk]
+[EL Fine]: sql: 2023-05-18 13:19:13.391--ClientSession(689671866)--Connection(1403413933)--Thread(Thread[grizzly-http-server-39,5,main])--INSERT INTO PEDAGOG (AISID, DEPARTMENT, EMAIL, INSTITUTE, NAME, PASSWORD) VALUES (?, ?, ?, ?, ?, ?)
+	bind => [45678, null, ucitel.test@stuba.sk, SI, Testovaci ucitel, null]
+[EL Fine]: sql: 2023-05-18 13:19:13.885--ClientSession(230535949)--Connection(1403413933)--Thread(Thread[grizzly-http-server-39,5,main])--INSERT INTO vsa_user (AISID, PASSWORD, USERNAME) VALUES (?, ?, ?)
+	bind => [45678, $2a$13$0pd6qn2tTYDlCZB4/PkP4.wVU0FqvolYWtJjavhzqoCYLTSSbKY5G, ucitel.test@stuba.sk]
+[EL Fine]: sql: 2023-05-18 13:19:13.886--ClientSession(230535949)--Connection(1403413933)--Thread(Thread[grizzly-http-server-39,5,main])--INSERT INTO User_PERMISSIONS (User_AISID, PERMISSIONS) VALUES (?, ?)
+	bind => [45678, 1]
+[EL Fine]: sql: 2023-05-18 13:19:13.896--ClientSession(476951178)--Connection(1403413933)--Thread(Thread[grizzly-http-server-39,5,main])--UPDATE PEDAGOG SET DEPARTMENT = ?, INSTITUTE = ? WHERE (AISID = ?)
+	bind => [SI, UIM, 45678]
+2023-05-18 13:19:13.903  INFO --- [y-http-server-0] .s.f.u.v.p.JAXRSApplicationConfiguration : Recieved credentials: ucitel.test@stuba.sk, password
+[EL Fine]: sql: 2023-05-18 13:19:13.903--ServerSession(1202547191)--Connection(1403413933)--Thread(Thread[grizzly-http-server-0,5,main])--SELECT AISID, PASSWORD, USERNAME FROM vsa_user WHERE (USERNAME = ?)
+	bind => [ucitel.test@stuba.sk]
+]]></system-out>
+  </testcase>
+  <testcase name="shouldSubmitThesisWithTeacherAndWithWrongStudent" classname="sk.stuba.fei.uim.vsa.pr2.ThesisResourceTest" time="1.181">
+    <failure message="expected: &lt;201&gt; but was: &lt;401&gt;" type="org.opentest4j.AssertionFailedError"><![CDATA[org.opentest4j.AssertionFailedError: expected: <201> but was: <401>
+	at sk.stuba.fei.uim.vsa.pr2.ThesisResourceTest.createThesis(ThesisResourceTest.java:642)
+	at sk.stuba.fei.uim.vsa.pr2.ThesisResourceTest.shouldSubmitThesisWithTeacherAndWithWrongStudent(ThesisResourceTest.java:457)
+]]></failure>
+    <system-out><![CDATA[[EL Fine]: sql: 2023-05-18 13:19:14.503--ServerSession(1202547191)--Connection(1403413933)--Thread(Thread[grizzly-http-server-1,5,main])--SELECT AISID, DEPARTMENT, EMAIL, INSTITUTE, NAME, PASSWORD FROM PEDAGOG WHERE (EMAIL = ?)
+	bind => [ucitel.test@stuba.sk]
+[EL Fine]: sql: 2023-05-18 13:19:14.504--ClientSession(912136160)--Connection(1403413933)--Thread(Thread[grizzly-http-server-1,5,main])--INSERT INTO PEDAGOG (AISID, DEPARTMENT, EMAIL, INSTITUTE, NAME, PASSWORD) VALUES (?, ?, ?, ?, ?, ?)
+	bind => [45678, null, ucitel.test@stuba.sk, SI, Testovaci ucitel, null]
+[EL Fine]: sql: 2023-05-18 13:19:15.073--ClientSession(1044472863)--Connection(1403413933)--Thread(Thread[grizzly-http-server-1,5,main])--INSERT INTO vsa_user (AISID, PASSWORD, USERNAME) VALUES (?, ?, ?)
+	bind => [45678, $2a$13$1Rvs7gRPevfRml9XyvTabOfOYej2.o3kE5b.Vb6UhCtDXWWhkBiym, ucitel.test@stuba.sk]
+[EL Fine]: sql: 2023-05-18 13:19:15.074--ClientSession(1044472863)--Connection(1403413933)--Thread(Thread[grizzly-http-server-1,5,main])--INSERT INTO User_PERMISSIONS (User_AISID, PERMISSIONS) VALUES (?, ?)
+	bind => [45678, 1]
+[EL Fine]: sql: 2023-05-18 13:19:15.085--ClientSession(373297927)--Connection(1403413933)--Thread(Thread[grizzly-http-server-1,5,main])--UPDATE PEDAGOG SET DEPARTMENT = ?, INSTITUTE = ? WHERE (AISID = ?)
+	bind => [SI, UIM, 45678]
+2023-05-18 13:19:15.094  INFO --- [y-http-server-2] .s.f.u.v.p.JAXRSApplicationConfiguration : Recieved credentials: ucitel.test@stuba.sk, password
+[EL Fine]: sql: 2023-05-18 13:19:15.094--ServerSession(1202547191)--Connection(1403413933)--Thread(Thread[grizzly-http-server-2,5,main])--SELECT AISID, PASSWORD, USERNAME FROM vsa_user WHERE (USERNAME = ?)
+	bind => [ucitel.test@stuba.sk]
+]]></system-out>
+  </testcase>
+  <testcase name="shouldGetAllTheses" classname="sk.stuba.fei.uim.vsa.pr2.ThesisResourceTest" time="1.091">
+    <failure message="expected: &lt;201&gt; but was: &lt;401&gt;" type="org.opentest4j.AssertionFailedError"><![CDATA[org.opentest4j.AssertionFailedError: expected: <201> but was: <401>
+	at sk.stuba.fei.uim.vsa.pr2.ThesisResourceTest.createThesis(ThesisResourceTest.java:642)
+	at sk.stuba.fei.uim.vsa.pr2.ThesisResourceTest.shouldGetAllTheses(ThesisResourceTest.java:140)
+]]></failure>
+    <system-out><![CDATA[[EL Fine]: sql: 2023-05-18 13:19:15.675--ServerSession(1202547191)--Connection(1403413933)--Thread(Thread[grizzly-http-server-3,5,main])--SELECT AISID, DEPARTMENT, EMAIL, INSTITUTE, NAME, PASSWORD FROM PEDAGOG WHERE (EMAIL = ?)
+	bind => [ucitel.test@stuba.sk]
+[EL Fine]: sql: 2023-05-18 13:19:15.676--ClientSession(1226261848)--Connection(1403413933)--Thread(Thread[grizzly-http-server-3,5,main])--INSERT INTO PEDAGOG (AISID, DEPARTMENT, EMAIL, INSTITUTE, NAME, PASSWORD) VALUES (?, ?, ?, ?, ?, ?)
+	bind => [45678, null, ucitel.test@stuba.sk, SI, Testovaci ucitel, null]
+[EL Fine]: sql: 2023-05-18 13:19:16.174--ClientSession(1050134521)--Connection(1403413933)--Thread(Thread[grizzly-http-server-3,5,main])--INSERT INTO vsa_user (AISID, PASSWORD, USERNAME) VALUES (?, ?, ?)
+	bind => [45678, $2a$13$cE4roa897oj.OVWrgcAYmOpFzh5TuYVHdKzaMjcbZkgQgqat4SNZq, ucitel.test@stuba.sk]
+[EL Fine]: sql: 2023-05-18 13:19:16.175--ClientSession(1050134521)--Connection(1403413933)--Thread(Thread[grizzly-http-server-3,5,main])--INSERT INTO User_PERMISSIONS (User_AISID, PERMISSIONS) VALUES (?, ?)
+	bind => [45678, 1]
+[EL Fine]: sql: 2023-05-18 13:19:16.186--ClientSession(1623043897)--Connection(1403413933)--Thread(Thread[grizzly-http-server-3,5,main])--UPDATE PEDAGOG SET DEPARTMENT = ?, INSTITUTE = ? WHERE (AISID = ?)
+	bind => [SI, UIM, 45678]
+2023-05-18 13:19:16.194  INFO --- [y-http-server-4] .s.f.u.v.p.JAXRSApplicationConfiguration : Recieved credentials: ucitel.test@stuba.sk, password
+[EL Fine]: sql: 2023-05-18 13:19:16.194--ServerSession(1202547191)--Connection(1403413933)--Thread(Thread[grizzly-http-server-4,5,main])--SELECT AISID, PASSWORD, USERNAME FROM vsa_user WHERE (USERNAME = ?)
+	bind => [ucitel.test@stuba.sk]
+]]></system-out>
+  </testcase>
+</testsuite>
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="sk.stuba.fei.uim.vsa.pr2.SanityCheckTest" time="1.155" tests="3" errors="0" skipped="0" failures="0">
+  <properties>
+    <property name="awt.toolkit" value="sun.awt.X11.XToolkit"/>
+    <property name="file.encoding.pkg" value="sun.io"/>
+    <property name="java.specification.version" value="1.8"/>
+    <property name="sun.cpu.isalist" value=""/>
+    <property name="sun.jnu.encoding" value="UTF-8"/>
+    <property name="java.class.path" value="/tested--b-vsa-ls23-projekt-2/target/test-classes:/tested--b-vsa-ls23-projekt-2/target/classes:/root/.m2/repository/org/apache/derby/derbyclient/10.14.2.0/derbyclient-10.14.2.0.jar:/root/.m2/repository/org/glassfish/jersey/containers/jersey-container-grizzly2-http/2.39.1/jersey-container-grizzly2-http-2.39.1.jar:/root/.m2/repository/org/glassfish/hk2/external/jakarta.inject/2.6.1/jakarta.inject-2.6.1.jar:/root/.m2/repository/org/glassfish/grizzly/grizzly-http-server/2.4.4/grizzly-http-server-2.4.4.jar:/root/.m2/repository/org/glassfish/grizzly/grizzly-http/2.4.4/grizzly-http-2.4.4.jar:/root/.m2/repository/org/glassfish/grizzly/grizzly-framework/2.4.4/grizzly-framework-2.4.4.jar:/root/.m2/repository/org/glassfish/jersey/core/jersey-common/2.39.1/jersey-common-2.39.1.jar:/root/.m2/repository/jakarta/annotation/jakarta.annotation-api/1.3.5/jakarta.annotation-api-1.3.5.jar:/root/.m2/repository/org/glassfish/hk2/osgi-resource-locator/1.0.3/osgi-resource-locator-1.0.3.jar:/root/.m2/repository/org/glassfish/jersey/core/jersey-server/2.39.1/jersey-server-2.39.1.jar:/root/.m2/repository/org/glassfish/jersey/core/jersey-client/2.39.1/jersey-client-2.39.1.jar:/root/.m2/repository/jakarta/validation/jakarta.validation-api/2.0.2/jakarta.validation-api-2.0.2.jar:/root/.m2/repository/jakarta/ws/rs/jakarta.ws.rs-api/2.1.6/jakarta.ws.rs-api-2.1.6.jar:/root/.m2/repository/org/glassfish/jersey/media/jersey-media-moxy/2.39.1/jersey-media-moxy-2.39.1.jar:/root/.m2/repository/org/glassfish/jersey/ext/jersey-entity-filtering/2.39.1/jersey-entity-filtering-2.39.1.jar:/root/.m2/repository/jakarta/json/jakarta.json-api/1.1.6/jakarta.json-api-1.1.6.jar:/root/.m2/repository/org/glassfish/jakarta.json/1.1.6/jakarta.json-1.1.6.jar:/root/.m2/repository/org/eclipse/persistence/org.eclipse.persistence.moxy/2.7.10/org.eclipse.persistence.moxy-2.7.10.jar:/root/.m2/repository/org/eclipse/persistence/org.eclipse.persistence.core/2.7.10/org.eclipse.persistence.core-2.7.10.jar:/root/.m2/repository/org/eclipse/persistence/org.eclipse.persistence.asm/9.2.0/org.eclipse.persistence.asm-9.2.0.jar:/root/.m2/repository/org/glassfish/jersey/media/jersey-media-json-jackson/2.39.1/jersey-media-json-jackson-2.39.1.jar:/root/.m2/repository/com/fasterxml/jackson/core/jackson-annotations/2.14.1/jackson-annotations-2.14.1.jar:/root/.m2/repository/com/fasterxml/jackson/core/jackson-databind/2.14.1/jackson-databind-2.14.1.jar:/root/.m2/repository/com/fasterxml/jackson/module/jackson-module-jaxb-annotations/2.14.1/jackson-module-jaxb-annotations-2.14.1.jar:/root/.m2/repository/jakarta/xml/bind/jakarta.xml.bind-api/2.3.3/jakarta.xml.bind-api-2.3.3.jar:/root/.m2/repository/org/glassfish/jersey/inject/jersey-hk2/2.39.1/jersey-hk2-2.39.1.jar:/root/.m2/repository/org/glassfish/hk2/hk2-locator/2.6.1/hk2-locator-2.6.1.jar:/root/.m2/repository/org/glassfish/hk2/external/aopalliance-repackaged/2.6.1/aopalliance-repackaged-2.6.1.jar:/root/.m2/repository/org/glassfish/hk2/hk2-api/2.6.1/hk2-api-2.6.1.jar:/root/.m2/repository/org/glassfish/hk2/hk2-utils/2.6.1/hk2-utils-2.6.1.jar:/root/.m2/repository/org/javassist/javassist/3.29.0-GA/javassist-3.29.0-GA.jar:/root/.m2/repository/at/favre/lib/bcrypt/0.10.2/bcrypt-0.10.2.jar:/root/.m2/repository/at/favre/lib/bytes/1.5.0/bytes-1.5.0.jar:/root/.m2/repository/org/postgresql/postgresql/42.5.4/postgresql-42.5.4.jar:/root/.m2/repository/org/checkerframework/checker-qual/3.5.0/checker-qual-3.5.0.jar:/root/.m2/repository/org/eclipse/persistence/eclipselink/2.7.11/eclipselink-2.7.11.jar:/root/.m2/repository/org/eclipse/persistence/jakarta.persistence/2.2.3/jakarta.persistence-2.2.3.jar:/root/.m2/repository/org/eclipse/persistence/commonj.sdo/2.1.1/commonj.sdo-2.1.1.jar:/root/.m2/repository/org/eclipse/persistence/javax.persistence/2.2.1/javax.persistence-2.2.1.jar:/root/.m2/repository/org/projectlombok/lombok/1.18.24/lombok-1.18.24.jar:/root/.m2/repository/org/reflections/reflections/0.10.2/reflections-0.10.2.jar:/root/.m2/repository/com/google/code/findbugs/jsr305/3.0.2/jsr305-3.0.2.jar:/root/.m2/repository/org/junit/jupiter/junit-jupiter-engine/5.8.2/junit-jupiter-engine-5.8.2.jar:/root/.m2/repository/org/junit/platform/junit-platform-engine/1.8.2/junit-platform-engine-1.8.2.jar:/root/.m2/repository/org/apiguardian/apiguardian-api/1.1.2/apiguardian-api-1.1.2.jar:/root/.m2/repository/org/junit/jupiter/junit-jupiter-api/5.8.2/junit-jupiter-api-5.8.2.jar:/root/.m2/repository/org/opentest4j/opentest4j/1.2.0/opentest4j-1.2.0.jar:/root/.m2/repository/org/junit/platform/junit-platform-commons/1.8.2/junit-platform-commons-1.8.2.jar:/root/.m2/repository/ch/qos/logback/logback-core/1.3.5/logback-core-1.3.5.jar:/root/.m2/repository/org/slf4j/slf4j-api/2.0.4/slf4j-api-2.0.4.jar:/root/.m2/repository/ch/qos/logback/logback-classic/1.3.5/logback-classic-1.3.5.jar:/root/.m2/repository/com/fasterxml/jackson/datatype/jackson-datatype-jsr310/2.15.1/jackson-datatype-jsr310-2.15.1.jar:/root/.m2/repository/com/fasterxml/jackson/core/jackson-core/2.15.1/jackson-core-2.15.1.jar:"/>
+    <property name="java.vm.vendor" value="Oracle Corporation"/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="java.vendor.url" value="http://java.oracle.com/"/>
+    <property name="user.timezone" value=""/>
+    <property name="java.vm.specification.version" value="1.8"/>
+    <property name="os.name" value="Linux"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="sun.boot.library.path" value="/usr/local/openjdk-8/jre/lib/amd64"/>
+    <property name="sun.java.command" value="/tested--b-vsa-ls23-projekt-2/target/surefire/surefirebooter3639320439650527394.jar /tested--b-vsa-ls23-projekt-2/target/surefire 2023-05-18T13-18-35_499-jvmRun1 surefire8438766231838400500tmp surefire_02617501296421621447tmp"/>
+    <property name="surefire.test.class.path" value="/tested--b-vsa-ls23-projekt-2/target/test-classes:/tested--b-vsa-ls23-projekt-2/target/classes:/root/.m2/repository/org/apache/derby/derbyclient/10.14.2.0/derbyclient-10.14.2.0.jar:/root/.m2/repository/org/glassfish/jersey/containers/jersey-container-grizzly2-http/2.39.1/jersey-container-grizzly2-http-2.39.1.jar:/root/.m2/repository/org/glassfish/hk2/external/jakarta.inject/2.6.1/jakarta.inject-2.6.1.jar:/root/.m2/repository/org/glassfish/grizzly/grizzly-http-server/2.4.4/grizzly-http-server-2.4.4.jar:/root/.m2/repository/org/glassfish/grizzly/grizzly-http/2.4.4/grizzly-http-2.4.4.jar:/root/.m2/repository/org/glassfish/grizzly/grizzly-framework/2.4.4/grizzly-framework-2.4.4.jar:/root/.m2/repository/org/glassfish/jersey/core/jersey-common/2.39.1/jersey-common-2.39.1.jar:/root/.m2/repository/jakarta/annotation/jakarta.annotation-api/1.3.5/jakarta.annotation-api-1.3.5.jar:/root/.m2/repository/org/glassfish/hk2/osgi-resource-locator/1.0.3/osgi-resource-locator-1.0.3.jar:/root/.m2/repository/org/glassfish/jersey/core/jersey-server/2.39.1/jersey-server-2.39.1.jar:/root/.m2/repository/org/glassfish/jersey/core/jersey-client/2.39.1/jersey-client-2.39.1.jar:/root/.m2/repository/jakarta/validation/jakarta.validation-api/2.0.2/jakarta.validation-api-2.0.2.jar:/root/.m2/repository/jakarta/ws/rs/jakarta.ws.rs-api/2.1.6/jakarta.ws.rs-api-2.1.6.jar:/root/.m2/repository/org/glassfish/jersey/media/jersey-media-moxy/2.39.1/jersey-media-moxy-2.39.1.jar:/root/.m2/repository/org/glassfish/jersey/ext/jersey-entity-filtering/2.39.1/jersey-entity-filtering-2.39.1.jar:/root/.m2/repository/jakarta/json/jakarta.json-api/1.1.6/jakarta.json-api-1.1.6.jar:/root/.m2/repository/org/glassfish/jakarta.json/1.1.6/jakarta.json-1.1.6.jar:/root/.m2/repository/org/eclipse/persistence/org.eclipse.persistence.moxy/2.7.10/org.eclipse.persistence.moxy-2.7.10.jar:/root/.m2/repository/org/eclipse/persistence/org.eclipse.persistence.core/2.7.10/org.eclipse.persistence.core-2.7.10.jar:/root/.m2/repository/org/eclipse/persistence/org.eclipse.persistence.asm/9.2.0/org.eclipse.persistence.asm-9.2.0.jar:/root/.m2/repository/org/glassfish/jersey/media/jersey-media-json-jackson/2.39.1/jersey-media-json-jackson-2.39.1.jar:/root/.m2/repository/com/fasterxml/jackson/core/jackson-annotations/2.14.1/jackson-annotations-2.14.1.jar:/root/.m2/repository/com/fasterxml/jackson/core/jackson-databind/2.14.1/jackson-databind-2.14.1.jar:/root/.m2/repository/com/fasterxml/jackson/module/jackson-module-jaxb-annotations/2.14.1/jackson-module-jaxb-annotations-2.14.1.jar:/root/.m2/repository/jakarta/xml/bind/jakarta.xml.bind-api/2.3.3/jakarta.xml.bind-api-2.3.3.jar:/root/.m2/repository/org/glassfish/jersey/inject/jersey-hk2/2.39.1/jersey-hk2-2.39.1.jar:/root/.m2/repository/org/glassfish/hk2/hk2-locator/2.6.1/hk2-locator-2.6.1.jar:/root/.m2/repository/org/glassfish/hk2/external/aopalliance-repackaged/2.6.1/aopalliance-repackaged-2.6.1.jar:/root/.m2/repository/org/glassfish/hk2/hk2-api/2.6.1/hk2-api-2.6.1.jar:/root/.m2/repository/org/glassfish/hk2/hk2-utils/2.6.1/hk2-utils-2.6.1.jar:/root/.m2/repository/org/javassist/javassist/3.29.0-GA/javassist-3.29.0-GA.jar:/root/.m2/repository/at/favre/lib/bcrypt/0.10.2/bcrypt-0.10.2.jar:/root/.m2/repository/at/favre/lib/bytes/1.5.0/bytes-1.5.0.jar:/root/.m2/repository/org/postgresql/postgresql/42.5.4/postgresql-42.5.4.jar:/root/.m2/repository/org/checkerframework/checker-qual/3.5.0/checker-qual-3.5.0.jar:/root/.m2/repository/org/eclipse/persistence/eclipselink/2.7.11/eclipselink-2.7.11.jar:/root/.m2/repository/org/eclipse/persistence/jakarta.persistence/2.2.3/jakarta.persistence-2.2.3.jar:/root/.m2/repository/org/eclipse/persistence/commonj.sdo/2.1.1/commonj.sdo-2.1.1.jar:/root/.m2/repository/org/eclipse/persistence/javax.persistence/2.2.1/javax.persistence-2.2.1.jar:/root/.m2/repository/org/projectlombok/lombok/1.18.24/lombok-1.18.24.jar:/root/.m2/repository/org/reflections/reflections/0.10.2/reflections-0.10.2.jar:/root/.m2/repository/com/google/code/findbugs/jsr305/3.0.2/jsr305-3.0.2.jar:/root/.m2/repository/org/junit/jupiter/junit-jupiter-engine/5.8.2/junit-jupiter-engine-5.8.2.jar:/root/.m2/repository/org/junit/platform/junit-platform-engine/1.8.2/junit-platform-engine-1.8.2.jar:/root/.m2/repository/org/apiguardian/apiguardian-api/1.1.2/apiguardian-api-1.1.2.jar:/root/.m2/repository/org/junit/jupiter/junit-jupiter-api/5.8.2/junit-jupiter-api-5.8.2.jar:/root/.m2/repository/org/opentest4j/opentest4j/1.2.0/opentest4j-1.2.0.jar:/root/.m2/repository/org/junit/platform/junit-platform-commons/1.8.2/junit-platform-commons-1.8.2.jar:/root/.m2/repository/ch/qos/logback/logback-core/1.3.5/logback-core-1.3.5.jar:/root/.m2/repository/org/slf4j/slf4j-api/2.0.4/slf4j-api-2.0.4.jar:/root/.m2/repository/ch/qos/logback/logback-classic/1.3.5/logback-classic-1.3.5.jar:/root/.m2/repository/com/fasterxml/jackson/datatype/jackson-datatype-jsr310/2.15.1/jackson-datatype-jsr310-2.15.1.jar:/root/.m2/repository/com/fasterxml/jackson/core/jackson-core/2.15.1/jackson-core-2.15.1.jar:"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="user.home" value="/root"/>
+    <property name="user.language" value="en"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.home" value="/usr/local/openjdk-8/jre"/>
+    <property name="basedir" value="/tested--b-vsa-ls23-projekt-2"/>
+    <property name="file.separator" value="/"/>
+    <property name="line.separator" value="&#10;"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="java.awt.graphicsenv" value="sun.awt.X11GraphicsEnvironment"/>
+    <property name="surefire.real.class.path" value="/tested--b-vsa-ls23-projekt-2/target/surefire/surefirebooter3639320439650527394.jar"/>
+    <property name="sun.boot.class.path" value="/usr/local/openjdk-8/jre/lib/resources.jar:/usr/local/openjdk-8/jre/lib/rt.jar:/usr/local/openjdk-8/jre/lib/sunrsasign.jar:/usr/local/openjdk-8/jre/lib/jsse.jar:/usr/local/openjdk-8/jre/lib/jce.jar:/usr/local/openjdk-8/jre/lib/charsets.jar:/usr/local/openjdk-8/jre/lib/jfr.jar:/usr/local/openjdk-8/jre/classes"/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="java.runtime.version" value="1.8.0_342-b07"/>
+    <property name="user.name" value="root"/>
+    <property name="path.separator" value=":"/>
+    <property name="os.version" value="5.15.90.1-microsoft-standard-WSL2"/>
+    <property name="java.endorsed.dirs" value="/usr/local/openjdk-8/jre/lib/endorsed"/>
+    <property name="java.runtime.name" value="OpenJDK Runtime Environment"/>
+    <property name="file.encoding" value="UTF-8"/>
+    <property name="java.vm.name" value="OpenJDK 64-Bit Server VM"/>
+    <property name="localRepository" value="/root/.m2/repository"/>
+    <property name="java.vendor.url.bug" value="http://bugreport.sun.com/bugreport/"/>
+    <property name="java.io.tmpdir" value="/tmp"/>
+    <property name="java.version" value="1.8.0_342"/>
+    <property name="user.dir" value="/tested--b-vsa-ls23-projekt-2"/>
+    <property name="os.arch" value="amd64"/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="java.awt.printerjob" value="sun.print.PSPrinterJob"/>
+    <property name="sun.os.patch.level" value="unknown"/>
+    <property name="java.library.path" value="/usr/java/packages/lib/amd64:/usr/lib64:/lib64:/lib:/usr/lib"/>
+    <property name="java.vm.info" value="mixed mode"/>
+    <property name="java.vendor" value="Oracle Corporation"/>
+    <property name="java.vm.version" value="25.342-b07"/>
+    <property name="java.ext.dirs" value="/usr/local/openjdk-8/jre/lib/ext:/usr/java/packages/lib/ext"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
+    <property name="java.class.version" value="52.0"/>
+  </properties>
+  <testcase name="testValidityOfPOMFile" classname="sk.stuba.fei.uim.vsa.pr2.SanityCheckTest" time="0.012"/>
+  <testcase name="testForResourcesAvailability" classname="sk.stuba.fei.uim.vsa.pr2.SanityCheckTest" time="0.205"/>
+  <testcase name="testPersistentUnit" classname="sk.stuba.fei.uim.vsa.pr2.SanityCheckTest" time="0.002"/>
+</testsuite>
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="sk.stuba.fei.uim.vsa.pr2.TeacherResourceTest" time="12.144" tests="11" errors="0" skipped="0" failures="8">
+  <properties>
+    <property name="awt.toolkit" value="sun.awt.X11.XToolkit"/>
+    <property name="file.encoding.pkg" value="sun.io"/>
+    <property name="java.specification.version" value="1.8"/>
+    <property name="sun.cpu.isalist" value=""/>
+    <property name="sun.jnu.encoding" value="UTF-8"/>
+    <property name="java.class.path" value="/tested--b-vsa-ls23-projekt-2/target/test-classes:/tested--b-vsa-ls23-projekt-2/target/classes:/root/.m2/repository/org/apache/derby/derbyclient/10.14.2.0/derbyclient-10.14.2.0.jar:/root/.m2/repository/org/glassfish/jersey/containers/jersey-container-grizzly2-http/2.39.1/jersey-container-grizzly2-http-2.39.1.jar:/root/.m2/repository/org/glassfish/hk2/external/jakarta.inject/2.6.1/jakarta.inject-2.6.1.jar:/root/.m2/repository/org/glassfish/grizzly/grizzly-http-server/2.4.4/grizzly-http-server-2.4.4.jar:/root/.m2/repository/org/glassfish/grizzly/grizzly-http/2.4.4/grizzly-http-2.4.4.jar:/root/.m2/repository/org/glassfish/grizzly/grizzly-framework/2.4.4/grizzly-framework-2.4.4.jar:/root/.m2/repository/org/glassfish/jersey/core/jersey-common/2.39.1/jersey-common-2.39.1.jar:/root/.m2/repository/jakarta/annotation/jakarta.annotation-api/1.3.5/jakarta.annotation-api-1.3.5.jar:/root/.m2/repository/org/glassfish/hk2/osgi-resource-locator/1.0.3/osgi-resource-locator-1.0.3.jar:/root/.m2/repository/org/glassfish/jersey/core/jersey-server/2.39.1/jersey-server-2.39.1.jar:/root/.m2/repository/org/glassfish/jersey/core/jersey-client/2.39.1/jersey-client-2.39.1.jar:/root/.m2/repository/jakarta/validation/jakarta.validation-api/2.0.2/jakarta.validation-api-2.0.2.jar:/root/.m2/repository/jakarta/ws/rs/jakarta.ws.rs-api/2.1.6/jakarta.ws.rs-api-2.1.6.jar:/root/.m2/repository/org/glassfish/jersey/media/jersey-media-moxy/2.39.1/jersey-media-moxy-2.39.1.jar:/root/.m2/repository/org/glassfish/jersey/ext/jersey-entity-filtering/2.39.1/jersey-entity-filtering-2.39.1.jar:/root/.m2/repository/jakarta/json/jakarta.json-api/1.1.6/jakarta.json-api-1.1.6.jar:/root/.m2/repository/org/glassfish/jakarta.json/1.1.6/jakarta.json-1.1.6.jar:/root/.m2/repository/org/eclipse/persistence/org.eclipse.persistence.moxy/2.7.10/org.eclipse.persistence.moxy-2.7.10.jar:/root/.m2/repository/org/eclipse/persistence/org.eclipse.persistence.core/2.7.10/org.eclipse.persistence.core-2.7.10.jar:/root/.m2/repository/org/eclipse/persistence/org.eclipse.persistence.asm/9.2.0/org.eclipse.persistence.asm-9.2.0.jar:/root/.m2/repository/org/glassfish/jersey/media/jersey-media-json-jackson/2.39.1/jersey-media-json-jackson-2.39.1.jar:/root/.m2/repository/com/fasterxml/jackson/core/jackson-annotations/2.14.1/jackson-annotations-2.14.1.jar:/root/.m2/repository/com/fasterxml/jackson/core/jackson-databind/2.14.1/jackson-databind-2.14.1.jar:/root/.m2/repository/com/fasterxml/jackson/module/jackson-module-jaxb-annotations/2.14.1/jackson-module-jaxb-annotations-2.14.1.jar:/root/.m2/repository/jakarta/xml/bind/jakarta.xml.bind-api/2.3.3/jakarta.xml.bind-api-2.3.3.jar:/root/.m2/repository/org/glassfish/jersey/inject/jersey-hk2/2.39.1/jersey-hk2-2.39.1.jar:/root/.m2/repository/org/glassfish/hk2/hk2-locator/2.6.1/hk2-locator-2.6.1.jar:/root/.m2/repository/org/glassfish/hk2/external/aopalliance-repackaged/2.6.1/aopalliance-repackaged-2.6.1.jar:/root/.m2/repository/org/glassfish/hk2/hk2-api/2.6.1/hk2-api-2.6.1.jar:/root/.m2/repository/org/glassfish/hk2/hk2-utils/2.6.1/hk2-utils-2.6.1.jar:/root/.m2/repository/org/javassist/javassist/3.29.0-GA/javassist-3.29.0-GA.jar:/root/.m2/repository/at/favre/lib/bcrypt/0.10.2/bcrypt-0.10.2.jar:/root/.m2/repository/at/favre/lib/bytes/1.5.0/bytes-1.5.0.jar:/root/.m2/repository/org/postgresql/postgresql/42.5.4/postgresql-42.5.4.jar:/root/.m2/repository/org/checkerframework/checker-qual/3.5.0/checker-qual-3.5.0.jar:/root/.m2/repository/org/eclipse/persistence/eclipselink/2.7.11/eclipselink-2.7.11.jar:/root/.m2/repository/org/eclipse/persistence/jakarta.persistence/2.2.3/jakarta.persistence-2.2.3.jar:/root/.m2/repository/org/eclipse/persistence/commonj.sdo/2.1.1/commonj.sdo-2.1.1.jar:/root/.m2/repository/org/eclipse/persistence/javax.persistence/2.2.1/javax.persistence-2.2.1.jar:/root/.m2/repository/org/projectlombok/lombok/1.18.24/lombok-1.18.24.jar:/root/.m2/repository/org/reflections/reflections/0.10.2/reflections-0.10.2.jar:/root/.m2/repository/com/google/code/findbugs/jsr305/3.0.2/jsr305-3.0.2.jar:/root/.m2/repository/org/junit/jupiter/junit-jupiter-engine/5.8.2/junit-jupiter-engine-5.8.2.jar:/root/.m2/repository/org/junit/platform/junit-platform-engine/1.8.2/junit-platform-engine-1.8.2.jar:/root/.m2/repository/org/apiguardian/apiguardian-api/1.1.2/apiguardian-api-1.1.2.jar:/root/.m2/repository/org/junit/jupiter/junit-jupiter-api/5.8.2/junit-jupiter-api-5.8.2.jar:/root/.m2/repository/org/opentest4j/opentest4j/1.2.0/opentest4j-1.2.0.jar:/root/.m2/repository/org/junit/platform/junit-platform-commons/1.8.2/junit-platform-commons-1.8.2.jar:/root/.m2/repository/ch/qos/logback/logback-core/1.3.5/logback-core-1.3.5.jar:/root/.m2/repository/org/slf4j/slf4j-api/2.0.4/slf4j-api-2.0.4.jar:/root/.m2/repository/ch/qos/logback/logback-classic/1.3.5/logback-classic-1.3.5.jar:/root/.m2/repository/com/fasterxml/jackson/datatype/jackson-datatype-jsr310/2.15.1/jackson-datatype-jsr310-2.15.1.jar:/root/.m2/repository/com/fasterxml/jackson/core/jackson-core/2.15.1/jackson-core-2.15.1.jar:"/>
+    <property name="java.vm.vendor" value="Oracle Corporation"/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="java.vendor.url" value="http://java.oracle.com/"/>
+    <property name="user.timezone" value=""/>
+    <property name="java.vm.specification.version" value="1.8"/>
+    <property name="os.name" value="Linux"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="sun.boot.library.path" value="/usr/local/openjdk-8/jre/lib/amd64"/>
+    <property name="sun.java.command" value="/tested--b-vsa-ls23-projekt-2/target/surefire/surefirebooter3639320439650527394.jar /tested--b-vsa-ls23-projekt-2/target/surefire 2023-05-18T13-18-35_499-jvmRun1 surefire8438766231838400500tmp surefire_02617501296421621447tmp"/>
+    <property name="surefire.test.class.path" value="/tested--b-vsa-ls23-projekt-2/target/test-classes:/tested--b-vsa-ls23-projekt-2/target/classes:/root/.m2/repository/org/apache/derby/derbyclient/10.14.2.0/derbyclient-10.14.2.0.jar:/root/.m2/repository/org/glassfish/jersey/containers/jersey-container-grizzly2-http/2.39.1/jersey-container-grizzly2-http-2.39.1.jar:/root/.m2/repository/org/glassfish/hk2/external/jakarta.inject/2.6.1/jakarta.inject-2.6.1.jar:/root/.m2/repository/org/glassfish/grizzly/grizzly-http-server/2.4.4/grizzly-http-server-2.4.4.jar:/root/.m2/repository/org/glassfish/grizzly/grizzly-http/2.4.4/grizzly-http-2.4.4.jar:/root/.m2/repository/org/glassfish/grizzly/grizzly-framework/2.4.4/grizzly-framework-2.4.4.jar:/root/.m2/repository/org/glassfish/jersey/core/jersey-common/2.39.1/jersey-common-2.39.1.jar:/root/.m2/repository/jakarta/annotation/jakarta.annotation-api/1.3.5/jakarta.annotation-api-1.3.5.jar:/root/.m2/repository/org/glassfish/hk2/osgi-resource-locator/1.0.3/osgi-resource-locator-1.0.3.jar:/root/.m2/repository/org/glassfish/jersey/core/jersey-server/2.39.1/jersey-server-2.39.1.jar:/root/.m2/repository/org/glassfish/jersey/core/jersey-client/2.39.1/jersey-client-2.39.1.jar:/root/.m2/repository/jakarta/validation/jakarta.validation-api/2.0.2/jakarta.validation-api-2.0.2.jar:/root/.m2/repository/jakarta/ws/rs/jakarta.ws.rs-api/2.1.6/jakarta.ws.rs-api-2.1.6.jar:/root/.m2/repository/org/glassfish/jersey/media/jersey-media-moxy/2.39.1/jersey-media-moxy-2.39.1.jar:/root/.m2/repository/org/glassfish/jersey/ext/jersey-entity-filtering/2.39.1/jersey-entity-filtering-2.39.1.jar:/root/.m2/repository/jakarta/json/jakarta.json-api/1.1.6/jakarta.json-api-1.1.6.jar:/root/.m2/repository/org/glassfish/jakarta.json/1.1.6/jakarta.json-1.1.6.jar:/root/.m2/repository/org/eclipse/persistence/org.eclipse.persistence.moxy/2.7.10/org.eclipse.persistence.moxy-2.7.10.jar:/root/.m2/repository/org/eclipse/persistence/org.eclipse.persistence.core/2.7.10/org.eclipse.persistence.core-2.7.10.jar:/root/.m2/repository/org/eclipse/persistence/org.eclipse.persistence.asm/9.2.0/org.eclipse.persistence.asm-9.2.0.jar:/root/.m2/repository/org/glassfish/jersey/media/jersey-media-json-jackson/2.39.1/jersey-media-json-jackson-2.39.1.jar:/root/.m2/repository/com/fasterxml/jackson/core/jackson-annotations/2.14.1/jackson-annotations-2.14.1.jar:/root/.m2/repository/com/fasterxml/jackson/core/jackson-databind/2.14.1/jackson-databind-2.14.1.jar:/root/.m2/repository/com/fasterxml/jackson/module/jackson-module-jaxb-annotations/2.14.1/jackson-module-jaxb-annotations-2.14.1.jar:/root/.m2/repository/jakarta/xml/bind/jakarta.xml.bind-api/2.3.3/jakarta.xml.bind-api-2.3.3.jar:/root/.m2/repository/org/glassfish/jersey/inject/jersey-hk2/2.39.1/jersey-hk2-2.39.1.jar:/root/.m2/repository/org/glassfish/hk2/hk2-locator/2.6.1/hk2-locator-2.6.1.jar:/root/.m2/repository/org/glassfish/hk2/external/aopalliance-repackaged/2.6.1/aopalliance-repackaged-2.6.1.jar:/root/.m2/repository/org/glassfish/hk2/hk2-api/2.6.1/hk2-api-2.6.1.jar:/root/.m2/repository/org/glassfish/hk2/hk2-utils/2.6.1/hk2-utils-2.6.1.jar:/root/.m2/repository/org/javassist/javassist/3.29.0-GA/javassist-3.29.0-GA.jar:/root/.m2/repository/at/favre/lib/bcrypt/0.10.2/bcrypt-0.10.2.jar:/root/.m2/repository/at/favre/lib/bytes/1.5.0/bytes-1.5.0.jar:/root/.m2/repository/org/postgresql/postgresql/42.5.4/postgresql-42.5.4.jar:/root/.m2/repository/org/checkerframework/checker-qual/3.5.0/checker-qual-3.5.0.jar:/root/.m2/repository/org/eclipse/persistence/eclipselink/2.7.11/eclipselink-2.7.11.jar:/root/.m2/repository/org/eclipse/persistence/jakarta.persistence/2.2.3/jakarta.persistence-2.2.3.jar:/root/.m2/repository/org/eclipse/persistence/commonj.sdo/2.1.1/commonj.sdo-2.1.1.jar:/root/.m2/repository/org/eclipse/persistence/javax.persistence/2.2.1/javax.persistence-2.2.1.jar:/root/.m2/repository/org/projectlombok/lombok/1.18.24/lombok-1.18.24.jar:/root/.m2/repository/org/reflections/reflections/0.10.2/reflections-0.10.2.jar:/root/.m2/repository/com/google/code/findbugs/jsr305/3.0.2/jsr305-3.0.2.jar:/root/.m2/repository/org/junit/jupiter/junit-jupiter-engine/5.8.2/junit-jupiter-engine-5.8.2.jar:/root/.m2/repository/org/junit/platform/junit-platform-engine/1.8.2/junit-platform-engine-1.8.2.jar:/root/.m2/repository/org/apiguardian/apiguardian-api/1.1.2/apiguardian-api-1.1.2.jar:/root/.m2/repository/org/junit/jupiter/junit-jupiter-api/5.8.2/junit-jupiter-api-5.8.2.jar:/root/.m2/repository/org/opentest4j/opentest4j/1.2.0/opentest4j-1.2.0.jar:/root/.m2/repository/org/junit/platform/junit-platform-commons/1.8.2/junit-platform-commons-1.8.2.jar:/root/.m2/repository/ch/qos/logback/logback-core/1.3.5/logback-core-1.3.5.jar:/root/.m2/repository/org/slf4j/slf4j-api/2.0.4/slf4j-api-2.0.4.jar:/root/.m2/repository/ch/qos/logback/logback-classic/1.3.5/logback-classic-1.3.5.jar:/root/.m2/repository/com/fasterxml/jackson/datatype/jackson-datatype-jsr310/2.15.1/jackson-datatype-jsr310-2.15.1.jar:/root/.m2/repository/com/fasterxml/jackson/core/jackson-core/2.15.1/jackson-core-2.15.1.jar:"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="user.home" value="/root"/>
+    <property name="user.language" value="en"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.home" value="/usr/local/openjdk-8/jre"/>
+    <property name="basedir" value="/tested--b-vsa-ls23-projekt-2"/>
+    <property name="file.separator" value="/"/>
+    <property name="line.separator" value="&#10;"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="java.awt.graphicsenv" value="sun.awt.X11GraphicsEnvironment"/>
+    <property name="surefire.real.class.path" value="/tested--b-vsa-ls23-projekt-2/target/surefire/surefirebooter3639320439650527394.jar"/>
+    <property name="sun.boot.class.path" value="/usr/local/openjdk-8/jre/lib/resources.jar:/usr/local/openjdk-8/jre/lib/rt.jar:/usr/local/openjdk-8/jre/lib/sunrsasign.jar:/usr/local/openjdk-8/jre/lib/jsse.jar:/usr/local/openjdk-8/jre/lib/jce.jar:/usr/local/openjdk-8/jre/lib/charsets.jar:/usr/local/openjdk-8/jre/lib/jfr.jar:/usr/local/openjdk-8/jre/classes"/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="java.runtime.version" value="1.8.0_342-b07"/>
+    <property name="user.name" value="root"/>
+    <property name="path.separator" value=":"/>
+    <property name="os.version" value="5.15.90.1-microsoft-standard-WSL2"/>
+    <property name="java.endorsed.dirs" value="/usr/local/openjdk-8/jre/lib/endorsed"/>
+    <property name="java.runtime.name" value="OpenJDK Runtime Environment"/>
+    <property name="file.encoding" value="UTF-8"/>
+    <property name="java.vm.name" value="OpenJDK 64-Bit Server VM"/>
+    <property name="localRepository" value="/root/.m2/repository"/>
+    <property name="java.vendor.url.bug" value="http://bugreport.sun.com/bugreport/"/>
+    <property name="java.io.tmpdir" value="/tmp"/>
+    <property name="java.version" value="1.8.0_342"/>
+    <property name="user.dir" value="/tested--b-vsa-ls23-projekt-2"/>
+    <property name="os.arch" value="amd64"/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="java.awt.printerjob" value="sun.print.PSPrinterJob"/>
+    <property name="sun.os.patch.level" value="unknown"/>
+    <property name="java.library.path" value="/usr/java/packages/lib/amd64:/usr/lib64:/lib64:/lib:/usr/lib"/>
+    <property name="java.vm.info" value="mixed mode"/>
+    <property name="java.vendor" value="Oracle Corporation"/>
+    <property name="java.vm.version" value="25.342-b07"/>
+    <property name="java.ext.dirs" value="/usr/local/openjdk-8/jre/lib/ext:/usr/java/packages/lib/ext"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
+    <property name="java.class.version" value="52.0"/>
+  </properties>
+  <testcase name="shouldCreateTeacherWithOnlyRequiredProperties" classname="sk.stuba.fei.uim.vsa.pr2.TeacherResourceTest" time="0.757"/>
+  <testcase name="shouldGetTeacher" classname="sk.stuba.fei.uim.vsa.pr2.TeacherResourceTest" time="1.13">
+    <failure message="expected: &lt;200&gt; but was: &lt;401&gt;" type="org.opentest4j.AssertionFailedError"><![CDATA[org.opentest4j.AssertionFailedError: expected: <200> but was: <401>
+	at sk.stuba.fei.uim.vsa.pr2.TeacherResourceTest.shouldGetTeacher(TeacherResourceTest.java:145)
+]]></failure>
+    <system-out><![CDATA[[EL Fine]: sql: 2023-05-18 13:19:17.627--ServerSession(1202547191)--Connection(1403413933)--Thread(Thread[grizzly-http-server-1,5,main])--SELECT AISID, DEPARTMENT, EMAIL, INSTITUTE, NAME, PASSWORD FROM PEDAGOG WHERE (EMAIL = ?)
+	bind => [ucitel.test@stuba.sk]
+[EL Fine]: sql: 2023-05-18 13:19:17.628--ClientSession(1523583578)--Connection(1403413933)--Thread(Thread[grizzly-http-server-1,5,main])--INSERT INTO PEDAGOG (AISID, DEPARTMENT, EMAIL, INSTITUTE, NAME, PASSWORD) VALUES (?, ?, ?, ?, ?, ?)
+	bind => [45678, null, ucitel.test@stuba.sk, SI, Testovaci ucitel, null]
+[EL Fine]: sql: 2023-05-18 13:19:18.173--ClientSession(1290826261)--Connection(1403413933)--Thread(Thread[grizzly-http-server-1,5,main])--INSERT INTO vsa_user (AISID, PASSWORD, USERNAME) VALUES (?, ?, ?)
+	bind => [45678, $2a$13$djL4bQHU7r3c8fLXJIB0..GygarBWojsGs/GVCOlg2vjyLmeAgOtK, ucitel.test@stuba.sk]
+[EL Fine]: sql: 2023-05-18 13:19:18.174--ClientSession(1290826261)--Connection(1403413933)--Thread(Thread[grizzly-http-server-1,5,main])--INSERT INTO User_PERMISSIONS (User_AISID, PERMISSIONS) VALUES (?, ?)
+	bind => [45678, 1]
+[EL Fine]: sql: 2023-05-18 13:19:18.185--ClientSession(1086282829)--Connection(1403413933)--Thread(Thread[grizzly-http-server-1,5,main])--UPDATE PEDAGOG SET DEPARTMENT = ?, INSTITUTE = ? WHERE (AISID = ?)
+	bind => [SI, UIM, 45678]
+2023-05-18 13:19:18.194  INFO --- [y-http-server-2] .s.f.u.v.p.JAXRSApplicationConfiguration : Recieved credentials: ucitel.test@stuba.sk, password
+[EL Fine]: sql: 2023-05-18 13:19:18.194--ServerSession(1202547191)--Connection(1403413933)--Thread(Thread[grizzly-http-server-2,5,main])--SELECT AISID, PASSWORD, USERNAME FROM vsa_user WHERE (USERNAME = ?)
+	bind => [ucitel.test@stuba.sk]
+]]></system-out>
+  </testcase>
+  <testcase name="deleteTeacher" classname="sk.stuba.fei.uim.vsa.pr2.TeacherResourceTest" time="1.117">
+    <failure message="expected: &lt;200&gt; but was: &lt;401&gt;" type="org.opentest4j.AssertionFailedError"><![CDATA[org.opentest4j.AssertionFailedError: expected: <200> but was: <401>
+	at sk.stuba.fei.uim.vsa.pr2.TeacherResourceTest.deleteTeacher(TeacherResourceTest.java:181)
+]]></failure>
+    <system-out><![CDATA[[EL Fine]: sql: 2023-05-18 13:19:18.766--ServerSession(1202547191)--Connection(1403413933)--Thread(Thread[grizzly-http-server-3,5,main])--SELECT AISID, DEPARTMENT, EMAIL, INSTITUTE, NAME, PASSWORD FROM PEDAGOG WHERE (EMAIL = ?)
+	bind => [ucitel.test@stuba.sk]
+[EL Fine]: sql: 2023-05-18 13:19:18.767--ClientSession(1112426122)--Connection(1403413933)--Thread(Thread[grizzly-http-server-3,5,main])--INSERT INTO PEDAGOG (AISID, DEPARTMENT, EMAIL, INSTITUTE, NAME, PASSWORD) VALUES (?, ?, ?, ?, ?, ?)
+	bind => [45678, null, ucitel.test@stuba.sk, SI, Testovaci ucitel, null]
+[EL Fine]: sql: 2023-05-18 13:19:19.267--ClientSession(2003068945)--Connection(1403413933)--Thread(Thread[grizzly-http-server-3,5,main])--INSERT INTO vsa_user (AISID, PASSWORD, USERNAME) VALUES (?, ?, ?)
+	bind => [45678, $2a$13$BkbBdvY.b6Ul.EIKK3efjOHsXAi6nxYavO12ZuuAhCnauPnwsgb6e, ucitel.test@stuba.sk]
+[EL Fine]: sql: 2023-05-18 13:19:19.268--ClientSession(2003068945)--Connection(1403413933)--Thread(Thread[grizzly-http-server-3,5,main])--INSERT INTO User_PERMISSIONS (User_AISID, PERMISSIONS) VALUES (?, ?)
+	bind => [45678, 1]
+[EL Fine]: sql: 2023-05-18 13:19:19.278--ClientSession(1139209082)--Connection(1403413933)--Thread(Thread[grizzly-http-server-3,5,main])--UPDATE PEDAGOG SET DEPARTMENT = ?, INSTITUTE = ? WHERE (AISID = ?)
+	bind => [SI, UIM, 45678]
+2023-05-18 13:19:19.285  INFO --- [y-http-server-4] .s.f.u.v.p.JAXRSApplicationConfiguration : Recieved credentials: ucitel.test@stuba.sk, password
+[EL Fine]: sql: 2023-05-18 13:19:19.285--ServerSession(1202547191)--Connection(1403413933)--Thread(Thread[grizzly-http-server-4,5,main])--SELECT AISID, PASSWORD, USERNAME FROM vsa_user WHERE (USERNAME = ?)
+	bind => [ucitel.test@stuba.sk]
+]]></system-out>
+  </testcase>
+  <testcase name="shouldGetNotFoundForNonExistingTeacher" classname="sk.stuba.fei.uim.vsa.pr2.TeacherResourceTest" time="1.093">
+    <failure message="expected: &lt;true&gt; but was: &lt;false&gt;" type="org.opentest4j.AssertionFailedError"><![CDATA[org.opentest4j.AssertionFailedError: expected: <true> but was: <false>
+	at sk.stuba.fei.uim.vsa.pr2.TeacherResourceTest.shouldGetNotFoundForNonExistingTeacher(TeacherResourceTest.java:166)
+]]></failure>
+    <system-out><![CDATA[[EL Fine]: sql: 2023-05-18 13:19:19.883--ServerSession(1202547191)--Connection(1403413933)--Thread(Thread[grizzly-http-server-5,5,main])--SELECT AISID, DEPARTMENT, EMAIL, INSTITUTE, NAME, PASSWORD FROM PEDAGOG WHERE (EMAIL = ?)
+	bind => [ucitel.test@stuba.sk]
+[EL Fine]: sql: 2023-05-18 13:19:19.884--ClientSession(1547344741)--Connection(1403413933)--Thread(Thread[grizzly-http-server-5,5,main])--INSERT INTO PEDAGOG (AISID, DEPARTMENT, EMAIL, INSTITUTE, NAME, PASSWORD) VALUES (?, ?, ?, ?, ?, ?)
+	bind => [45678, null, ucitel.test@stuba.sk, SI, Testovaci ucitel, null]
+[EL Fine]: sql: 2023-05-18 13:19:20.384--ClientSession(1602815676)--Connection(1403413933)--Thread(Thread[grizzly-http-server-5,5,main])--INSERT INTO vsa_user (AISID, PASSWORD, USERNAME) VALUES (?, ?, ?)
+	bind => [45678, $2a$13$oLr9ZGVzTYMgoYHf5HYipOzm37c4O1HMwKxyZ.zFkweC2MKe6pCBS, ucitel.test@stuba.sk]
+[EL Fine]: sql: 2023-05-18 13:19:20.385--ClientSession(1602815676)--Connection(1403413933)--Thread(Thread[grizzly-http-server-5,5,main])--INSERT INTO User_PERMISSIONS (User_AISID, PERMISSIONS) VALUES (?, ?)
+	bind => [45678, 1]
+[EL Fine]: sql: 2023-05-18 13:19:20.395--ClientSession(517458249)--Connection(1403413933)--Thread(Thread[grizzly-http-server-5,5,main])--UPDATE PEDAGOG SET DEPARTMENT = ?, INSTITUTE = ? WHERE (AISID = ?)
+	bind => [SI, UIM, 45678]
+2023-05-18 13:19:20.403  INFO --- [y-http-server-6] .s.f.u.v.p.JAXRSApplicationConfiguration : Recieved credentials: ucitel.test@stuba.sk, password
+[EL Fine]: sql: 2023-05-18 13:19:20.404--ServerSession(1202547191)--Connection(1403413933)--Thread(Thread[grizzly-http-server-6,5,main])--SELECT AISID, PASSWORD, USERNAME FROM vsa_user WHERE (USERNAME = ?)
+	bind => [ucitel.test@stuba.sk]
+]]></system-out>
+  </testcase>
+  <testcase name="shouldReturnUnauthorized" classname="sk.stuba.fei.uim.vsa.pr2.TeacherResourceTest" time="0.085">
+    <failure message="expected: &lt;true&gt; but was: &lt;false&gt;" type="org.opentest4j.AssertionFailedError"><![CDATA[org.opentest4j.AssertionFailedError: expected: <true> but was: <false>
+	at sk.stuba.fei.uim.vsa.pr2.TeacherResourceTest.shouldReturnUnauthorized(TeacherResourceTest.java:113)
+]]></failure>
+  </testcase>
+  <testcase name="shouldCreateTeacher" classname="sk.stuba.fei.uim.vsa.pr2.TeacherResourceTest" time="0.605"/>
+  <testcase name="shouldReturnForbiddenToDeleteTeacherWithStudent" classname="sk.stuba.fei.uim.vsa.pr2.TeacherResourceTest" time="2.169">
+    <failure message="expected: &lt;true&gt; but was: &lt;false&gt;" type="org.opentest4j.AssertionFailedError"><![CDATA[org.opentest4j.AssertionFailedError: expected: <true> but was: <false>
+	at sk.stuba.fei.uim.vsa.pr2.TeacherResourceTest.shouldReturnForbiddenToDeleteTeacherWithStudent(TeacherResourceTest.java:239)
+]]></failure>
+    <system-out><![CDATA[[EL Fine]: sql: 2023-05-18 13:19:21.653--ServerSession(1202547191)--Connection(1403413933)--Thread(Thread[grizzly-http-server-9,5,main])--SELECT AISID, DEPARTMENT, EMAIL, INSTITUTE, NAME, PASSWORD FROM PEDAGOG WHERE (EMAIL = ?)
+	bind => [ucitel.test@stuba.sk]
+[EL Fine]: sql: 2023-05-18 13:19:21.654--ClientSession(695584540)--Connection(1403413933)--Thread(Thread[grizzly-http-server-9,5,main])--INSERT INTO PEDAGOG (AISID, DEPARTMENT, EMAIL, INSTITUTE, NAME, PASSWORD) VALUES (?, ?, ?, ?, ?, ?)
+	bind => [45678, null, ucitel.test@stuba.sk, SI, Testovaci ucitel, null]
+[EL Fine]: sql: 2023-05-18 13:19:22.198--ClientSession(215310889)--Connection(1403413933)--Thread(Thread[grizzly-http-server-9,5,main])--INSERT INTO vsa_user (AISID, PASSWORD, USERNAME) VALUES (?, ?, ?)
+	bind => [45678, $2a$13$S0mbYsnuAdqHE2mBpZTWh..nlXz/LDiBHMwpRVtsnLFVa2D4fLokq, ucitel.test@stuba.sk]
+[EL Fine]: sql: 2023-05-18 13:19:22.199--ClientSession(215310889)--Connection(1403413933)--Thread(Thread[grizzly-http-server-9,5,main])--INSERT INTO User_PERMISSIONS (User_AISID, PERMISSIONS) VALUES (?, ?)
+	bind => [45678, 1]
+[EL Fine]: sql: 2023-05-18 13:19:22.209--ClientSession(1537576411)--Connection(1403413933)--Thread(Thread[grizzly-http-server-9,5,main])--UPDATE PEDAGOG SET DEPARTMENT = ?, INSTITUTE = ? WHERE (AISID = ?)
+	bind => [SI, UIM, 45678]
+[EL Fine]: sql: 2023-05-18 13:19:22.223--ServerSession(1202547191)--Connection(1403413933)--Thread(Thread[grizzly-http-server-10,5,main])--SELECT Id, EMAIL, NAME, PASSWORD, program, TERM, study_year FROM STUDENT WHERE (EMAIL = ?)
+	bind => [xstudent@stuba.sk]
+[EL Fine]: sql: 2023-05-18 13:19:22.224--ClientSession(1200340765)--Connection(1403413933)--Thread(Thread[grizzly-http-server-10,5,main])--INSERT INTO STUDENT (Id, EMAIL, NAME, PASSWORD, program, TERM, study_year) VALUES (?, ?, ?, ?, ?, ?, ?)
+	bind => [70127, xstudent@stuba.sk, Test Student, null, null, null, null]
+[EL Fine]: sql: 2023-05-18 13:19:22.749--ClientSession(1512285307)--Connection(1403413933)--Thread(Thread[grizzly-http-server-10,5,main])--INSERT INTO vsa_user (AISID, PASSWORD, USERNAME) VALUES (?, ?, ?)
+	bind => [70127, $2a$13$LmQ5Vx04zBHAMB1N6JAvF.RrRUffc0/tolF.SuPyGPT4CAbKyux3e, xstudent@stuba.sk]
+[EL Fine]: sql: 2023-05-18 13:19:22.749--ClientSession(1512285307)--Connection(1403413933)--Thread(Thread[grizzly-http-server-10,5,main])--INSERT INTO User_PERMISSIONS (User_AISID, PERMISSIONS) VALUES (?, ?)
+	bind => [70127, 0]
+[EL Fine]: sql: 2023-05-18 13:19:23.233--ClientSession(969008225)--Connection(1403413933)--Thread(Thread[grizzly-http-server-10,5,main])--UPDATE STUDENT SET PASSWORD = ?, program = ?, TERM = ?, study_year = ? WHERE (Id = ?)
+	bind => [$2a$13$UKWjSBHvnzvGB.QusZN/b.wZz6aZUNYBbK1gSOqyKdotxv2irf7HO, API, 18, 8, 70127]
+2023-05-18 13:19:23.251  INFO --- [-http-server-11] .s.f.u.v.p.JAXRSApplicationConfiguration : Recieved credentials: xstudent@stuba.sk, password
+[EL Fine]: sql: 2023-05-18 13:19:23.251--ServerSession(1202547191)--Connection(1403413933)--Thread(Thread[grizzly-http-server-11,5,main])--SELECT AISID, PASSWORD, USERNAME FROM vsa_user WHERE (USERNAME = ?)
+	bind => [xstudent@stuba.sk]
+]]></system-out>
+  </testcase>
+  <testcase name="shouldReturnForbiddenToDeleteWithWrongTeacher" classname="sk.stuba.fei.uim.vsa.pr2.TeacherResourceTest" time="1.629">
+    <failure message="expected: &lt;true&gt; but was: &lt;false&gt;" type="org.opentest4j.AssertionFailedError"><![CDATA[org.opentest4j.AssertionFailedError: expected: <true> but was: <false>
+	at sk.stuba.fei.uim.vsa.pr2.TeacherResourceTest.shouldReturnForbiddenToDeleteWithWrongTeacher(TeacherResourceTest.java:225)
+]]></failure>
+    <system-out><![CDATA[[EL Fine]: sql: 2023-05-18 13:19:23.859--ServerSession(1202547191)--Connection(1403413933)--Thread(Thread[grizzly-http-server-12,5,main])--SELECT AISID, DEPARTMENT, EMAIL, INSTITUTE, NAME, PASSWORD FROM PEDAGOG WHERE (EMAIL = ?)
+	bind => [ucitel.test@stuba.sk]
+[EL Fine]: sql: 2023-05-18 13:19:23.86--ClientSession(134356031)--Connection(1403413933)--Thread(Thread[grizzly-http-server-12,5,main])--INSERT INTO PEDAGOG (AISID, DEPARTMENT, EMAIL, INSTITUTE, NAME, PASSWORD) VALUES (?, ?, ?, ?, ?, ?)
+	bind => [45678, null, ucitel.test@stuba.sk, SI, Testovaci ucitel, null]
+[EL Fine]: sql: 2023-05-18 13:19:24.345--ClientSession(28633335)--Connection(1403413933)--Thread(Thread[grizzly-http-server-12,5,main])--INSERT INTO vsa_user (AISID, PASSWORD, USERNAME) VALUES (?, ?, ?)
+	bind => [45678, $2a$13$0MQ2VTm1dlfe72p3Vdosr.E1/U1diTdzmr0QNA/hJ34VOY29cPCk6, ucitel.test@stuba.sk]
+[EL Fine]: sql: 2023-05-18 13:19:24.346--ClientSession(28633335)--Connection(1403413933)--Thread(Thread[grizzly-http-server-12,5,main])--INSERT INTO User_PERMISSIONS (User_AISID, PERMISSIONS) VALUES (?, ?)
+	bind => [45678, 1]
+[EL Fine]: sql: 2023-05-18 13:19:24.356--ClientSession(2076531150)--Connection(1403413933)--Thread(Thread[grizzly-http-server-12,5,main])--UPDATE PEDAGOG SET DEPARTMENT = ?, INSTITUTE = ? WHERE (AISID = ?)
+	bind => [SI, UIM, 45678]
+[EL Fine]: sql: 2023-05-18 13:19:24.366--ServerSession(1202547191)--Connection(1403413933)--Thread(Thread[grizzly-http-server-13,5,main])--SELECT AISID, DEPARTMENT, EMAIL, INSTITUTE, NAME, PASSWORD FROM PEDAGOG WHERE (EMAIL = ?)
+	bind => [test.teacher@stuba.sk]
+[EL Fine]: sql: 2023-05-18 13:19:24.367--ClientSession(1607491520)--Connection(1403413933)--Thread(Thread[grizzly-http-server-13,5,main])--INSERT INTO PEDAGOG (AISID, DEPARTMENT, EMAIL, INSTITUTE, NAME, PASSWORD) VALUES (?, ?, ?, ?, ?, ?)
+	bind => [123456, null, test.teacher@stuba.sk, BIS, Meno testovacieho uciteľa, null]
+[EL Fine]: sql: 2023-05-18 13:19:24.87--ClientSession(1150059948)--Connection(1403413933)--Thread(Thread[grizzly-http-server-13,5,main])--INSERT INTO vsa_user (AISID, PASSWORD, USERNAME) VALUES (?, ?, ?)
+	bind => [123456, $2a$13$mFecwoblvEZiyVkpGzpUS.Aikyrx6x.zCCd7EN.5xRgSeFrIr9My2, test.teacher@stuba.sk]
+[EL Fine]: sql: 2023-05-18 13:19:24.871--ClientSession(1150059948)--Connection(1403413933)--Thread(Thread[grizzly-http-server-13,5,main])--INSERT INTO User_PERMISSIONS (User_AISID, PERMISSIONS) VALUES (?, ?)
+	bind => [123456, 1]
+[EL Fine]: sql: 2023-05-18 13:19:24.88--ClientSession(1281917352)--Connection(1403413933)--Thread(Thread[grizzly-http-server-13,5,main])--UPDATE PEDAGOG SET DEPARTMENT = ?, INSTITUTE = ? WHERE (AISID = ?)
+	bind => [BIS, UIMM, 123456]
+2023-05-18 13:19:24.888  INFO --- [-http-server-14] .s.f.u.v.p.JAXRSApplicationConfiguration : Recieved credentials: test.teacher@stuba.sk, password
+[EL Fine]: sql: 2023-05-18 13:19:24.888--ServerSession(1202547191)--Connection(1403413933)--Thread(Thread[grizzly-http-server-14,5,main])--SELECT AISID, PASSWORD, USERNAME FROM vsa_user WHERE (USERNAME = ?)
+	bind => [test.teacher@stuba.sk]
+]]></system-out>
+  </testcase>
+  <testcase name="shouldGetEmptyList" classname="sk.stuba.fei.uim.vsa.pr2.TeacherResourceTest" time="1.592">
+    <failure message="expected: &lt;200&gt; but was: &lt;401&gt;" type="org.opentest4j.AssertionFailedError"><![CDATA[org.opentest4j.AssertionFailedError: expected: <200> but was: <401>
+	at sk.stuba.fei.uim.vsa.pr2.TeacherResourceTest.shouldGetEmptyList(TeacherResourceTest.java:126)
+]]></failure>
+    <system-out><![CDATA[[EL Fine]: sql: 2023-05-18 13:19:25.483--ServerSession(1202547191)--Connection(1403413933)--Thread(Thread[grizzly-http-server-15,5,main])--SELECT Id, EMAIL, NAME, PASSWORD, program, TERM, study_year FROM STUDENT WHERE (EMAIL = ?)
+	bind => [xstudent@stuba.sk]
+[EL Fine]: sql: 2023-05-18 13:19:25.484--ClientSession(1761529670)--Connection(1403413933)--Thread(Thread[grizzly-http-server-15,5,main])--INSERT INTO STUDENT (Id, EMAIL, NAME, PASSWORD, program, TERM, study_year) VALUES (?, ?, ?, ?, ?, ?, ?)
+	bind => [70127, xstudent@stuba.sk, Test Student, null, null, null, null]
+[EL Fine]: sql: 2023-05-18 13:19:25.98--ClientSession(2134747843)--Connection(1403413933)--Thread(Thread[grizzly-http-server-15,5,main])--INSERT INTO vsa_user (AISID, PASSWORD, USERNAME) VALUES (?, ?, ?)
+	bind => [70127, $2a$13$iHPIs/HaOS0qC8wwDHFZketesbc4A.rxaI4Mjcjd5yMd7iJninD3K, xstudent@stuba.sk]
+[EL Fine]: sql: 2023-05-18 13:19:25.98--ClientSession(2134747843)--Connection(1403413933)--Thread(Thread[grizzly-http-server-15,5,main])--INSERT INTO User_PERMISSIONS (User_AISID, PERMISSIONS) VALUES (?, ?)
+	bind => [70127, 0]
+[EL Fine]: sql: 2023-05-18 13:19:26.472--ClientSession(804616265)--Connection(1403413933)--Thread(Thread[grizzly-http-server-15,5,main])--UPDATE STUDENT SET PASSWORD = ?, program = ?, TERM = ?, study_year = ? WHERE (Id = ?)
+	bind => [$2a$13$b95m5d71wXTCCPnmiSnrRO5qaYh0uEtLOUq3.vL5N58ZLPkaiPYMS, API, 18, 8, 70127]
+2023-05-18 13:19:26.479  INFO --- [-http-server-16] .s.f.u.v.p.JAXRSApplicationConfiguration : Recieved credentials: xstudent@stuba.sk, password
+[EL Fine]: sql: 2023-05-18 13:19:26.48--ServerSession(1202547191)--Connection(1403413933)--Thread(Thread[grizzly-http-server-16,5,main])--SELECT AISID, PASSWORD, USERNAME FROM vsa_user WHERE (USERNAME = ?)
+	bind => [xstudent@stuba.sk]
+]]></system-out>
+  </testcase>
+  <testcase name="shouldCallWithoutBodyAndReturnError" classname="sk.stuba.fei.uim.vsa.pr2.TeacherResourceTest" time="0.086"/>
+  <testcase name="shouldGetAllTeachers" classname="sk.stuba.fei.uim.vsa.pr2.TeacherResourceTest" time="1.779">
+    <failure message="expected: &lt;200&gt; but was: &lt;401&gt;" type="org.opentest4j.AssertionFailedError"><![CDATA[org.opentest4j.AssertionFailedError: expected: <200> but was: <401>
+	at sk.stuba.fei.uim.vsa.pr2.TeacherResourceTest.shouldGetAllTeachers(TeacherResourceTest.java:94)
+]]></failure>
+    <system-out><![CDATA[[EL Fine]: sql: 2023-05-18 13:19:27.135--ServerSession(1202547191)--Connection(1403413933)--Thread(Thread[grizzly-http-server-18,5,main])--SELECT AISID, DEPARTMENT, EMAIL, INSTITUTE, NAME, PASSWORD FROM PEDAGOG WHERE (EMAIL = ?)
+	bind => [ucitel.test@stuba.sk]
+[EL Fine]: sql: 2023-05-18 13:19:27.136--ClientSession(1852404443)--Connection(1403413933)--Thread(Thread[grizzly-http-server-18,5,main])--INSERT INTO PEDAGOG (AISID, DEPARTMENT, EMAIL, INSTITUTE, NAME, PASSWORD) VALUES (?, ?, ?, ?, ?, ?)
+	bind => [45678, null, ucitel.test@stuba.sk, SI, Testovaci ucitel, null]
+[EL Fine]: sql: 2023-05-18 13:19:27.629--ClientSession(386562703)--Connection(1403413933)--Thread(Thread[grizzly-http-server-18,5,main])--INSERT INTO vsa_user (AISID, PASSWORD, USERNAME) VALUES (?, ?, ?)
+	bind => [45678, $2a$13$0alvB48pEAnli7IgQrWdq.mKfR3lNogLeVKWt44/2RRYAC1hOQExC, ucitel.test@stuba.sk]
+[EL Fine]: sql: 2023-05-18 13:19:27.63--ClientSession(386562703)--Connection(1403413933)--Thread(Thread[grizzly-http-server-18,5,main])--INSERT INTO User_PERMISSIONS (User_AISID, PERMISSIONS) VALUES (?, ?)
+	bind => [45678, 1]
+[EL Fine]: sql: 2023-05-18 13:19:27.641--ClientSession(2131218880)--Connection(1403413933)--Thread(Thread[grizzly-http-server-18,5,main])--UPDATE PEDAGOG SET DEPARTMENT = ?, INSTITUTE = ? WHERE (AISID = ?)
+	bind => [SI, UIM, 45678]
+[EL Fine]: sql: 2023-05-18 13:19:27.65--ServerSession(1202547191)--Connection(1403413933)--Thread(Thread[grizzly-http-server-19,5,main])--SELECT AISID, DEPARTMENT, EMAIL, INSTITUTE, NAME, PASSWORD FROM PEDAGOG WHERE (EMAIL = ?)
+	bind => [test.teacher@stuba.sk]
+[EL Fine]: sql: 2023-05-18 13:19:27.65--ClientSession(1189054863)--Connection(1403413933)--Thread(Thread[grizzly-http-server-19,5,main])--INSERT INTO PEDAGOG (AISID, DEPARTMENT, EMAIL, INSTITUTE, NAME, PASSWORD) VALUES (?, ?, ?, ?, ?, ?)
+	bind => [123456, null, test.teacher@stuba.sk, BIS, Meno testovacieho uciteľa, null]
+[EL Fine]: sql: 2023-05-18 13:19:28.142--ClientSession(962244756)--Connection(1403413933)--Thread(Thread[grizzly-http-server-19,5,main])--INSERT INTO vsa_user (AISID, PASSWORD, USERNAME) VALUES (?, ?, ?)
+	bind => [123456, $2a$13$STz70dS9N/B2XuOKOg.vo.BO8/A6aCoh3uyrkf/pDnYkcmorg.ttq, test.teacher@stuba.sk]
+[EL Fine]: sql: 2023-05-18 13:19:28.142--ClientSession(962244756)--Connection(1403413933)--Thread(Thread[grizzly-http-server-19,5,main])--INSERT INTO User_PERMISSIONS (User_AISID, PERMISSIONS) VALUES (?, ?)
+	bind => [123456, 1]
+[EL Fine]: sql: 2023-05-18 13:19:28.152--ClientSession(2133963734)--Connection(1403413933)--Thread(Thread[grizzly-http-server-19,5,main])--UPDATE PEDAGOG SET DEPARTMENT = ?, INSTITUTE = ? WHERE (AISID = ?)
+	bind => [BIS, UIMM, 123456]
+2023-05-18 13:19:28.159  INFO --- [-http-server-20] .s.f.u.v.p.JAXRSApplicationConfiguration : Recieved credentials: ucitel.test@stuba.sk, password
+[EL Fine]: sql: 2023-05-18 13:19:28.159--ServerSession(1202547191)--Connection(1403413933)--Thread(Thread[grizzly-http-server-20,5,main])--SELECT AISID, PASSWORD, USERNAME FROM vsa_user WHERE (USERNAME = ?)
+	bind => [ucitel.test@stuba.sk]
+]]></system-out>
+  </testcase>
+</testsuite></testsuites>

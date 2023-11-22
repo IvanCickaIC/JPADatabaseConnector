@@ -1,0 +1,80 @@
+-------------------------------------------------------------------------------
+Test set: sk.stuba.fei.uim.vsa.pr2.StudentResourceTest
+-------------------------------------------------------------------------------
+Tests run: 10, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 16.181 s <<< FAILURE! - in sk.stuba.fei.uim.vsa.pr2.StudentResourceTest
+shouldReturnUnauthorized  Time elapsed: 0.081 s  <<< FAILURE!
+org.opentest4j.AssertionFailedError: expected: <true> but was: <false>
+	at sk.stuba.fei.uim.vsa.pr2.StudentResourceTest.shouldReturnUnauthorized(StudentResourceTest.java:114)
+
+---------------------------------------------------------------------
+ 
+-------------------------------------------------------------------------------
+Test set: sk.stuba.fei.uim.vsa.pr2.ThesisResourceTest
+-------------------------------------------------------------------------------
+Tests run: 21, Failures: 12, Errors: 0, Skipped: 0, Time elapsed: 39.624 s <<< FAILURE! - in sk.stuba.fei.uim.vsa.pr2.ThesisResourceTest
+shouldFindThesisByStudent  Time elapsed: 2.668 s  <<< FAILURE!
+org.opentest4j.AssertionFailedError: expected: not <null>
+	at sk.stuba.fei.uim.vsa.pr2.ThesisResourceTest.shouldFindThesisByStudent(ThesisResourceTest.java:532)
+
+shouldReturnUnauthorized  Time elapsed: 0.075 s  <<< FAILURE!
+org.opentest4j.AssertionFailedError: expected: <true> but was: <false>
+	at sk.stuba.fei.uim.vsa.pr2.ThesisResourceTest.shouldReturnUnauthorized(ThesisResourceTest.java:166)
+
+shouldFindThesisByTeacher  Time elapsed: 1.615 s  <<< FAILURE!
+org.opentest4j.AssertionFailedError: expected: not <null>
+	at sk.stuba.fei.uim.vsa.pr2.ThesisResourceTest.shouldFindThesisByTeacher(ThesisResourceTest.java:497)
+
+shouldAssignThesisWithStudent  Time elapsed: 3.558 s  <<< FAILURE!
+org.opentest4j.AssertionFailedError: expected: not <null>
+	at sk.stuba.fei.uim.vsa.pr2.ThesisResourceTest.shouldAssignThesisWithStudent(ThesisResourceTest.java:337)
+
+shouldGetThesis  Time elapsed: 1.553 s  <<< FAILURE!
+org.opentest4j.AssertionFailedError: expected: not <null>
+	at sk.stuba.fei.uim.vsa.pr2.ThesisResourceTest.shouldGetThesis(ThesisResourceTest.java:203)
+
+shouldAssignThesisWithTeacher  Time elapsed: 2.526 s  <<< FAILURE!
+org.opentest4j.AssertionFailedError: expected: not <null>
+	at sk.stuba.fei.uim.vsa.pr2.ThesisResourceTest.shouldAssignThesisWithTeacher(ThesisResourceTest.java:297)
+
+shouldSubmitThesisWithStudent  Time elapsed: 3.516 s  <<< FAILURE!
+org.opentest4j.AssertionFailedError: expected: not <null>
+	at sk.stuba.fei.uim.vsa.pr2.ThesisResourceTest.shouldSubmitThesisWithStudent(ThesisResourceTest.java:416)
+
+shouldSubmitThesisWithTeacher  Time elapsed: 2.529 s  <<< FAILURE!
+org.opentest4j.AssertionFailedError: expected: not <null>
+	at sk.stuba.fei.uim.vsa.pr2.ThesisResourceTest.shouldSubmitThesisWithTeacher(ThesisResourceTest.java:369)
+
+shouldDeleteThesis  Time elapsed: 1.577 s  <<< FAILURE!
+org.opentest4j.AssertionFailedError: expected: not <null>
+	at sk.stuba.fei.uim.vsa.pr2.ThesisResourceTest.shouldDeleteThesis(ThesisResourceTest.java:247)
+
+shouldCallFindThesesWithWrongCriteria  Time elapsed: 1.573 s  <<< FAILURE!
+org.opentest4j.AssertionFailedError: expected: not <null>
+	at sk.stuba.fei.uim.vsa.pr2.ThesisResourceTest.shouldCallFindThesesWithWrongCriteria(ThesisResourceTest.java:624)
+
+shouldSubmitThesisWithTeacherAndWithWrongStudent  Time elapsed: 2.534 s  <<< FAILURE!
+org.opentest4j.AssertionFailedError: expected: not <null>
+	at sk.stuba.fei.uim.vsa.pr2.ThesisResourceTest.shouldSubmitThesisWithTeacherAndWithWrongStudent(ThesisResourceTest.java:461)
+
+shouldGetAllTheses  Time elapsed: 2.057 s  <<< FAILURE!
+org.opentest4j.AssertionFailedError: expected: not <null>
+	at sk.stuba.fei.uim.vsa.pr2.ThesisResourceTest.shouldGetAllTheses(ThesisResourceTest.java:153)
+
+---------------------------------------------------------------------
+ 
+-------------------------------------------------------------------------------
+Test set: sk.stuba.fei.uim.vsa.pr2.SanityCheckTest
+-------------------------------------------------------------------------------
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.96 s - in sk.stuba.fei.uim.vsa.pr2.SanityCheckTest
+---------------------------------------------------------------------
+ 
+-------------------------------------------------------------------------------
+Test set: sk.stuba.fei.uim.vsa.pr2.TeacherResourceTest
+-------------------------------------------------------------------------------
+Tests run: 11, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 12.306 s <<< FAILURE! - in sk.stuba.fei.uim.vsa.pr2.TeacherResourceTest
+shouldReturnUnauthorized  Time elapsed: 0.085 s  <<< FAILURE!
+org.opentest4j.AssertionFailedError: expected: <true> but was: <false>
+	at sk.stuba.fei.uim.vsa.pr2.TeacherResourceTest.shouldReturnUnauthorized(TeacherResourceTest.java:114)
+
+---------------------------------------------------------------------
+ 

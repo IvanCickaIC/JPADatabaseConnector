@@ -1,0 +1,24 @@
+Jun 01, 2023 4:28:50 PM org.glassfish.grizzly.http.server.NetworkListener start
+INFO: Started listener bound to [docker-desktop:8080]
+Jun 01, 2023 4:28:50 PM org.glassfish.grizzly.http.server.HttpServer start
+INFO: [HttpServer] Started.
+Jun 01, 2023 4:28:50 PM org.glassfish.grizzly.http.server.NetworkListener shutdownNow
+INFO: Stopped listener bound to [docker-desktop:8080]
+Jun 01, 2023 4:28:51 PM org.glassfish.grizzly.http.server.NetworkListener start
+INFO: Started listener bound to [docker-desktop:8080]
+Jun 01, 2023 4:28:51 PM org.glassfish.grizzly.http.server.HttpServer start
+INFO: [HttpServer-1] Started.
+Jun 01, 2023 4:29:07 PM org.glassfish.grizzly.http.server.NetworkListener shutdownNow
+INFO: Stopped listener bound to [docker-desktop:8080]
+Jun 01, 2023 4:29:07 PM org.glassfish.grizzly.http.server.NetworkListener start
+INFO: Started listener bound to [docker-desktop:8080]
+Jun 01, 2023 4:29:07 PM org.glassfish.grizzly.http.server.HttpServer start
+INFO: [HttpServer-2] Started.
+Jun 01, 2023 4:29:49 PM org.glassfish.grizzly.http.server.NetworkListener shutdownNow
+INFO: Stopped listener bound to [docker-desktop:8080]
+Jun 01, 2023 4:29:49 PM org.glassfish.grizzly.http.server.NetworkListener start
+INFO: Started listener bound to [docker-desktop:8080]
+Jun 01, 2023 4:29:49 PM org.glassfish.grizzly.http.server.HttpServer start
+INFO: [HttpServer-3] Started.
+Jun 01, 2023 4:30:02 PM org.glassfish.grizzly.http.server.NetworkListener shutdownNow
+INFO: Stopped listener bound to [docker-desktop:8080]
